@@ -1,6 +1,6 @@
-:- include('./instance.pl').
-:- include('./utils.pl').
-:- include('./planifier.pl').
+:- include('./definition.pl').
+:- include('./views.pl').
+:- include('./organisation.pl').
 
 /**
  * planification(-Cs).
