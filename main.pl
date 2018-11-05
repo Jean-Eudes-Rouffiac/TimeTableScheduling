@@ -1,5 +1,5 @@
 :- include('./definition.pl').
-:- include('./views.pl').
+:- include('./view.pl').
 :- include('./organisation.pl').
 
 /**
