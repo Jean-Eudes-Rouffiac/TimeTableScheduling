@@ -1,140 +1,76 @@
-
-%matiere GM5%
+%
+%%
+% SEMESTRE 10 %
+%%
 %
 
 
+ % MACHINE LEARNING %%
 
-%s11%
-subject(machine_learning).
-subject(traitement_image).
-subject(calcul_sto).
-subject(realite_virtuelle).
-
-
-%% REGRESSION NON LINEAIRE %%
-
- Sessions('CM regression_non_lineaire', regression_non_lineaire, portier , cm, GM4, [
-     cm_regression_non_lineaire_1, cm_regression_non_lineaire_2, cm_regression_non_lineaire_3, cm_regression_non_lineaire_4,
-     cm_regression_non_lineaire_5
- ]).
-
- Sessions('TD regression non lineaire groupe1', regression_non_lineaire, portier, tp, GM4_1, [
-     tp_regression_non_lineaire_1_1, tp_regression_non_lineaire_1_2, tp_regression_non_lineaire_1_3, tp_regression_non_lineaire_1_4,
-     tp_regression_non_lineaire_1_5
- ]).
-
- Sessions('TP regression non lineaire groupe2', regression_non_lineaire, portier, tp, GM4_2, [
-     tp_regression_non_lineaire_2_1, tp_regression_non_lineaire_2_2, tp_regression_non_lineaire_2_3, tp_regression_non_lineaire_2_4,
-     tp_regression_non_lineaire_2_5
- ]).
-
- Sessions('DS regression non lineaire', regression_non_lineaire, portier, ds, GM4, [
-     ds_regression_non_lineaire
- ]).
-
- % HAD %%
-
-  Sessions('CM had', had, itmi , cm, GM4, [
-      cm_had_1, cm_had_2, cm_had_3, cm_had_4,
-      cm_had_5
+  Sessions('CM machine_learning', machine_learning, zanni_merk , cm, GM5, [
+      cm_machine_learning_1, cm_machine_learning_2, cm_machine_learning_3, cm_machine_learning_4,
+      cm_machine_learning_5
   ]).
 
-  Sessions('TD regression non lineaire groupe1', had, itmi, td, GM4_1, [
-      td_had_1_1, td_had_1_2, td_had_1_3, td_had_1_4,
-      td_had_1_5
+  Sessions('TD machine learning groupe1', machine_learning, zanni_merk, td, GM5_1, [
+      td_machine_learning_1_1, td_machine_learning_1_2, td_machine_learning_1_3, td_machine_learning_1_4,
+      td_machine_learning_1_5
   ]).
 
-  Sessions('TD regression non lineaire groupe2', had, itmi, td, GM4_2, [
-      td_had_2_1, td_had_2_2, td_had_2_3, td_had_2_4,
-      td_had_2_5
+  Sessions('TD machine learning groupe2', machine_learning, zanni_merk, td, GM5_2, [
+      td_machine_learning_2_1, td_machine_learning_2_2, td_machine_learning_2_3, td_machine_learning_2_4,
+      td_machine_learning_2_5
   ]).
 
-  Sessions('DS regression non lineaire', had, itmi, ds, GM4, [
-      ds_had
-  ]).
+  % TRAITEMENT IMAGE %%
 
-
-  % HAMILTON JACOBI %%
-
-   Sessions('CM hamilton_jacobi', hamilton_jacobi, forcadel , cm, GM4, [
-       cm_hamilton_jacobi_1, cm_hamilton_jacobi_2, cm_hamilton_jacobi_3, cm_hamilton_jacobi_4,
-       cm_hamilton_jacobi_5
+   Sessions('CM traitement image', traitement_image, zanni_merk , cm, GM5, [
+       cm_traitement_image_1, cm_traitement_image_2, cm_traitement_image_3, cm_traitement_image_4,
+       cm_traitement_image_5
    ]).
 
-   Sessions('TD regression non lineaire groupe1', hamilton_jacobi, forcadel, td, GM4_1, [
-       td_hamilton_jacobi_1_1, td_hamilton_jacobi_1_2, td_hamilton_jacobi_1_3, td_hamilton_jacobi_1_4,
-       td_hamilton_jacobi_1_5
+   Sessions('TD traitement image groupe1', traitement_image, zanni_merk, td, GM5_1, [
+       td_traitement_image_1_1, td_traitement_image_1_2, td_traitement_image_1_3, td_traitement_image_1_4,
+       td_traitement_image_1_5
    ]).
 
-   Sessions('TD regression non lineaire groupe2', hamilton_jacobi, forcadel, td, GM4_2, [
-       td_hamilton_jacobi_2_1, td_hamilton_jacobi_2_2, td_hamilton_jacobi_2_3, td_hamilton_jacobi_2_4,
-       td_hamilton_jacobi_2_5
-   ]).
-
-   Sessions('DS regression non lineaire', hamilton_jacobi, forcadel, ds, GM4, [
-       ds_hamilton_jacobi
+   Sessions('TD traitement image groupe2', traitement_image, zanni_merk, td, GM5_2, [
+       td_traitement_image_2_1, td_traitement_image_2_2, td_traitement_image_2_3, td_traitement_image_2_4,
+       td_traitement_image_2_5
    ]).
 
 
-   % AUTOMATIQUE NON LINEAIRE %%
+   % CALCUL STOCHASTIQUE %%
 
-    Sessions('CM auto_non_lineaire', auto_non_lineaire, el_assoudi , cm, GM4, [
-        cm_auto_non_lineaire_1, cm_auto_non_lineaire_2, cm_auto_non_lineaire_3, cm_auto_non_lineaire_4,
-        cm_auto_non_lineaire_5
+    Sessions('CM calcul sto', calcul_sto, ciotir , cm, GM5, [
+        cm_calcul_sto_1, cm_calcul_sto_2, cm_calcul_sto_3, cm_calcul_sto_4,
+        cm_calcul_sto_5
     ]).
 
-    Sessions('TD regression non lineaire groupe1', auto_non_lineaire, el_assoudi, td, GM4_1, [
-        td_auto_non_lineaire_1_1, td_auto_non_lineaire_1_2, td_auto_non_lineaire_1_3, td_auto_non_lineaire_1_4,
-        td_auto_non_lineaire_1_5
+    Sessions('TD calcul sto groupe1', calcul_sto, ciotir, td, GM5_1, [
+        td_calcul_sto_1_1, td_calcul_sto_1_2, td_calcul_sto_1_3, td_calcul_sto_1_4,
+        td_calcul_sto_1_5
     ]).
 
-    Sessions('td regression non lineaire groupe2', auto_non_lineaire, el_assoudi, td, GM4_2, [
-        td_auto_non_lineaire_2_1, td_auto_non_lineaire_2_2, td_auto_non_lineaire_2_3, td_auto_non_lineaire_2_4,
-        td_auto_non_lineaire_2_5
+    Sessions('TD calcul sto groupe2', calcul_sto, ciotir, td, GM5_2, [
+        td_calcul_sto_2_1, td_calcul_sto_2_2, td_calcul_sto_2_3, td_calcul_sto_2_4,
+        td_calcul_sto_2_5
     ]).
 
-    Sessions('DS regression non lineaire', auto_non_lineaire, el_assoudi, ds, GM4, [
-        ds_auto_non_lineaire
-    ]).
 
-    % CALCUL PARALLELLE %%
+    % REALITE VIRTUELLE %%
 
-     Sessions('CM calcul_parallelle', calcul_parallelle, le_guyader , cm, GM4, [
-         cm_calcul_parallelle_1, cm_calcul_parallelle_2, cm_calcul_parallelle_3, cm_calcul_parallelle_4,
-         cm_calcul_parallelle_5
+     Sessions('CM realite virtuelle', realite_virtuelle, saunier , cm, GM5, [
+         cm_realite_virtuelle_1, cm_realite_virtuelle_2, cm_realite_virtuelle_3, cm_realite_virtuelle_4,
+         cm_realite_virtuelle_5
      ]).
 
-     Sessions('TD regression non lineaire groupe1', calcul_parallelle, le_guyader, td, GM4_1, [
-         td_calcul_parallelle_1_1, td_calcul_parallelle_1_2, td_calcul_parallelle_1_3, td_calcul_parallelle_1_4,
-         td_calcul_parallelle_1_5
+     Sessions('TD realite virtuelle groupe1', realite_virtuelle, saunier, td, GM5_1, [
+         td_realite_virtuelle_1_1, td_realite_virtuelle_1_2, td_realite_virtuelle_1_3, td_realite_virtuelle_1_4,
+         td_realite_virtuelle_1_5
      ]).
 
-     Sessions('td regression non lineaire groupe2', calcul_parallelle, le_guyader, td, GM4_2, [
-         td_calcul_parallelle_2_1, td_calcul_parallelle_2_2, td_calcul_parallelle_2_3, td_calcul_parallelle_2_4,
-         td_calcul_parallelle_2_5
+     Sessions('TD realite virtuelle groupe2', realite_virtuelle, saunier, td, GM5_2, [
+         td_realite_virtuelle_2_1, td_realite_virtuelle_2_2, td_realite_virtuelle_2_3, td_realite_virtuelle_2_4,
+         td_realite_virtuelle_2_5
      ]).
-
-     Sessions('DS regression non lineaire', calcul_parallelle, le_guyader, ds, GM4, [
-         ds_calcul_parallelle
-     ]).
-
-     % PROGRAMMATION LOGIQUE CONTRAINTE %%
-
-      Sessions('CM programmation_logique_contrainte', programmation_logique_contrainte, abdulrab , cm, GM4, [
-          cm_programmation_logique_contrainte_1, cm_programmation_logique_contrainte_2, cm_programmation_logique_contrainte_3, cm_programmation_logique_contrainte_4,
-          cm_programmation_logique_contrainte_5
-      ]).
-
-      Sessions('TD programmation_logique_contrainte groupe1', programmation_logique_contrainte, abdulrab, td, GM4_1, [
-          td_programmation_logique_contrainte_1_1, td_programmation_logique_contrainte_1_2, td_programmation_logique_contrainte_1_3, td_programmation_logique_contrainte_1_4,
-          td_programmation_logique_contrainte_1_5
-      ]).
-
-      Sessions('td programmation_logique_contrainte groupe2', programmation_logique_contrainte, abdulrab, td, GM4_2, [
-          td_programmation_logique_contrainte_2_1, td_programmation_logique_contrainte_2_2, td_programmation_logique_contrainte_2_3, td_programmation_logique_contrainte_2_4,
-          td_programmation_logique_contrainte_2_5
-      ]).
-
-      Sessions('DS programmation_logique_contrainte', programmation_logique_contrainte, abdulrab, ds, GM4, [
-          ds_programmation_logique_contrainte
-      ]).
