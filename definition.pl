@@ -385,30 +385,19 @@ accueille(S, T) :-
 
 
 
-Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, GM3, [
+Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
 ]).
 
-Sessions('TD BDD', connaissances_bdd, raschia, td, id, [
-    td_bdd_id_1,
-    td_bdd_id_2,
-       td_bdd_id_3,
-    td_bdd_id_4,
-    td_bdd_id_5
+Sessions('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, GM3_1, [
+    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
 ]).
 
-Sessions('TP BDD', connaissances_bdd, raschia, tp, id, [
-    tp_bdd_id_1,
-    tp_bdd_id_2,
-    tp_bdd_id_3,
-    tp_bdd_id_4,
-    tp_bdd_id_5,
-    tp_bdd_id_6
+Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, GM3_2, [
+    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
 ]).
 
-
-
-Sessions('DS BDD', connaissances_bdd, raschia, ds, info, [
+Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
     ds_bdd
 ]).
 
