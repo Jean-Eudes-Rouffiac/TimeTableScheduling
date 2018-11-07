@@ -456,12 +456,35 @@ Sessions('DS automatique', automatique, el_assoudi, ds, GM4, [
     ds_automatique
 ]).
 
+<<<<<<< HEAD
 
 
 
 % GM3 %
 
 % Analyse numérique 1 %
+=======
+% MARKOV %
+
+Sessions('CM markov', markov, fourati , cm, GM4, [
+    cm_markov_1, cm_markov_2, cm_markov_3, cm_markov_4,
+    cm_markov_5
+]).
+
+Sessions('TD markov_groupe1', markov, fourati, td, GM4_1, [
+    td_markov_1_1, td_markov_1_2, td_markov_1_3, td_markov_1_4,
+    td_markov_1_5
+]).
+
+Sessions('TD markov_groupe2', markov, fourati, td, GM4_2, [
+    td_markov_2_1, td_markov_2_2, td_markov_2_3, td_markov_2_4,
+    td_markov_2_5
+]).
+
+Sessions('DS markov', markov, fourati, ds, GM4, [
+    ds_markov
+]).
+>>>>>>> 2473785bce1fff58965e1fd770ca7ae0f13d05d5
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
@@ -480,7 +503,27 @@ Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
 ]).
 
 
+<<<<<<< HEAD
 % Mesure et distribution %
+=======
+Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+Sessions('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, GM3_1, [
+    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
+]).
+
+Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, GM3_2, [
+    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
+]).
+
+Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
+    ds_ananum1
+]).
+
+
+>>>>>>> 2473785bce1fff58965e1fd770ca7ae0f13d05d5
 
 Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
     cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
