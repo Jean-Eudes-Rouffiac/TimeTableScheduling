@@ -430,6 +430,27 @@ Sessions('DS opti_lineaire', opti_lineaire, forcadel, ds, GM4, [
     ds_opti_lineaire
 ]).
 
+% AUTOMATIQUE %
+
+Sessions('CM automatique', automatique,el_assoudil , cm, GM4, [
+    cm_automatique_1, cm_automatique_2, cm_automatique_3, cm_automatique_4,
+    cm_automatique_5
+]).
+
+Sessions('TD automatique_groupe1', automatique, el_assoudi, td, GM4_1, [
+    td_automatique_1_1, td_automatique_1_2, td_automatique_1_3, td_automatique_1_4,
+    td_automatique_1_5
+]).
+
+Sessions('TD automatique_groupe2', automatique, el_assoudi, td, GM4_2, [
+    td_automatique_2_1, td_automatique_2_2, td_automatique_2_3, td_automatique_2_4,
+    td_automatique_2_5
+]).
+
+Sessions('DS automatique', automatique, el_assoudi, ds, GM4, [
+    ds_automatique
+]).
+
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
 ]).
