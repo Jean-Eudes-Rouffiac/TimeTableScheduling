@@ -456,14 +456,8 @@ Sessions('DS automatique', automatique, el_assoudi, ds, GM4, [
     ds_automatique
 ]).
 
-<<<<<<< HEAD
 
 
-
-% GM3 %
-
-% Analyse numérique 1 %
-=======
 % MARKOV %
 
 Sessions('CM markov', markov, fourati , cm, GM4, [
@@ -484,7 +478,13 @@ Sessions('TD markov_groupe2', markov, fourati, td, GM4_2, [
 Sessions('DS markov', markov, fourati, ds, GM4, [
     ds_markov
 ]).
->>>>>>> 2473785bce1fff58965e1fd770ca7ae0f13d05d5
+
+
+
+% GM3 %
+
+% Analyse numérique 1 %
+
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
@@ -503,9 +503,9 @@ Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
 ]).
 
 
-<<<<<<< HEAD
+
 % Mesure et distribution %
-=======
+
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
 ]).
@@ -523,7 +523,7 @@ Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
 ]).
 
 
->>>>>>> 2473785bce1fff58965e1fd770ca7ae0f13d05d5
+
 
 Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
     cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
