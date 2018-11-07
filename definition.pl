@@ -1219,6 +1219,201 @@ Sessions('CM Sport', sport, dubois, cm, GM3, [
 ]).
 
 
+
+
+
+%% REGRESSION NON LINEAIRE %%
+
+ Sessions('CM regression non linéaire', regression_non_lineaire, portier , cm, GM5, [
+     cm_regression_non_lineaire_1, cm_regression_non_lineaire_2, cm_regression_non_lineaire_3, cm_regression_non_lineaire_4,
+     cm_regression_non_lineaire_5
+ ]).
+
+ Sessions('TP regression non linéaire groupe 1', regression_non_lineaire, portier, tp, GM5_1, [
+     tp_regression_non_lineaire_1_1, tp_regression_non_lineaire_1_2, tp_regression_non_lineaire_1_3, tp_regression_non_lineaire_1_4,
+     tp_regression_non_lineaire_1_5
+ ]).
+
+ Sessions('TP regression non linéaire groupe 2', regression_non_lineaire, portier, tp, GM5_2, [
+     tp_regression_non_lineaire_2_1, tp_regression_non_lineaire_2_2, tp_regression_non_lineaire_2_3, tp_regression_non_lineaire_2_4,
+     tp_regression_non_lineaire_2_5
+ ]).
+
+
+ % HAD %%
+
+  Sessions('CM heuristique et aide à la décision', had, itmi , cm, GM5, [
+      cm_had_1, cm_had_2, cm_had_3, cm_had_4,
+      cm_had_5
+  ]).
+
+  Sessions('TD heuristique et aide à la décision groupe 1', had, itmi, td, GM5_1, [
+      td_had_1_1, td_had_1_2, td_had_1_3, td_had_1_4,
+      td_had_1_5
+  ]).
+
+  Sessions('TD heuristique et aide à la décision groupe 2', had, itmi, td, GM5_2, [
+      td_had_2_1, td_had_2_2, td_had_2_3, td_had_2_4,
+      td_had_2_5
+  ]).
+
+
+
+  % HAMILTON JACOBI %%
+
+   Sessions('CM Hamilton Jacobi', hamilton_jacobi, forcadel , cm, GM5, [
+       cm_hamilton_jacobi_1, cm_hamilton_jacobi_2, cm_hamilton_jacobi_3, cm_hamilton_jacobi_4,
+       cm_hamilton_jacobi_5
+   ]).
+
+   Sessions('TD Hamilton Jacobi groupe 1', hamilton_jacobi, forcadel, td, GM5_1, [
+       td_hamilton_jacobi_1_1, td_hamilton_jacobi_1_2, td_hamilton_jacobi_1_3, td_hamilton_jacobi_1_4,
+       td_hamilton_jacobi_1_5
+   ]).
+
+   Sessions('TD Hamilton Jacobi groupe 2', hamilton_jacobi, forcadel, td, GM5_2, [
+       td_hamilton_jacobi_2_1, td_hamilton_jacobi_2_2, td_hamilton_jacobi_2_3, td_hamilton_jacobi_2_4,
+       td_hamilton_jacobi_2_5
+   ]).
+
+
+
+   % AUTOMATIQUE NON LINEAIRE %%
+
+    Sessions('CM automatique non linéaire', auto_non_lineaire, el_assoudi , cm, GM5, [
+        cm_auto_non_lineaire_1, cm_auto_non_lineaire_2, cm_auto_non_lineaire_3, cm_auto_non_lineaire_4,
+        cm_auto_non_lineaire_5
+    ]).
+
+    Sessions('TD automatique non linéaire groupe 1', auto_non_lineaire, el_assoudi, td, GM5_1, [
+        td_auto_non_lineaire_1_1, td_auto_non_lineaire_1_2, td_auto_non_lineaire_1_3, td_auto_non_lineaire_1_4,
+        td_auto_non_lineaire_1_5
+    ]).
+
+    Sessions('TD automatique non linéaire groupe 2', auto_non_lineaire, el_assoudi, td, GM5_2, [
+        td_auto_non_lineaire_2_1, td_auto_non_lineaire_2_2, td_auto_non_lineaire_2_3, td_auto_non_lineaire_2_4,
+        td_auto_non_lineaire_2_5
+    ]).
+
+    Sessions('DS automatique non linéaire', auto_non_lineaire, el_assoudi, ds, GM5, [
+        ds_auto_non_lineaire
+    ]).
+
+    % CALCUL PARALLELLE %%
+
+     Sessions('CM calcul parallèle', calcul_parallelle, le_guyader , cm, GM5, [
+         cm_calcul_parallelle_1, cm_calcul_parallelle_2, cm_calcul_parallelle_3, cm_calcul_parallelle_4,
+         cm_calcul_parallelle_5
+     ]).
+
+     Sessions('TD calcul parallèle groupe 1', calcul_parallelle, le_guyader, td, GM5_1, [
+         td_calcul_parallelle_1_1, td_calcul_parallelle_1_2, td_calcul_parallelle_1_3, td_calcul_parallelle_1_4,
+         td_calcul_parallelle_1_5
+     ]).
+
+     Sessions('TD calcul parallèle groupe 2', calcul_parallelle, le_guyader, td, GM5_2, [
+         td_calcul_parallelle_2_1, td_calcul_parallelle_2_2, td_calcul_parallelle_2_3, td_calcul_parallelle_2_4,
+         td_calcul_parallelle_2_5
+     ]).
+
+
+
+     % PROGRAMMATION LOGIQUE CONTRAINTE %%
+
+      Sessions('CM programmation_logique_contrainte', programmation_logique_contrainte, abdulrab , cm, GM5, [
+          cm_programmation_logique_contrainte_1, cm_programmation_logique_contrainte_2, cm_programmation_logique_contrainte_3, cm_programmation_logique_contrainte_4,
+          cm_programmation_logique_contrainte_5
+      ]).
+
+      Sessions('TD programmation_logique_contrainte groupe 1', programmation_logique_contrainte, abdulrab, td, GM5_1, [
+          td_programmation_logique_contrainte_1_1, td_programmation_logique_contrainte_1_2, td_programmation_logique_contrainte_1_3, td_programmation_logique_contrainte_1_4,
+          td_programmation_logique_contrainte_1_5
+      ]).
+
+      Sessions('td programmation_logique_contrainte groupe 2', programmation_logique_contrainte, abdulrab, td, GM5_2, [
+          td_programmation_logique_contrainte_2_1, td_programmation_logique_contrainte_2_2, td_programmation_logique_contrainte_2_3, td_programmation_logique_contrainte_2_4,
+          td_programmation_logique_contrainte_2_5
+      ]).
+
+      Sessions('DS programmation_logique_contrainte', programmation_logique_contrainte, abdulrab, ds, GM5, [
+          ds_programmation_logique_contrainte
+      ]).
+
+% s10 %
+
+      % MACHINE LEARNING %%
+
+  Sessions('CM machine_learning', machine_learning, zanni_merk , cm, GM5, [
+      cm_machine_learning_1, cm_machine_learning_2, cm_machine_learning_3, cm_machine_learning_4,
+      cm_machine_learning_5
+  ]).
+
+  Sessions('TD machine learning groupe1', machine_learning, zanni_merk, td, GM5_1, [
+      td_machine_learning_1_1, td_machine_learning_1_2, td_machine_learning_1_3, td_machine_learning_1_4,
+      td_machine_learning_1_5
+  ]).
+
+  Sessions('TD machine learning groupe2', machine_learning, zanni_merk, td, GM5_2, [
+      td_machine_learning_2_1, td_machine_learning_2_2, td_machine_learning_2_3, td_machine_learning_2_4,
+      td_machine_learning_2_5
+  ]).
+
+  % TRAITEMENT IMAGE %%
+
+   Sessions('CM traitement image', traitement_image, zanni_merk , cm, GM5, [
+       cm_traitement_image_1, cm_traitement_image_2, cm_traitement_image_3, cm_traitement_image_4,
+       cm_traitement_image_5
+   ]).
+
+   Sessions('TD traitement image groupe1', traitement_image, zanni_merk, td, GM5_1, [
+       td_traitement_image_1_1, td_traitement_image_1_2, td_traitement_image_1_3, td_traitement_image_1_4,
+       td_traitement_image_1_5
+   ]).
+
+   Sessions('TD traitement image groupe2', traitement_image, zanni_merk, td, GM5_2, [
+       td_traitement_image_2_1, td_traitement_image_2_2, td_traitement_image_2_3, td_traitement_image_2_4,
+       td_traitement_image_2_5
+   ]).
+
+
+   % CALCUL STOCHASTIQUE %%
+
+    Sessions('CM calcul sto', calcul_sto, ciotir , cm, GM5, [
+        cm_calcul_sto_1, cm_calcul_sto_2, cm_calcul_sto_3, cm_calcul_sto_4,
+        cm_calcul_sto_5
+    ]).
+
+    Sessions('TD calcul sto groupe1', calcul_sto, ciotir, td, GM5_1, [
+        td_calcul_sto_1_1, td_calcul_sto_1_2, td_calcul_sto_1_3, td_calcul_sto_1_4,
+        td_calcul_sto_1_5
+    ]).
+
+    Sessions('TD calcul sto groupe2', calcul_sto, ciotir, td, GM5_2, [
+        td_calcul_sto_2_1, td_calcul_sto_2_2, td_calcul_sto_2_3, td_calcul_sto_2_4,
+        td_calcul_sto_2_5
+    ]).
+
+
+    % REALITE VIRTUELLE %%
+
+     Sessions('CM realite virtuelle', realite_virtuelle, saunier , cm, GM5, [
+         cm_realite_virtuelle_1, cm_realite_virtuelle_2, cm_realite_virtuelle_3, cm_realite_virtuelle_4,
+         cm_realite_virtuelle_5
+     ]).
+
+     Sessions('TD realite virtuelle groupe1', realite_virtuelle, saunier, td, GM5_1, [
+         td_realite_virtuelle_1_1, td_realite_virtuelle_1_2, td_realite_virtuelle_1_3, td_realite_virtuelle_1_4,
+         td_realite_virtuelle_1_5
+     ]).
+
+     Sessions('TD realite virtuelle groupe2', realite_virtuelle, saunier, td, GM5_2, [
+         td_realite_virtuelle_2_1, td_realite_virtuelle_2_2, td_realite_virtuelle_2_3, td_realite_virtuelle_2_4,
+         td_realite_virtuelle_2_5
+     ]).
+
+
+
+
 /**
 
  * Session(?Id, ?TypeCours, ?subject, ?Name)
