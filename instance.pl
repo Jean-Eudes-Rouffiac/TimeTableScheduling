@@ -8,15 +8,16 @@
  * @arg Groupe      Nom du groupe
  * @arg Effectif    Nombre d'étudiants dans le groupe
  **/
-groupe(info,      62).
-groupe(id,        24).
-groupe(silr,      38).
-groupe(silr1,     18).
-groupe(silr2,     20).
-groupe(anglais_A, 12).
-groupe(anglais_B, 16).
-groupe(anglais_C, 18).
-groupe(anglais_D, 16).
+
+groupe(gm3, 65).
+groupe(gm3_1, 32).
+groupe(gm3_2, 33).
+groupe(gm4, 50).
+groupe(gm4_1, 25).
+groupe(gm4_2, 25).
+groupe(gm5, 30).
+groupe(gm5_1, 15).
+groupe(gm5_2, 15).
 
 /**
  * incomp(-G1, -G2)
@@ -24,16 +25,14 @@ groupe(anglais_D, 16).
  * @arg G1     Nom du groupe 1
  * @arg G2     Nom du groupe 2
  */
-incomp(id, info).
-incomp(silr, info).
-incomp(silr1, silr).
-incomp(silr1, info).
-incomp(silr2, silr).
-incomp(silr2, info).
-incomp(anglais_A, info).
-incomp(anglais_B, info).
-incomp(anglais_C, info).
-incomp(anglais_D, info).
+
+incomp(gm3, gm3_1).
+incomp(gm3, gm3_2).
+incomp(gm4, gm4_1).
+incomp(gm4, gm4_2).
+incomp(gm5, gm5_1).
+incomp(gm5, gm5_2).
+
 
 /**
  * incompatibles(-Groupe1, -Groupe2)
@@ -59,31 +58,96 @@ incompatibles(X, Y) :- incomp(Y, X), !.
  *
  * @arg Matiere     Nom de la matière
  **/
-matiere(projet_genie_logiciel).
-matiere(projet_transversal).
 
-matiere(hes_anglais).
-matiere(hes_marketing).
 
-matiere(connaissances_bdd).
-matiere(connaissances_projet_ia).
-matiere(connaissances_ia).
+%matiere gm3%
 
-matiere(math_analyse_donnees).
-matiere(math_compta).
-matiere(math_crypto).
-matiere(math_opti).
-matiere(math_archi_parallèle).
+%s5%
 
-matiere(logiciel_patrons).
-matiere(logiciel_projet_c).
-matiere(logiciel_c).
-matiere(logiciel_multimedia).
-matiere(logiciel_traitement_image).
-matiere(logiciel_reseau).
-matiere(logiciel_signal).
-matiere(logiciel_outils).
-matiere(logiciel_meta_heuristique).
+matiere(analyse_numerique_1).
+matiere(fortran).
+matiere(mesure_distribution).
+
+matiere(probabilite).
+matiere(signal_1).
+matiere(optimisation_discrete).
+
+matiere(c).
+matiere(algo).
+
+%s6%
+matiere(analyse_numerique_2).
+matiere(analyse_fonctionnelle).
+matiere(algo_num_arith).
+
+matiere(statistiques1).
+matiere(analyse_donnees).
+matiere(equa_diff).
+
+matiere(langage_oriente_objet).
+matiere(syst_exploitation).
+
+
+
+
+%matiere gm4%
+%
+
+%s7%
+matiere(mnedp1).
+matiere(edp).
+matiere(opti_lineaire).
+
+
+matiere(automatique).
+matiere(markov).
+matiere(statistiques2).
+
+matiere(java).
+matiere(algo_structure_donnees).
+
+%s9%
+matiere(mnedp2).
+matiere(b_spline).
+
+matiere(signal2).
+matiere(opti_combinatoire).
+
+matiere(technoweb).
+matiere(cplusplus).
+matiere(base_de_donnee).
+
+
+
+
+%matiere gm5%
+%
+
+%s10%
+matiere(regression_non_lineaire).
+matiere(had).
+matiere(hamilton_jacobi).
+matiere(auto_non_lineaire).
+matiere(calcul_parallelle).
+matiere(programmation_logique_contrainte).
+matiere(opti_grande_dimension).
+
+%s11%
+matiere(meth_iterative).
+matiere(machine_learning).
+matiere(traitement_image).
+matiere(calcul_sto).
+matiere(realite_virtuelle).
+matiere(finance).
+matiere(ia).
+
+
+
+
+
+matiere(anglais).
+matiere(gsf).
+matiere(sport).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                   Profs                                      %
@@ -94,38 +158,41 @@ matiere(logiciel_meta_heuristique).
  *
  * @arg Prof     Nom de l'enseignant
  **/
-prof(jpeg).
-prof(picarougne).
-prof(marcus).
-prof(prie).
-prof(ricordel).
-prof(martinez).
-prof(kuntz).
-prof(parrein).
-prof(nachouki).
-prof(oili).
-prof(pigeau).
-prof(soufiane).
-prof(milliat).
-prof(goncalves).
-prof(moreau).
-prof(gelgon).
-prof(raschia).
-prof(lecapitaine).
-prof(peter).
-prof(lehn).
-prof(le_callet).
-prof(vigier).
-prof(perreira).
-prof(normand).
-prof(cohen).
-prof(leman).
-prof(prof_anglais1).
-prof(prof_anglais2).
-prof(prof_anglais3).
-prof(prof_anglais4).
-prof(prof_ptrans_id).
-prof(prof_ptrans_silr).
+
+prof(abdulrab).
+prof(beveraggi).
+prof(borel).
+prof(boutigny).
+prof(caputo).
+prof(chaignaud).
+prof(ciotir).
+prof(dubois).
+prof(el_assoudi).
+prof(el_machkouri).
+prof(forcadel).
+prof(fortier).
+prof(fourati).
+prof(knippel).
+prof(kotowicz).
+prof(gleyse).
+prof(godichon).
+prof(gout).
+prof(gypson).
+prof(joyce).
+prof(jaumat).
+prof(itmi).
+prof(merieux).
+prof(marx).
+prof(lemonnier).
+prof(le_guyader).
+prof(milou).
+prof(portier).
+prof(rennoux).
+prof(respondek).
+prof(tonnoir).
+prof(vercouter).
+prof(zakarova).
+prof(zanni_merk).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                   Plages                                     %
@@ -160,6 +227,10 @@ mois(1).
 mois(2).
 mois(3).
 mois(4).
+mois(5).
+mois(6).
+mois(7).
+mois(8).
 
 /**
 * joursParMois(-Nb).
@@ -202,15 +273,10 @@ dateBefore(J1, M1, J2, M2) :- M1 = M2, J1 < J2, !.
  * @arg Type  Un type de cours
  */
 typeCours(cm).
-typeCours(projet).
 typeCours(td).
 typeCours(tp).
 typeCours(ds).
-typeCours(mp).
-typeCours(tp_para).
-typeCours(tp_rez).
-typeCours(ds_machine).
-typeCours(anglais).
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                   Salle                                      %
@@ -223,26 +289,37 @@ typeCours(anglais).
  * @arg Effectif    Nombre de place disponibles
  * @arg Types       Listes de types de cours
  **/
-salle(a1, 300, [cm, ds]).
-salle(a2, 200, [cm, ds]).
-salle(b001, 26, [tp, mp, ds_machine]).
-salle(c001, 26, [tp, mp, ds_machine]).
-salle(c002, 26, [tp, mp, ds_machine]).
-salle(c008, 50, [cm, td, ds]).
-salle(c009, 26, [tp, tp_para, mp, ds_machine]).
-salle(c007, 10, [tp_rez]).
-salle(e101, 24, [cm, td]).
-salle(e102, 24, [cm, td]).
-salle(e103, 24, [td]).
-salle(e104, 24, [td]).
-salle(e202, 50, [cm, td]).
-salle(iht_aronax, 100, [cm, td]).
-salle(iht_nemo, 50, [td]).
-salle(isitem_TD1, 30, [cm, td]).
-salle(isitem_TD2, 30, [cm, td]).
-salle(isitem_exam, 100, [ds]).
-salle(maison_projet, 1000, [projet]).
-salle(maison_projet_2, 1000, [projet]).
+
+
+salle(ma_h_r1_01, 60, [cm, ds]).
+salle(ma_h_r1_03, 60, [cm, ds]).
+salle(ma_b_rc_17, 50, [td, cm]).
+salle(ma_b_rc_01, 50, [td, cm]).
+salle(ma_g_rc_01-02-03, 150, [cm, ds]).
+salle(ma_i_r1_06, 35, [td]).
+salle(ma_i_r1_03, 35, [td]).
+salle(ma_i_r1_08, 35, [td]).
+salle(ma_e_r1_06, 60, [td, cm]).
+salle(ma_e_r1_01, 60, [td, cm]).
+salle(ma_g_rC_05, 30, [td]).
+salle(ma_g_rC_07, 30, [td]).
+salle(ma_c_rC_01, 65, [cm, ds]).
+
+salle(du_rj_01, 40, [td]).
+salle(du_rj_03, 40, [td]).
+salle(du_rj_05, 40, [td]).
+salle(du_rj_07, 40, [td]).
+salle(du_rj_09, 40, [td]).
+salle(du_rj_11, 40, [td]).
+salle(du_rj_13, 40, [td]).
+salle(du_rj_15, 40, [td]).
+salle(du_rj_02, 100, [cm]).
+salle(du_rj_06, 100, [cm]).
+salle(du_rj_12, 100, [cm]).
+
+salle(bo_r2_03, 35, [tp]).
+salle(bo_r2_05, 35, [tp]).
+salle(bo_r2_07, 35, [tp]).
 
 /**
  * salle(?Nom, ?Effectif)
@@ -279,770 +356,995 @@ accueille(S, T) :-
  * @arg Ids     Liste d'atomes servant d'ids pour ces séances
  */
 
-/*
- * Systèmes d'information et de connaissances
- * INFO
- */
-
-seances('CM BDD', connaissances_bdd, raschia, cm, info, [
-    cm_bdd_1, cm_bdd_2, cm_bdd_3, cm_bdd_4,
-    cm_bdd_5, cm_bdd_6, cm_bdd_7, cm_bdd_8
+
+% gm3 %
+
+% S5 %
+
+% Analyse numérique 1 %
+
+
+seances('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, gm3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+seances('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, gm3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+seances('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, gm3_1, [
+    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
+]).
+
+seances('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, gm3_2, [
+    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
+]).
+
+seances('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, gm3, [
+    ds_ananum1
+]).
+
+
+% Mesure et distribution %
+
+seances('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, gm3, [
+    cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
+]).
+
+seances('TD Mesure et distribution Groupe 1', mesure_distribution, el_assoudi, td, gm3_1, [
+    td_mesure_1_1, td_mesure_1_2, td_mesure_1_3, td_mesure_1_4, td_mesure_1_5
+]).
+
+seances('TD Mesure et distribution Groupe 2', mesure_distribution, el_assoudi, td, gm3_2, [
+    td_mesure_2_1, td_mesure_2_2, td_mesure_2_3, td_mesure_2_4, td_mesure_2_5
+]).
+
+seances('DS Mesure et distribution', mesure_distribution, el_assoudi, ds, gm3, [
+    ds_mesure
+]).
+
+
+% Fortran %
+
+seances('CM Fortran', mesure_distribution, caputo, cm, gm3, [
+    cm_fortran_1, cm_fortran_2, cm_fortran_3, cm_fortran_4, cm_fortran_5
+]).
+
+seances('TD Fortran Groupe 1', mesure_distribution, caputo, td, gm3_1, [
+    td_fortran_1_1, td_fortran_1_2, td_fortran_1_3, td_fortran_1_4, td_fortran_1_5
+]).
+
+seances('TD Fortran Groupe 2', mesure_distribution, caputo, td, gm3_2, [
+    td_fortran_2_1, td_fortran_2_2, td_fortran_2_3, td_fortran_2_4, td_fortran_2_5
+]).
+
+seances('DS Fortran', mesure_distribution, caputo, ds, gm3, [
+    ds_fortran
+]).
+
+
+% Probabilité %
+
+seances('CM Probabilité', probabilite, ciotir, cm, gm3, [
+    cm_proba_1, cm_proba_2, cm_proba_3, cm_proba_4, cm_proba_5
+]).
+
+seances('TD Probabilité Groupe 1', probabilite, ciotir, td, gm3_1, [
+    td_proba_1_1, td_proba_1_2, td_proba_1_3, td_proba_1_4, td_proba_1_5
+]).
+
+seances('TD Probabilité Groupe 2', probabilite, ciotir, td, gm3_2, [
+    td_proba_2_1, td_proba_2_2, td_proba_2_3, td_proba_2_4, td_proba_2_5
+]).
+
+seances('DS Probabilité', probabilite, ciotir, ds, gm3, [
+    ds_proba
+]).
+
+
+
+% Optimisation discrète %
+
+seances('CM Optimisation discrète', optimisation_discrete, beveraggi, cm, gm3, [
+    cm_opti_discrete_1, cm_opti_discrete_2, cm_opti_discrete_3, cm_opti_discrete_4, cm_opti_discrete_5
+]).
+
+seances('TD Optimisation discrète Groupe 1', optimisation_discrete, beveraggi, td, gm3_1, [
+    td_opti_discrete_1_1, td_opti_discrete_1_2, td_opti_discrete_1_3, td_opti_discrete_1_4, td_opti_discrete_1_5
+]).
+
+seances('TD Optimisation discrète Groupe 2', optimisation_discrete, beveraggi, td, gm3_2, [
+    td_opti_discrete_2_1, td_opti_discrete_2_2, td_opti_discrete_2_3, td_opti_discrete_2_4, td_opti_discrete_2_5
+]).
+
+seances('DS Optimisation discrète', optimisation_discrete, beveraggi, ds, gm3, [
+    ds_opti_discrete
+]).
+
+
+
+% Signal 1 %
+
+seances('CM Signal 1', signal_1, fortier, cm, gm3, [
+    cm_signal1_1, cm_signal1_2, cm_signal1_3, cm_signal1_4, cm_signal1_5
+]).
+
+seances('TD Signal 1 Groupe 1', signal_1, fortier, td, gm3_1, [
+    td_signal1_1_1, td_signal1_1_2, td_signal1_1_3, td_signal1_1_4, td_signal1_1_5
+]).
+
+seances('TD Signal 1 Groupe 2', signal_1, fortier, td, gm3_2, [
+    td_signal1_2_1, td_signal1_2_2, td_signal1_2_3, td_signal1_2_4, td_signal1_2_5
+]).
+
+seances('TP Signal 1 Groupe 1', signal_1, fortier, tp, gm3_1, [
+    tp_signal1_1_1, tp_signal1_1_2
+]).
+
+seances('TP Signal 1 Groupe 2', signal_1, fortier, tp, gm3_2, [
+    tp_signal1_2_1, tp_signal1_2_2
+]).
+
+seances('DS Signal 1', signal_1, fortier, ds, gm3, [
+    ds_signal1
+]).
+
+
+% Langage C %
+
+seances('CM Langage C', c, kotowicz, cm, gm3, [
+    cm_C_1, cm_C_2, cm_C_3, cm_C_4, cm_C_5
+]).
+
+seances('TD Langage C Groupe 1', c, kotowicz, tp, gm3_1, [
+    tp_C_1_1, tp_C_1_2, tp_C_1_3, tp_C_1_4, tp_C_1_5
+]).
+
+seances('TD Langage C Groupe 2', c, kotowicz, tp, gm3_2, [
+    tp_C_2_1, tp_C_2_2, tp_C_2_3, tp_C_2_4, tp_C_2_5
+]).
+
+seances('DS Langage C', c, kotowicz, ds, gm3, [
+    ds_C
+]).
+
+
+% Algo %
+
+seances('CM Algo', algo, chaignaud, cm, gm3, [
+    cm_algo_1, cm_algo_2, cm_algo_3, cm_algo_4, cm_algo_5
+]).
+
+seances('TD Algo Groupe 1', algo, chaignaud, td, gm3_1, [
+    td_algo_1_1, td_algo_1_2, td_algo_1_3, td_algo_1_4, td_algo_1_5
+]).
+
+seances('TD Algo Groupe 2', algo, chaignaud, td, gm3_2, [
+    td_algo_2_1, td_algo_2_2, td_algo_2_3, td_algo_2_4, td_algo_2_5
+]).
+
+seances('DS Algo', algo, chaignaud, ds, gm3, [
+    ds_algo
+]).
+
+
+% Anglais %
+
+seances('CM Anglais', anglais, milou, cm, gm3, [
+    cm_anglais1_1, cm_anglais1_2, cm_anglais1_3, cm_anglais1_4, cm_anglais1_5
+]).
+
+seances('TD Anglais Groupe 1', anglais, milou, td, gm3_1, [
+    td_anglais1_1_1, td_anglais1_1_2, td_anglais1_1_3, td_anglais1_1_4, td_anglais1_1_5
+]).
+
+seances('TD Anglais Groupe 2', anglais, milou, td, gm3_2, [
+    td_anglais1_2_1, td_anglais1_2_2, td_anglais1_2_3, td_anglais1_2_4, td_anglais1_2_5
+]).
+
+seances('DS Anglais', anglais, milou, ds, gm3, [
+    ds_anglais1
+]).
+
+% GSF %
+
+seances('TD GSF Groupe 1', gsf, borel, td, gm3_1, [
+    td_gsf1_1_1, td_gsf1_1_2, td_gsf1_1_3, td_gsf1_1_4, td_gsf1_1_5
+]).
+
+seances('TD GSF Groupe 2', gsf, borel, td, gm3_2, [
+    td_gsf1_2_1, td_gsf1_2_2, td_gsf1_2_3, td_gsf1_2_4, td_gsf1_2_5
+]).
+
+seances('DS GSF', gsf, borel, ds, gm3, [
+    ds_gsf1
+]).
+
+
+% Sport %
+
+seances('CM Sport', sport, dubois, cm, gm3, [
+    cm_sport1_1, cm_sport1_2, cm_sport1_3, cm_sport1_4, cm_sport1_5
+]).
+
+% S6 %
+
+% Analyse numérique 2 %
+
+seances('CM Analyse numérique 2', analyse_numerique_2, forcadel, cm, gm3, [
+    cm_ananum2_1, cm_ananum2_2, cm_ananum2_3, cm_ananum2_4, cm_ananum2_5
+]).
+
+seances('CM Analyse numérique 2', analyse_numerique_2, forcadel, cm, gm3, [
+    cm_ananum2_1, cm_ananum2_2, cm_ananum2_3, cm_ananum2_4, cm_ananum2_5
+]).
+
+seances('TD Analyse numérique 2 Groupe 1', analyse_numerique_2, forcadel, td, gm3_1, [
+    td_ananum2_1_1, td_ananum2_1_2, td_ananum2_1_3, td_ananum2_1_4, td_ananum2_1_5
+]).
+
+seances('TD Analyse numérique 2 Groupe 2', analyse_numerique_2, forcadel, td, gm3_2, [
+    td_ananum2_2_1, td_ananum2_2_2, td_ananum2_2_3, td_ananum2_2_4, td_ananum2_2_5
+]).
+
+seances('TP Analyse numérique 2 Groupe 1', analyse_numerique_2, forcadel, tp, gm3_1, [
+    tp_ananum2_1_1, tp_ananum2_1_2
+]).
+
+seances('TP Analyse numérique 2 Groupe 2', analyse_numerique_2, forcadel, tp, gm3_2, [
+    tp_ananum2_2_1, tp_ananum2_2_2
+]).
+
+seances('DS Analyse numérique 2', analyse_numerique_2, forcadel, ds, gm3, [
+    ds_ananum2
 ]).
-
-seances('TD BDD', connaissances_bdd, raschia, td, id, [
-    td_bdd_id_1,
-    td_bdd_id_2,
-       td_bdd_id_3,
-    td_bdd_id_4,
-    td_bdd_id_5
+
+% Analyse fonctionnelle %
+
+seances('CM Analyse fonctionnelle', analyse_fonctionnelle, zakarova, cm, gm3, [
+    cm_anafonc_1, cm_anafonc_2, cm_anafonc_3, cm_anafonc_4, cm_anafonc_5
+]).
+
+seances('TD Analyse fonctionnelle Groupe 1', analyse_fonctionnelle, zakarova, td, gm3_1, [
+    td_anafonc_1_1, td_anafonc_1_2, td_anafonc_1_3, td_anafonc_1_4, td_anafonc_1_5
+]).
+
+seances('TD Analyse fonctionnelle Groupe 2', analyse_fonctionnelle, zakarova, td, gm3_2, [
+    td_anafonc_2_1, td_anafonc_2_2, td_anafonc_2_3, td_anafonc_2_4, td_anafonc_2_5
+]).
+
+seances('DS Analyse fonctionnelle', analyse_fonctionnelle, zakarova, ds, gm3, [
+    ds_anafonc
 ]).
-
-seances('TP BDD', connaissances_bdd, raschia, tp, id, [
-    tp_bdd_id_1,
-    tp_bdd_id_2,
-    tp_bdd_id_3,
-    tp_bdd_id_4,
-    tp_bdd_id_5,
-    tp_bdd_id_6
+
+% Algorithmique numérique et arithmétique %
+
+seances('CM Algorithmique numérique et arithmétique', algo_num_arith, gleyse, cm, gm3, [
+    cm_algo_num_arith_1, cm_algo_num_arith_2, cm_algo_num_arith_3, cm_algo_num_arith_4, cm_algo_num_arith_5
 ]).
 
-seances('TD BDD', connaissances_bdd, nachouki, td, silr1, [
-    td_bdd_silr1_1,
-    td_bdd_silr1_2,
-    td_bdd_silr1_3,
-    td_bdd_silr1_4,
-    td_bdd_silr1_5
+seances('TD Algorithmique numérique et arithmétique Groupe 1', algo_num_arith, gleyse, td, gm3_1, [
+    td_algo_num_arith_1_1, td_algo_num_arith_1_2, td_algo_num_arith_1_3, td_algo_num_arith_1_4, td_algo_num_arith_1_5
 ]).
 
-seances('TP BDD', connaissances_bdd, nachouki, tp, silr1, [
-    tp_bdd_silr1_1,
-    tp_bdd_silr1_2,
-    tp_bdd_silr1_3,
-    tp_bdd_silr1_4,
-    tp_bdd_silr1_5,
-    tp_bdd_silr1_6
+seances('TD Algorithmique numérique et arithmétique Groupe 2', algo_num_arith, gleyse, td, gm3_2, [
+    td_algo_num_arith_2_1, td_algo_num_arith_2_2, td_algo_num_arith_2_3, td_algo_num_arith_2_4, td_algo_num_arith_2_5
 ]).
 
-seances('TD BDD', connaissances_bdd, nachouki, td, silr2, [
-    td_bdd_silr2_1,
-    td_bdd_silr2_2,
-    td_bdd_silr2_3,
-    td_bdd_silr2_4,
-    td_bdd_silr2_5
+seances('DS Algorithmique numérique et arithmétique', algo_num_arith, gleyse, ds, gm3, [
+    ds_algo_num_arith
 ]).
+
 
-seances('TP BDD', connaissances_bdd, nachouki, tp, silr2, [
-    tp_bdd_silr2_1,
-    tp_bdd_silr2_2,
-    tp_bdd_silr2_3,
-    tp_bdd_silr2_4,
-    tp_bdd_silr2_5,
-    tp_bdd_silr2_6
+
+% Statistiques 1 %
+
+seances('CM Statistiques 1', statistiques1, el_machkouri, cm, gm3, [
+    cm_stat1_1, cm_stat1_2, cm_stat1_3, cm_stat1_4, cm_stat1_5
 ]).
 
-seances('DS BDD', connaissances_bdd, raschia, ds, info, [
-    ds_bdd
+seances('TD Statistiques 1 Groupe 1', statistiques1, el_machkouri, td, gm3_1, [
+    td_stat1_1_1, td_stat1_1_2, td_stat1_1_3, td_stat1_1_4, td_stat1_1_5
 ]).
 
-seances('TP mini projet IA', connaissances_projet_ia, lecapitaine, tp, id, [
-    tp_projet_ia_id_1,
-    tp_projet_ia_id_2,
-    tp_projet_ia_id_3,
-    tp_projet_ia_id_4,
-    tp_projet_ia_id_5,
-    tp_projet_ia_id_6
+seances('TD Statistiques 1 Groupe 2', statistiques1, el_machkouri, td, gm3_2, [
+    td_stat1_2_1, td_stat1_2_2, td_stat1_2_3, td_stat1_2_4, td_stat1_2_5
 ]).
 
-seances('TP mini projet IA', connaissances_projet_ia, lecapitaine, tp, silr1, [
-    tp_projet_ia_silr1_1,
-    tp_projet_ia_silr1_2,
-    tp_projet_ia_silr1_3,
-    tp_projet_ia_silr1_4,
-    tp_projet_ia_silr1_5,
-    tp_projet_ia_silr1_6
+seances('DS Statistiques 1', statistiques1, el_machkouri, ds, gm3, [
+    ds_stat1
 ]).
+
+
+% Equation différentiel %
 
-seances('TP mini projet IA', connaissances_projet_ia, raschia, tp, silr2, [
-    tp_projet_ia_silr2_1,
-    tp_projet_ia_silr2_2,
-    tp_projet_ia_silr2_3,
-    tp_projet_ia_silr2_4,
-    tp_projet_ia_silr2_5,
-    tp_projet_ia_silr2_6
+seances('CM Equation différentiel', equa_diff, respondek, cm, gm3, [
+    cm_equadiff_1, cm_equadiff_2, cm_equadiff_3, cm_equadiff_4, cm_equadiff_5
 ]).
 
-seances('CM IA', connaissances_ia, martinez, cm, info, [
-    cm_IA_1,
-    cm_IA_2,
-    cm_IA_3,
-    cm_IA_4,
-    cm_IA_5,
-    cm_IA_6
+seances('TD Equation différentiel Groupe 1', equa_diff, respondek, td, gm3_1, [
+    td_equadiff_1_1, td_equadiff_1_2, td_equadiff_1_3, td_equadiff_1_4, td_equadiff_1_5
 ]).
 
-seances('TD IA', connaissances_ia, lecapitaine, td, id, [
-    td_IA_id_1,
-    td_IA_id_2,
-    td_IA_id_3
+seances('TD Equation différentiel Groupe 2', equa_diff, respondek, td, gm3_2, [
+    td_equadiff_2_1, td_equadiff_2_2, td_equadiff_2_3, td_equadiff_2_4, td_equadiff_2_5
 ]).
 
-seances('TD IA', connaissances_ia, martinez, td, silr1, [
-    td_IA_silr1_1,
-    td_IA_silr1_2,
-    td_IA_silr1_3
+seances('DS Equation différentiel', equa_diff, respondek, ds, gm3, [
+    ds_equadiff
 ]).
 
-seances('TD IA', connaissances_ia, raschia, td, silr2, [
-    td_IA_silr2_1,
-    td_IA_silr2_2,
-    td_IA_silr2_3
-]).
-
-seances('DS IA', connaissances_ia, martinez, ds, info, [
-    ds_ia
-]).
+% Système dexploitation %
 
+seances('CM Système dexploitation', syst_exploitation, jaumat, cm, gm3, [
+    cm_systexploit_1, cm_systexploit_2, cm_systexploit_3, cm_systexploit_4, cm_systexploit_5
+]).
 
-/*
- * Ingenierie logicielle
- * INFO
- */
+seances('TP Système dexploitation Groupe 1', syst_exploitation, jaumat, td, gm3_1, [
+    tp_systexploit_1_1, tp_systexploit_1_2, tp_systexploit_1_3, tp_systexploit_1_4, tp_systexploit_1_5
+]).
 
-seances('CM multimédia', logiciel_multimedia, jpeg, cm, id, [
-    cm_multimedia_1,
-    cm_multimedia_2,
-    cm_multimedia_3,
-    cm_multimedia_4
+seances('TP Système dexploitation Groupe 2', syst_exploitation, jaumat, td, gm3_2, [
+    tp_systexploit_2_1, tp_systexploit_2_2, tp_systexploit_2_3, tp_systexploit_2_4, tp_systexploit_2_5
 ]).
 
-seances('CM multimédia', logiciel_multimedia, gelgon, cm, id, [
-    cm_multimedia_5,
-    cm_multimedia_6,
-    cm_multimedia_7,
-    cm_multimedia_8
+seances('DS Système dexploitation objet', syst_exploitation, jaumat, ds, gm3, [
+    ds_systexploit
 ]).
 
-seances('TP multimédia', logiciel_multimedia, gelgon, tp, id, [
-    tp_multimedia_1,
-    tp_multimedia_2,
-    tp_multimedia_3,
-    tp_multimedia_4,
-    tp_multimedia_5,
-    tp_multimedia_6
+% Anglais %
+
+seances('CM Anglais', anglais, gypson, cm, gm3, [
+    cm_anglais2_1, cm_anglais2_2, cm_anglais2_3, cm_anglais2_4, cm_anglais2_5
 ]).
 
-seances('DS multimedia', logiciel_multimedia, [jpeg, gelgon], ds, info, [
-    ds_multimedia
+seances('TD Anglais Groupe 1', anglais, gypson, td, gm3_1, [
+    td_anglais2_1_1, td_anglais2_1_2, td_anglais2_1_3, td_anglais2_1_4, td_anglais2_1_5
 ]).
 
-seances('CM optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, cm, id, [
-    cm_meta_heuristique_1,
-    cm_meta_heuristique_2,
-    cm_meta_heuristique_3,
-    cm_meta_heuristique_4,
-    cm_meta_heuristique_5,
-    cm_meta_heuristique_6,
-    cm_meta_heuristique_7
+seances('TD Anglais Groupe 2', anglais, gypson, td, gm3_2, [
+    td_anglais2_2_1, td_anglais2_2_2, td_anglais2_2_3, td_anglais2_2_4, td_anglais2_2_5
 ]).
 
-seances('DS optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, ds, id, [
-    ds_meta_heuristique
+seances('DS Anglais', anglais, gypson, ds, gm3, [
+    ds_anglais2
 ]).
+
+% GSF %
 
-seances('CM C++', logiciel_c, picarougne, cm, info, [
-    cm_c_1,
-    cm_c_2,
-    cm_c_3,
-    cm_c_4,
-    cm_c_5,
-    cm_c_6,
-    cm_c_7,
-    cm_c_8,
-    cm_c_9,
-    cm_c_10
+seances('TD GSF Groupe 1', gsf, borel, td, gm3_1, [
+    td_gsf2_1_1, td_gsf2_1_2, td_gsf2_1_3, td_gsf2_1_4, td_gsf2_1_5
 ]).
 
-seances('TP C++', logiciel_c, soufiane, tp, id, [
-    tp_c_id_1,
-    tp_c_id_2,
-    tp_c_id_3,
-    tp_c_id_4,
-    tp_c_id_5,
-    tp_c_id_6,
-    tp_c_id_7,
-    tp_c_id_8,
-    tp_c_id_9,
-    tp_c_id_10
+seances('TD GSF Groupe 2', gsf, borel, td, gm3_2, [
+    td_gsf2_2_1, td_gsf2_2_2, td_gsf2_2_3, td_gsf2_2_4, td_gsf2_2_5
 ]).
 
-seances('TP C++', logiciel_c, milliat, tp, silr1, [
-    tp_c_silr1_1,
-    tp_c_silr1_2,
-    tp_c_silr1_3,
-    tp_c_silr1_4,
-    tp_c_silr1_5,
-    tp_c_silr1_6,
-    tp_c_silr1_7,
-    tp_c_silr1_8,
-    tp_c_silr1_9,
-    tp_c_silr1_10
+seances('DS GSF', gsf, borel, ds, gm3, [
+    ds_gsf2
 ]).
 
-seances('TP C++', logiciel_c, picarougne, tp, silr2, [
-    tp_c_silr2_1,
-    tp_c_silr2_2,
-    tp_c_silr2_3,
-    tp_c_silr2_4,
-    tp_c_silr2_5,
-    tp_c_silr2_6,
-    tp_c_silr2_7,
-    tp_c_silr2_8,
-    tp_c_silr2_9,
-    tp_c_silr2_10
+
+% Sport %
+
+seances('CM Sport', sport, dubois, cm, gm3, [
+    cm_sport2_1, cm_sport2_2, cm_sport2_3, cm_sport2_4, cm_sport2_5
 ]).
+
+
+% gm4 %
+
+
+% S7 %
+
+%% MNEDP1 %%
+
+ seances('CM mnedp1', mnedp1, gout , cm, gm4, [
+     cm_mnedp1_1, cm_mnedp1_2, cm_mnedp1_3, cm_mnedp1_4,
+     cm_mnedp1_5
+ ]).
+
+ seances('TD mnedp1_groupe1', mnedp1, gout, td, gm4_1, [
+     td_mnedp1_1_1, td_mnedp1_1_2, td_mnedp1_1_3, td_mnedp1_1_4,
+     td_mnedp1_1_5
+ ]).
+
+ seances('TD mnedp1_groupe2', mnedp1, gout, td, gm4_2, [
+     td_mnedp1_2_1, td_mnedp1_2_2, td_mnedp1_2_3, td_mnedp1_2_4,
+     td_mnedp1_2_5
+ ]).
+
+ seances('DS mnedp1', mnedp1, gout, ds, gm4, [
+     ds_mnedp1
+ ]).
+
+%% EDP %%
 
-seances('DS C++', logiciel_c, picarougne, ds, info, [
-    ds_c
+ seances('CM edp', edp, le_guyader , cm, gm4, [
+     cm_edp_1, cm_edp_2, cm_edp_3, cm_edp_4,
+     cm_edp_5
+ ]).
+
+ seances('TD edp_groupe1', edp, le_guyader, td, gm4_1, [
+     td_edp_1_1, td_edp_1_2, td_edp_1_3, td_edp_1_4,
+     td_edp_1_5
+ ]).
+
+ seances('TD edp_groupe2', edp, le_guyader, td, gm4_2, [
+     td_edp_2_1, td_edp_2_2, td_edp_2_3, td_edp_2_4,
+     td_edp_2_5
+ ]).
+
+ seances('DS edp', edp, le_guyader, ds, gm4, [
+     ds_edp
+ ]).
+
+% OPTIMISATION_LINEAIRE %
+
+seances('CM opti lineaire', opti_lineaire, forcadel , cm, gm4, [
+    cm_opti_lineaire_1, cm_opti_lineaire_2, cm_opti_lineaire_3, cm_opti_lineaire_4,
+    cm_opti_lineaire_5
 ]).
 
-seances('CM Mini-Projet C++', logiciel_projet_c, picarougne, cm, info, [
-    cm_projet_c_1,
-    cm_projet_c_2
+seances('TD opti lineaire groupe1', opti_lineaire, forcadel, td, gm4_1, [
+    td_opti_lineaire_1_1, td_opti_lineaire_1_2, td_opti_lineaire_1_3, td_opti_lineaire_1_4,
+    td_opti_lineaire_1_5
 ]).
 
-seances('CM outils ingénierie logiciel', logiciel_outils, cohen, cm, silr, [
-    cm_outils_ingenierie_silr_1,
-    cm_outils_ingenierie_silr_2
+seances('TD opti lineaire groupe2', opti_lineaire, forcadel, td, gm4_2, [
+    td_opti_lineaire_2_1, td_opti_lineaire_2_2, td_opti_lineaire_2_3, td_opti_lineaire_2_4,
+    td_opti_lineaire_2_5
 ]).
 
-seances('TP outils ingénierie logiciel', logiciel_outils, cohen, tp, silr1, [
-    tp_outils_ingenierie_silr1_1,
-    tp_outils_ingenierie_silr1_2,
-    tp_outils_ingenierie_silr1_3,
-    tp_outils_ingenierie_silr1_4,
-    tp_outils_ingenierie_silr1_5,
-    tp_outils_ingenierie_silr1_6
+seances('DS opti lineaire', opti_lineaire, forcadel, ds, gm4, [
+    ds_opti_lineaire
 ]).
+
+% AUTOMATIQUE %
 
-seances('TP outils ingénierie logiciel', logiciel_outils, vigier, tp, silr2, [
-    tp_outils_ingenierie_silr2_1,
-    tp_outils_ingenierie_silr2_2,
-    tp_outils_ingenierie_silr2_3,
-    tp_outils_ingenierie_silr2_4,
-    tp_outils_ingenierie_silr2_5,
-    tp_outils_ingenierie_silr2_6
+seances('CM automatique', automatique,el_assoudil , cm, gm4, [
+    cm_automatique_1, cm_automatique_2, cm_automatique_3, cm_automatique_4,
+    cm_automatique_5
 ]).
 
-seances('DS outils ingénierie logiciel', logiciel_outils, cohen, ds, silr, [
-    ds_outils_ingenierie
+seances('TD automatique groupe1', automatique, el_assoudi, td, gm4_1, [
+    td_automatique_1_1, td_automatique_1_2, td_automatique_1_3, td_automatique_1_4,
+    td_automatique_1_5
 ]).
 
-/*
- * Mathématiques de la décision
- * ID
- */
+seances('TD automatique groupe2', automatique, el_assoudi, td, gm4_2, [
+    td_automatique_2_1, td_automatique_2_2, td_automatique_2_3, td_automatique_2_4,
+    td_automatique_2_5
+]).
 
-seances('CM analyse de données', math_analyse_donnees, kuntz, cm, id, [
-    cm_analyse_donnees_1,
-    cm_analyse_donnees_2,
-    cm_analyse_donnees_3,
-    cm_analyse_donnees_4,
-    cm_analyse_donnees_5,
-    cm_analyse_donnees_6,
-    cm_analyse_donnees_7
+seances('DS automatique', automatique, el_assoudi, ds, gm4, [
+    ds_automatique
 ]).
+
 
-seances('TD analyse de données', math_analyse_donnees, lecapitaine, td, id, [
-    td_analyse_donnees_1,
-    td_analyse_donnees_2,
-    td_analyse_donnees_3
+
+% MARKOV %
+
+seances('CM markov', markov, fourati , cm, gm4, [
+    cm_markov_1, cm_markov_2, cm_markov_3, cm_markov_4,
+    cm_markov_5
 ]).
 
-seances('TP analyse de données', math_analyse_donnees, [lecapitaine, peter], tp, id, [
-    tp_analyse_donnees_1,
-    tp_analyse_donnees_2,
-    tp_analyse_donnees_3,
-    tp_analyse_donnees_4,
-    tp_analyse_donnees_5,
-    tp_analyse_donnees_6
+seances('TD markov groupe1', markov, fourati, td, gm4_1, [
+    td_markov_1_1, td_markov_1_2, td_markov_1_3, td_markov_1_4,
+    td_markov_1_5
 ]).
 
-seances('DS analyse de données', math_analyse_donnees, kuntz, ds, id, [
-    ds_analyse_donnees
+seances('TD markov groupe2', markov, fourati, td, gm4_2, [
+    td_markov_2_1, td_markov_2_2, td_markov_2_3, td_markov_2_4,
+    td_markov_2_5
 ]).
 
-seances('CM architecture para et parallélisation de données', math_archi_parallèle, martinez, cm, id, [
-    cm_archi_parallèle_1,
-    cm_archi_parallèle_2
+seances('DS markov', markov, fourati, ds, gm4, [
+    ds_markov
 ]).
+
+
+% STATISTIQUES 2 %
 
-seances('TD architecture para et parallélisation de données', math_archi_parallèle, martinez, td, id, [
-    td_archi_parallèle_1,
-    td_archi_parallèle_2
+seances('CM statistiques 2', statistiques2, godichon , cm, gm4, [
+    cm_statistiques2_1, cm_statistiques2_2, cm_statistiques2_3, cm_statistiques2_4,
+    cm_statistiques2_5
 ]).
 
-seances('DS architecture para et parallélisation de données', math_archi_parallèle, martinez, ds, id, [
-    ds_archi_parallèle
+seances('TD statistiques 2 groupe1', statistiques2, godichon, td, gm4_1, [
+    td_statistiques2_1_1, td_statistiques2_1_2, td_statistiques2_1_3, td_statistiques2_1_4,
+    td_statistiques2_1_5
 ]).
 
-seances('TD comptabilite', math_compta, goncalves, td, id, [
-    td_compta_1,
-    td_compta_2,
-    td_compta_3,
-    td_compta_4,
-    td_compta_5,
-    td_compta_6,
-    td_compta_7
+seances('TD statistiques 2 groupe2', statistiques2, godichon, td, gm4_2, [
+    td_statistiques2_2_1, td_statistiques2_2_2, td_statistiques2_2_3, td_statistiques2_2_4,
+    td_statistiques2_2_5
 ]).
 
-seances('DS comptabilite', math_compta, goncalves, ds, id, [
-    ds_compta
+seances('DS statistiques 2', statistiques2, godichon, ds, gm4, [
+    ds_statistiques2
 ]).
 
-/*
- * Mathématiques de la décision & réseau
- * Info
- */
 
-seances('CM crypto', math_crypto, parrein, cm, info, [
-    cm_crypto_1,
-    cm_crypto_2,
-    cm_crypto_3,
-    cm_crypto_4,
-    cm_crypto_5,
-    cm_crypto_6
+% JAVA %
+
+seances('CM java', java, vercouter , cm, gm4, [
+    cm_java_1, cm_java_2, cm_java_3, cm_java_4,
+    cm_java_5
 ]).
 
-seances('TD crypto', math_crypto, raschia, td, id, [
-    td_crypto_id_1,
-    td_crypto_id_2,
-    td_crypto_id_3,
-    td_crypto_id_4
+seances('TP java groupe1', java, vercouter, tp, gm4_1, [
+    tp_java_1_1, tp_java_1_2, tp_java_1_3, tp_java_1_4,
+    tp_java_1_5
 ]).
 
-seances('TD crypto', math_crypto, normand, td, silr1, [
-    td_crypto_silr1_1,
-    td_crypto_silr1_2,
-    td_crypto_silr1_3,
-    td_crypto_silr1_4
+seances('TP java groupe2', java, vercouter, td, gm4_2, [
+    tp_java_2_1, tp_java_2_2, tp_java_2_3, tp_java_2_4,
+    tp_java_2_5
 ]).
 
-seances('TD crypto', math_crypto, parrein, td, silr2, [
-    td_crypto_silr2_1,
-    td_crypto_silr2_2,
-    td_crypto_silr2_3,
-    td_crypto_silr2_4
+seances('DS java', java, vercouter, ds, gm4, [
+    ds_java
 ]).
+
+% ALGORITHME STRUCTURE DONNEES %
 
-seances('DS crypto', math_crypto, parrein, ds, info, [
-    ds_crypto
+seances('CM algo structure de données', algo_structure_donne, abdulrab , cm, gm4, [
+    cm_algo_structure_donne_1, cm_algo_structure_donne_2, cm_algo_structure_donne_3, cm_algo_structure_donne_4,
+    cm_algo_structure_donne_5
 ]).
 
-/*
- * Réseaux, multimédias 1
- * Silr
- */
+seances('TD algo structure de données groupe 1', algo_structure_donne, abdulrab, td, gm4_1, [
+    td_algo_structure_donne_1_1, td_algo_structure_donne_1_2, td_algo_structure_donne_1_3, td_algo_structure_donne_1_4,
+    td_algo_structure_donne_1_5
+]).
 
-seances('CM réseaux', logiciel_reseau, lehn, cm, silr, [
-    cm_reseaux_1,
-    cm_reseaux_2,
-    cm_reseaux_3,
-    cm_reseaux_4,
-    cm_reseaux_5,
-    cm_reseaux_6,
-    cm_reseaux_7
+seances('TD algo structure de données groupe 2', algo_structure_donne, abdulrab, td, gm4_2, [
+    td_algo_structure_donne_2_1, td_algo_structure_donne_2_2, td_algo_structure_donne_2_3, td_algo_structure_donne_2_4,
+    td_algo_structure_donne_2_5
 ]).
 
-seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr1, [
-    tp_reseaux_silr1_1,
-    tp_reseaux_silr1_2,
-    tp_reseaux_silr1_3,
-    tp_reseaux_silr1_4,
-    tp_reseaux_silr1_5,
-    tp_reseaux_silr1_6,
-    tp_reseaux_silr1_7,
-    tp_reseaux_silr1_8
+seances('DS algo structure de données', algo_structure_donne, abdulrab, ds, gm4, [
+    ds_algo_structure_donne
 ]).
+
 
-seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr2, [
-    tp_reseaux_silr2_1,
-    tp_reseaux_silr2_2,
-    tp_reseaux_silr2_3,
-    tp_reseaux_silr2_4,
-    tp_reseaux_silr2_5,
-    tp_reseaux_silr2_6,
-    tp_reseaux_silr2_7,
-    tp_reseaux_silr2_8
+% Anglais %
+
+seances('CM Anglais', anglais, milou, cm, gm4, [
+    cm_anglais3_1, cm_anglais3_2, cm_anglais3_3, cm_anglais3_4, cm_anglais3_5
 ]).
 
-seances('DS réseaux', logiciel_reseau, lehn, ds, silr, [
-    ds_reseaux
+seances('TD Anglais Groupe 1', anglais, milou, td, gm4_1, [
+    td_anglais3_1_1, td_anglais3_1_2, td_anglais3_1_3, td_anglais3_1_4, td_anglais3_1_5
 ]).
 
-seances('CM traitement d\'image', logiciel_traitement_image, jpeg, cm, silr, [
-    cm_traitement_image_1,
-    cm_traitement_image_2,
-    cm_traitement_image_3,
-    cm_traitement_image_4,
-    cm_traitement_image_5,
-    cm_traitement_image_6,
-    cm_traitement_image_7,
-    cm_traitement_image_8,
-    cm_traitement_image_9,
-    cm_traitement_image_10,
-    cm_traitement_image_11,
-    cm_traitement_image_12
+seances('TD Anglais Groupe 2', anglais, milou, td, gm4_2, [
+    td_anglais3_2_1, td_anglais3_2_2, td_anglais3_2_3, td_anglais3_2_4, td_anglais3_2_5
 ]).
 
-seances('TP traitement d\'image', logiciel_traitement_image, [gelgon, perreira], tp, silr1, [
-    tp_traitement_image_silr1_1,
-    tp_traitement_image_silr1_2,
-    tp_traitement_image_silr1_3,
-    tp_traitement_image_silr1_4,
-    tp_traitement_image_silr1_5,
-    tp_traitement_image_silr1_6,
-    tp_traitement_image_silr1_7
+seances('DS Anglais', anglais, milou, ds, gm4, [
+    ds_anglais3
 ]).
+
 
-seances('TP traitement d\'image', logiciel_traitement_image, marcus, tp, silr2, [
-    tp_traitement_image_silr2_1,
-    tp_traitement_image_silr2_2,
-    tp_traitement_image_silr2_3,
-    tp_traitement_image_silr2_4,
-    tp_traitement_image_silr2_5,
-    tp_traitement_image_silr2_6,
-    tp_traitement_image_silr2_7
+% GSF %
+
+seances('TD GSF Groupe 1', gsf, borel, td, gm4_1, [
+    td_gsf3_1_1, td_gsf3_1_2, td_gsf3_1_3, td_gsf3_1_4, td_gsf3_1_5
 ]).
 
-seances('DS traitement d\'image', logiciel_traitement_image, jpeg, ds, silr, [
-    ds_traitement_image
+seances('TD GSF Groupe 2', gsf, borel, td, gm4_2, [
+    td_gsf3_2_1, td_gsf3_2_2, td_gsf3_2_3, td_gsf3_2_4, td_gsf3_2_5
 ]).
 
-seances('CM traitement du signal', logiciel_signal, le_callet, cm, silr, [
-    cm_traitement_signal_1,
-    cm_traitement_signal_2,
-    cm_traitement_signal_3,
-    cm_traitement_signal_4,
-    cm_traitement_signal_5,
-    cm_traitement_signal_6
+seances('DS GSF', gsf, borel, ds, gm4, [
+    ds_gsf3
 ]).
+
+% Sport %
 
-seances('TD traitement du signal', logiciel_signal, le_callet, td, silr2, [
-    td_traitement_signal_silr1_1,
-    td_traitement_signal_silr1_2,
-    td_traitement_signal_silr1_3,
-    td_traitement_signal_silr1_4,
-    td_traitement_signal_silr1_5,
-    td_traitement_signal_silr1_6
+seances('CM Sport', sport, dubois, cm, gm3, [
+    cm_sport3_1, cm_sport3_2, cm_sport3_3, cm_sport3_4, cm_sport3_5
 ]).
 
-seances('TD traitement du signal', logiciel_signal, ricordel, td, silr2, [
-    td_traitement_signal_silr2_1,
-    td_traitement_signal_silr2_2,
-    td_traitement_signal_silr2_3,
-    td_traitement_signal_silr2_4,
-    td_traitement_signal_silr2_5,
-    td_traitement_signal_silr2_6
+
+%s9%
+
+% MNEDP2 %
+
+seances('CM mnedp2', mnedp2, gout , cm, gm4, [
+    cm_mnedp2_1, cm_mnedp2_2, cm_mnedp2_3, cm_mnedp2_4,
+    cm_mnedp2_5
 ]).
 
-seances('TP traitement du signal', logiciel_signal, [le_callet, vigier], tp, silr1, [
-    tp_traitement_signal_silr1_1,
-    tp_traitement_signal_silr1_2,
-    tp_traitement_signal_silr1_3,
-    tp_traitement_signal_silr1_4,
-    tp_traitement_signal_silr1_5,
-    tp_traitement_signal_silr1_6
+seances('TD mnedp2 groupe1', mnedp2, gout, td, gm4_1, [
+    td_mnedp2_1_1, td_mnedp2_1_2, td_mnedp2_1_3, td_mnedp2_1_4,
+    td_mnedp2_1_5
 ]).
 
-seances('TP traitement du signal', logiciel_signal, ricordel, tp, silr2, [
-    tp_traitement_signal_silr2_1,
-    tp_traitement_signal_silr2_2,
-    tp_traitement_signal_silr2_3,
-    tp_traitement_signal_silr2_4,
-    tp_traitement_signal_silr2_5,
-    tp_traitement_signal_silr2_6
+seances('TD mnedp2 groupe2', mnedp2, gout, td, gm4_2, [
+    td_mnedp2_2_1, td_mnedp2_2_2, td_mnedp2_2_3, td_mnedp2_2_4,
+    td_mnedp2_2_5
 ]).
 
-seances('DS traitement du signal', logiciel_signal, le_callet, ds, silr, [
-    ds_traitement_signal
+seances('DS mnedp2', mnedp2, gout, ds, gm4, [
+    ds_mnedp2
 ]).
+
 
-/*
- * HES
- * Info
- */
+% B SPLINES %
 
-seances('CM marketing', hes_marketing, moreau, cm, silr, [
-    cm_marketing_silr_1
+seances('CM b_spline', b_spline, le_guyader , cm, gm4, [
+    cm_b_spline_1, cm_b_spline_2, cm_b_spline_3, cm_b_spline_4,
+    cm_b_spline_5
 ]).
 
-seances('CM marketing', hes_marketing, oili, cm, silr, [
-    cm_marketing_silr_2
+seances('TD b_spline groupe1', b_spline, le_guyader, td, gm4_1, [
+    td_b_spline_1_1, td_b_spline_1_2, td_b_spline_1_3, td_b_spline_1_4,
+    td_b_spline_1_5
 ]).
 
-seances('CM marketing', hes_marketing, moreau, cm, id, [
-    cm_marketing_id_1
+seances('TD b_spline groupe2', b_spline, le_guyader, td, gm4_2, [
+    td_b_spline_2_1, td_b_spline_2_2, td_b_spline_2_3
 ]).
 
-seances('CM marketing', hes_marketing, oili, cm, silr, [
-    cm_marketing_id_2
+seances('TP b_spline groupe2', b_spline, le_guyader, tp, gm4_1, [
+    tp_b_spline_1_1, tp_b_spline_1_2
 ]).
 
-seances('TD marketing', hes_marketing, oili, cm, silr, [
-    td_marketing_silr_1,
-    td_marketing_silr_2,
-    td_marketing_silr_3,
-    td_marketing_silr_4,
-    td_marketing_silr_5,
-    td_marketing_silr_6,
-    td_marketing_silr_7
+seances('TP b_spline groupe2', b_spline, le_guyader, tp, gm4_2, [
+    tp_b_spline_2_1, tp_b_spline_2_2
 ]).
 
-seances('TD marketing', hes_marketing, oili, cm, id, [
-    td_marketing_id_1,
-    td_marketing_id_2,
-    td_marketing_id_3,
-    td_marketing_id_4,
-    td_marketing_id_5,
-    td_marketing_id_6,
-    td_marketing_id_7
+seances('DS b_spline', b_spline, le_guyader, ds, gm4, [
+    ds_b_spline
 ]).
 
-seances('DS marketing', hes_marketing, [moreau, oili], ds, info, [
-    ds_marketing
+
+% SIGNAL 2 %
+
+seances('CM signal2', signal2, fortier , cm, gm4, [
+    cm_signal2_1, cm_signal2_2, cm_signal2_3, cm_signal2_4,
+    cm_signal2_5
 ]).
 
+seances('TD signal2 groupe1', signal2, fortier, td, gm4_1, [
+    td_signal2_1_1, td_signal2_1_2, td_signal2_1_3, td_signal2_1_4,
+    td_signal2_1_5
+]).
 
-seances('TD anglais', hes_anglais, prof_anglais1, td, anglais_A, [
-    td_anglais_A_1,
-    td_anglais_A_2,
-    td_anglais_A_3,
-    td_anglais_A_4,
-    td_anglais_A_5,
-    td_anglais_A_6,
-    td_anglais_A_7,
-    td_anglais_A_8,
-    td_anglais_A_9,
-    td_anglais_A_10,
-    td_anglais_A_11,
-    td_anglais_A_12
+seances('TD signal2 groupe2', signal2, fortier, td, gm4_2, [
+    td_signal2_2_1, td_signal2_2_2, td_signal2_2_3, td_signal2_2_4,
+    td_signal2_2_5
 ]).
 
-seances('TD anglais', hes_anglais, prof_anglais2, td, anglais_B, [
-    td_anglais_B_1,
-    td_anglais_B_2,
-    td_anglais_B_3,
-    td_anglais_B_4,
-    td_anglais_B_5,
-    td_anglais_B_6,
-    td_anglais_B_7,
-    td_anglais_B_8,
-    td_anglais_B_9,
-    td_anglais_B_10,
-    td_anglais_B_11,
-    td_anglais_B_12
+seances('DS signal2', signal2, fortier, ds, gm4, [
+    ds_signal2
 ]).
+
 
-seances('TD anglais', hes_anglais, prof_anglais3, td, anglais_C, [
-    td_anglais_C_1,
-    td_anglais_C_2,
-    td_anglais_C_3,
-    td_anglais_C_4,
-    td_anglais_C_5,
-    td_anglais_C_6,
-    td_anglais_C_7,
-    td_anglais_C_8,
-    td_anglais_C_9,
-    td_anglais_C_10,
-    td_anglais_C_11,
-    td_anglais_C_12
+% OTPIMISATION COMBINATOIRE %
+
+seances('CM opti combinatoire', opti_combinatoire, knippel , cm, gm4, [
+    cm_opti_combinatoire_1, cm_opti_combinatoire_2, cm_opti_combinatoire_3, cm_opti_combinatoire_4,
+    cm_opti_combinatoire_5
 ]).
 
-seances('TD anglais', hes_anglais, prof_anglais4, td, anglais_D, [
-    td_anglais_D_1,
-    td_anglais_D_2,
-    td_anglais_D_3,
-    td_anglais_D_4,
-    td_anglais_D_5,
-    td_anglais_D_6,
-    td_anglais_D_7,
-    td_anglais_D_8,
-    td_anglais_D_9,
-    td_anglais_D_10,
-    td_anglais_D_11,
-    td_anglais_D_12
+seances('TD opti combinatoire groupe1', opti_combinatoire, knippel, td, gm4_1, [
+    td_opti_combinatoire_1_1, td_opti_combinatoire_1_2, td_opti_combinatoire_1_3, td_opti_combinatoire_1_4,
+    td_opti_combinatoire_1_5
 ]).
 
-/*
- * Stages et Projets
- * Info
- */
+seances('TD opti combinatoire groupe2', opti_combinatoire, knippel, td, gm4_2, [
+    td_opti_combinatoire_2_1, td_opti_combinatoire_2_2, td_opti_combinatoire_2_3, td_opti_combinatoire_2_4,
+    td_opti_combinatoire_2_5
+]).
 
-seances('CM génie logiciel gestion projets', projet_genie_logiciel, marcus, cm, info, [
-    cm_genie_logi_1,
-    cm_genie_logi_2,
-    cm_genie_logi_3
+seances('DS opti combinatoire', opti_combinatoire, knippel, ds, gm4, [
+    ds_opti_combinatoire
 ]).
+
+
+% TECHNO WEB %
 
-seances('CM génie logiciel gestion projets', projet_genie_logiciel, prie, cm, info, [
-    cm_genie_logi_4,
-    cm_genie_logi_5,
-    cm_genie_logi_6
+seances('CM technoweb', technoweb, zanni_merk , cm, gm4, [
+    cm_technoweb_1, cm_technoweb_2, cm_technoweb_3, cm_technoweb_4,
+    cm_technoweb_5
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, marcus, td, id, [
-    td_genie_logi_id_1,
-    td_genie_logi_id_2,
-    td_genie_logi_id_3
+seances('TP technoweb groupe1', technoweb, zanni_merk, tp, gm4_1, [
+    tp_technoweb_1_1, tp_technoweb_1_2, tp_technoweb_1_3, tp_technoweb_1_4,
+    tp_technoweb_1_5
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, nachouki, td, silr1, [
-    td_genie_logi_silr1_1,
-    td_genie_logi_silr1_2,
-    td_genie_logi_silr1_3
+seances('TP technoweb groupe2', technoweb, zanni_merk, tp, gm4_2, [
+    tp_technoweb_2_1, tp_technoweb_2_2, tp_technoweb_2_3, tp_technoweb_2_4,
+    tp_technoweb_2_5
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, prie, td, silr2, [
-    td_genie_logi_silr2_1,
-    td_genie_logi_silr2_2,
-    td_genie_logi_silr2_3
+seances('DS techno web', technoweb, zanni_merk, ds, gm4, [
+    ds_technoweb
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, id, [
-    tp_genie_logi_id_1
+% C++ %
+
+seances('CM c++', cplusplus, kotowicz , cm, gm4, [
+    cm_cplusplus_1, cm_cplusplus_2, cm_cplusplus_3, cm_cplusplus_4,
+    cm_cplusplus_5
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, silr1, [
-    tp_genie_logi_silr1_1
+seances('TP c++ groupe1', cplusplus, kotowicz, td, gm4_1, [
+    tp_cplusplus_1_1, tp_cplusplus_1_2, tp_cplusplus_1_3, tp_cplusplus_1_4,
+    tp_cplusplus_1_5
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, silr2, [
-    tp_genie_logi_silr2_1
+seances('TP c++ groupe2', cplusplus, kotowicz, td, gm4_2, [
+    tp_cplusplus_2_1, tp_cplusplus_2_2, tp_cplusplus_2_3, tp_cplusplus_2_4,
+    tp_cplusplus_2_5
 ]).
 
-seances('DS génie logiciel gestion projets', projet_genie_logiciel, [marcus, prie], ds, info, [
-    ds_genie_logi
+seances('DS c++', cplusplus, kotowicz, ds, gm4, [
+    ds_cplusplus
 ]).
+
 
-seances('CM patrons conception', logiciel_patrons, pigeau, cm, info, [
-    cm_patrons_1,
-    cm_patrons_2,
-    cm_patrons_3
+% BASE DONNEES %
+
+seances('CM base de donnees', base_de_donnee, chaignaud , cm, gm4, [
+    cm_base_de_donnee_1, cm_base_de_donnee_2, cm_base_de_donnee_3, cm_base_de_donnee_4,
+    cm_base_de_donnee_5
 ]).
 
-seances('TD patrons conception', logiciel_patrons, marcus, td, id, [
-    td_patrons_id_1,
-    td_patrons_id_2
+seances('TD base de donnees groupe1', base_de_donnee, chaignaud, td, gm4_1, [
+    td_base_de_donnee_1_1, td_base_de_donnee_1_2, td_base_de_donnee_1_3, td_base_de_donnee_1_4,
+    td_base_de_donnee_1_5
 ]).
 
-seances('TD patrons conception', logiciel_patrons, prie, td, silr1, [
-    td_patrons_silr1_1,
-    td_patrons_silr1_2
+seances('TD base de donnees groupe2', base_de_donnee, chaignaud, td, gm4_2, [
+    td_base_de_donnee_2_1, td_base_de_donnee_2_2, td_base_de_donnee_2_3, td_base_de_donnee_2_4,
+    td_base_de_donnee_2_5
 ]).
 
-seances('TD patrons conception', logiciel_patrons, pigeau, td, silr2, [
-    td_patrons_silr2_1,
-    td_patrons_silr2_2
+seances('DS base de donnees', base_de_donnee, chaignaud, ds, gm4, [
+    ds_base_de_donnee
 ]).
+
+% Anglais %
 
-seances('TP patrons conception', logiciel_patrons, marcus, tp, id, [
-    tp_patrons_id_1,
-    tp_patrons_id_2
+seances('CM Anglais', anglais, milou, cm, gm4, [
+    cm_anglais4_1, cm_anglais4_2, cm_anglais4_3, cm_anglais4_4, cm_anglais4_5
 ]).
 
-seances('TP patrons conception', logiciel_patrons, prie, tp, silr1, [
-    tp_patrons_silr1_1,
-    tp_patrons_silr1_2
+seances('TD Anglais Groupe 1', anglais, milou, td, gm4_1, [
+    td_anglais4_1_1, td_anglais4_1_2, td_anglais4_1_3, td_anglais4_1_4, td_anglais4_1_5
 ]).
 
-seances('TP patrons conception', logiciel_patrons, pigeau, tp, silr2, [
-    tp_patrons_silr2_1,
-    tp_patrons_silr2_2
+seances('TD Anglais Groupe 2', anglais, milou, td, gm4_2, [
+    td_anglais4_2_1, td_anglais4_2_2, td_anglais4_2_3, td_anglais4_2_4, td_anglais4_2_5
 ]).
 
-seances('DS patrons conception', logiciel_patrons, pigeau, ds, info, [
-    ds_patrons
+seances('DS Anglais', anglais, milou, ds, gm4, [
+    ds_anglais4
 ]).
 
-seances('CM projet transversal', projet_transversal, jpeg, cm, info, [
-    cm_projet_transversal_1
+
+% GSF %
+
+seances('TD GSF Groupe 1', gsf, borel, td, gm4_1, [
+    td_gsf4_1_1, td_gsf4_1_2, td_gsf4_1_3, td_gsf4_1_4, td_gsf4_1_5
 ]).
 
-seances('CM projet transversal', projet_transversal, marcus, cm, info, [
-    cm_projet_transversal_2
+seances('TD GSF Groupe 2', gsf, borel, td, gm4_2, [
+    td_gsf4_2_1, td_gsf4_2_2, td_gsf4_2_3, td_gsf4_2_4, td_gsf4_2_5
 ]).
 
-seances('PROJET projet transversal', projet_transversal, prof_ptrans_id, projet, id, [
-    projet_transversal_id_1,
-    projet_transversal_id_2,
-    projet_transversal_id_3,
-    projet_transversal_id_4,
-    projet_transversal_id_5,
-    projet_transversal_id_6,
-    projet_transversal_id_7,
-    projet_transversal_id_8,
-    projet_transversal_id_9,
-    projet_transversal_id_10,
-    projet_transversal_id_11,
-    projet_transversal_id_12,
-    projet_transversal_id_13,
-    projet_transversal_id_14,
-    projet_transversal_id_15,
-    projet_transversal_id_16,
-    projet_transversal_id_17,
-    projet_transversal_id_18,
-    projet_transversal_id_19,
-    projet_transversal_id_20,
-    projet_transversal_id_21,
-    projet_transversal_id_22,
-    projet_transversal_id_23,
-    projet_transversal_id_24,
-    projet_transversal_id_25,
-    projet_transversal_id_26,
-    projet_transversal_id_27,
-    projet_transversal_id_28,
-    projet_transversal_id_29,
-    projet_transversal_id_30,
-    projet_transversal_id_31,
-    projet_transversal_id_32,
-    projet_transversal_id_33
+seances('DS GSF', gsf, borel, ds, gm4, [
+    ds_gsf4
 ]).
+
+
+% Sport %
 
-seances('PROJET projet transversal', projet_transversal, prof_ptrans_silr, projet, silr, [
-    projet_transversal_silr_1,
-    projet_transversal_silr_2,
-    projet_transversal_silr_3,
-    projet_transversal_silr_4,
-    projet_transversal_silr_5,
-    projet_transversal_silr_6,
-    projet_transversal_silr_7,
-    projet_transversal_silr_8,
-    projet_transversal_silr_9,
-    projet_transversal_silr_10,
-    projet_transversal_silr_11,
-    projet_transversal_silr_12,
-    projet_transversal_silr_13,
-    projet_transversal_silr_14,
-    projet_transversal_silr_15,
-    projet_transversal_silr_16,
-    projet_transversal_silr_17,
-    projet_transversal_silr_18,
-    projet_transversal_silr_19,
-    projet_transversal_silr_20,
-    projet_transversal_silr_21,
-    projet_transversal_silr_22,
-    projet_transversal_silr_23,
-    projet_transversal_silr_24,
-    projet_transversal_silr_25,
-    projet_transversal_silr_26,
-    projet_transversal_silr_27,
-    projet_transversal_silr_28,
-    projet_transversal_silr_29,
-    projet_transversal_silr_30,
-    projet_transversal_silr_31,
-    projet_transversal_silr_32,
-    projet_transversal_silr_33
+seances('CM Sport', sport, dubois, cm, gm3, [
+    cm_sport4_1, cm_sport4_2, cm_sport4_3, cm_sport4_4, cm_sport4_5
 ]).
+
+
+
+% gm5 %
+
+% S9 %
+
+%% REGRESSION NON LINEAIRE %%
+
+ seances('CM regression non linéaire', regression_non_lineaire, portier , cm, gm5, [
+     cm_regression_non_lineaire_1, cm_regression_non_lineaire_2, cm_regression_non_lineaire_3, cm_regression_non_lineaire_4,
+     cm_regression_non_lineaire_5
+ ]).
+
+ seances('TP regression non linéaire groupe 1', regression_non_lineaire, portier, tp, gm5_1, [
+     tp_regression_non_lineaire_1_1, tp_regression_non_lineaire_1_2, tp_regression_non_lineaire_1_3, tp_regression_non_lineaire_1_4,
+     tp_regression_non_lineaire_1_5
+ ]).
+
+ seances('TP regression non linéaire groupe 2', regression_non_lineaire, portier, tp, gm5_2, [
+     tp_regression_non_lineaire_2_1, tp_regression_non_lineaire_2_2, tp_regression_non_lineaire_2_3, tp_regression_non_lineaire_2_4,
+     tp_regression_non_lineaire_2_5
+ ]).
+
+
+ % HAD %%
+
+  seances('CM heuristique et aide à la décision', had, itmi , cm, gm5, [
+      cm_had_1, cm_had_2, cm_had_3, cm_had_4,
+      cm_had_5
+  ]).
+
+  seances('TD heuristique et aide à la décision groupe 1', had, itmi, td, gm5_1, [
+      td_had_1_1, td_had_1_2, td_had_1_3, td_had_1_4,
+      td_had_1_5
+  ]).
+
+  seances('TD heuristique et aide à la décision groupe 2', had, itmi, td, gm5_2, [
+      td_had_2_1, td_had_2_2, td_had_2_3, td_had_2_4,
+      td_had_2_5
+  ]).
+
+
+
+  % HAMILTON JACOBI %%
+
+   seances('CM Hamilton Jacobi', hamilton_jacobi, forcadel , cm, gm5, [
+       cm_hamilton_jacobi_1, cm_hamilton_jacobi_2, cm_hamilton_jacobi_3, cm_hamilton_jacobi_4,
+       cm_hamilton_jacobi_5
+   ]).
+
+   seances('TD Hamilton Jacobi groupe 1', hamilton_jacobi, forcadel, td, gm5_1, [
+       td_hamilton_jacobi_1_1, td_hamilton_jacobi_1_2, td_hamilton_jacobi_1_3, td_hamilton_jacobi_1_4,
+       td_hamilton_jacobi_1_5
+   ]).
+
+   seances('TD Hamilton Jacobi groupe 2', hamilton_jacobi, forcadel, td, gm5_2, [
+       td_hamilton_jacobi_2_1, td_hamilton_jacobi_2_2, td_hamilton_jacobi_2_3, td_hamilton_jacobi_2_4,
+       td_hamilton_jacobi_2_5
+   ]).
+
+
+
+   % AUTOMATIQUE NON LINEAIRE %%
+
+    seances('CM automatique non linéaire', auto_non_lineaire, el_assoudi , cm, gm5, [
+        cm_auto_non_lineaire_1, cm_auto_non_lineaire_2, cm_auto_non_lineaire_3, cm_auto_non_lineaire_4,
+        cm_auto_non_lineaire_5
+    ]).
+
+    seances('TD automatique non linéaire groupe 1', auto_non_lineaire, el_assoudi, td, gm5_1, [
+        td_auto_non_lineaire_1_1, td_auto_non_lineaire_1_2, td_auto_non_lineaire_1_3, td_auto_non_lineaire_1_4,
+        td_auto_non_lineaire_1_5
+    ]).
+
+    seances('TD automatique non linéaire groupe 2', auto_non_lineaire, el_assoudi, td, gm5_2, [
+        td_auto_non_lineaire_2_1, td_auto_non_lineaire_2_2, td_auto_non_lineaire_2_3, td_auto_non_lineaire_2_4,
+        td_auto_non_lineaire_2_5
+    ]).
+
+    seances('DS automatique non linéaire', auto_non_lineaire, el_assoudi, ds, gm5, [
+        ds_auto_non_lineaire
+    ]).
+
+    % CALCUL PARALLELLE %%
+
+     seances('CM calcul parallèle', calcul_parallelle, le_guyader , cm, gm5, [
+         cm_calcul_parallelle_1, cm_calcul_parallelle_2, cm_calcul_parallelle_3, cm_calcul_parallelle_4,
+         cm_calcul_parallelle_5
+     ]).
+
+     seances('TD calcul parallèle groupe 1', calcul_parallelle, le_guyader, td, gm5_1, [
+         td_calcul_parallelle_1_1, td_calcul_parallelle_1_2, td_calcul_parallelle_1_3, td_calcul_parallelle_1_4,
+         td_calcul_parallelle_1_5
+     ]).
+
+     seances('TD calcul parallèle groupe 2', calcul_parallelle, le_guyader, td, gm5_2, [
+         td_calcul_parallelle_2_1, td_calcul_parallelle_2_2, td_calcul_parallelle_2_3, td_calcul_parallelle_2_4,
+         td_calcul_parallelle_2_5
+     ]).
+
+
+
+     % PROGRAMMATION LOGIQUE CONTRAINTE %%
+
+      seances('CM programmation_logique_contrainte', programmation_logique_contrainte, abdulrab , cm, gm5, [
+          cm_programmation_logique_contrainte_1, cm_programmation_logique_contrainte_2, cm_programmation_logique_contrainte_3, cm_programmation_logique_contrainte_4,
+          cm_programmation_logique_contrainte_5
+      ]).
+
+      seances('TD programmation_logique_contrainte groupe 1', programmation_logique_contrainte, abdulrab, td, gm5_1, [
+          td_programmation_logique_contrainte_1_1, td_programmation_logique_contrainte_1_2, td_programmation_logique_contrainte_1_3, td_programmation_logique_contrainte_1_4,
+          td_programmation_logique_contrainte_1_5
+      ]).
+
+      seances('td programmation_logique_contrainte groupe 2', programmation_logique_contrainte, abdulrab, td, gm5_2, [
+          td_programmation_logique_contrainte_2_1, td_programmation_logique_contrainte_2_2, td_programmation_logique_contrainte_2_3, td_programmation_logique_contrainte_2_4,
+          td_programmation_logique_contrainte_2_5
+      ]).
+
+      seances('DS programmation_logique_contrainte', programmation_logique_contrainte, abdulrab, ds, gm5, [
+          ds_programmation_logique_contrainte
+      ]).
+
+% s10 %
+
+      % MACHINE LEARNING %%
+
+  seances('CM machine_learning', machine_learning, zanni_merk , cm, gm5, [
+      cm_machine_learning_1, cm_machine_learning_2, cm_machine_learning_3, cm_machine_learning_4,
+      cm_machine_learning_5
+  ]).
+
+  seances('TD machine learning groupe1', machine_learning, zanni_merk, td, gm5_1, [
+      td_machine_learning_1_1, td_machine_learning_1_2, td_machine_learning_1_3, td_machine_learning_1_4,
+      td_machine_learning_1_5
+  ]).
+
+  seances('TD machine learning groupe2', machine_learning, zanni_merk, td, gm5_2, [
+      td_machine_learning_2_1, td_machine_learning_2_2, td_machine_learning_2_3, td_machine_learning_2_4,
+      td_machine_learning_2_5
+  ]).
+
+  % TRAITEMENT IMAGE %%
+
+   seances('CM traitement image', traitement_image, zanni_merk , cm, gm5, [
+       cm_traitement_image_1, cm_traitement_image_2, cm_traitement_image_3, cm_traitement_image_4,
+       cm_traitement_image_5
+   ]).
+
+   seances('TD traitement image groupe1', traitement_image, zanni_merk, td, gm5_1, [
+       td_traitement_image_1_1, td_traitement_image_1_2, td_traitement_image_1_3, td_traitement_image_1_4,
+       td_traitement_image_1_5
+   ]).
+
+   seances('TD traitement image groupe2', traitement_image, zanni_merk, td, gm5_2, [
+       td_traitement_image_2_1, td_traitement_image_2_2, td_traitement_image_2_3, td_traitement_image_2_4,
+       td_traitement_image_2_5
+   ]).
+
+
+   % CALCUL STOCHASTIQUE %%
+
+    seances('CM calcul sto', calcul_sto, ciotir , cm, gm5, [
+        cm_calcul_sto_1, cm_calcul_sto_2, cm_calcul_sto_3, cm_calcul_sto_4,
+        cm_calcul_sto_5
+    ]).
+
+    seances('TD calcul sto groupe1', calcul_sto, ciotir, td, gm5_1, [
+        td_calcul_sto_1_1, td_calcul_sto_1_2, td_calcul_sto_1_3, td_calcul_sto_1_4,
+        td_calcul_sto_1_5
+    ]).
+
+    seances('TD calcul sto groupe2', calcul_sto, ciotir, td, gm5_2, [
+        td_calcul_sto_2_1, td_calcul_sto_2_2, td_calcul_sto_2_3, td_calcul_sto_2_4,
+        td_calcul_sto_2_5
+    ]).
+
+
+    % REALITE VIRTUELLE %%
+
+     seances('CM realite virtuelle', realite_virtuelle, saunier , cm, gm5, [
+         cm_realite_virtuelle_1, cm_realite_virtuelle_2, cm_realite_virtuelle_3, cm_realite_virtuelle_4,
+         cm_realite_virtuelle_5
+     ]).
+
+     seances('TD realite virtuelle groupe1', realite_virtuelle, saunier, td, gm5_1, [
+         td_realite_virtuelle_1_1, td_realite_virtuelle_1_2, td_realite_virtuelle_1_3, td_realite_virtuelle_1_4,
+         td_realite_virtuelle_1_5
+     ]).
+
+     seances('TD realite virtuelle groupe2', realite_virtuelle, saunier, td, gm5_2, [
+         td_realite_virtuelle_2_1, td_realite_virtuelle_2_2, td_realite_virtuelle_2_3, td_realite_virtuelle_2_4,
+         td_realite_virtuelle_2_5
+     ]).
 
 
 /**
@@ -1086,7 +1388,8 @@ seances('PROJET projet transversal', projet_transversal, prof_ptrans_silr, proje
  * @arg Seance_suivie       Id de la séance suivit
  */
 :- dynamic suitSeance/2.
-suitSeance(td_bdd_id_1, cm_bdd_8).
+suitSeance(cm_ananum2_1, cm_ananum1_5).
+suitSeance(td_ananum2_1, td_ananum2_5).
 suitSeance(tp_bdd_id_1, cm_bdd_8).
 suitSeance(td_bdd_silr1_1, cm_bdd_8).
 suitSeance(tp_bdd_silr1_1, cm_bdd_8).
