@@ -256,7 +256,7 @@ daysPermonth(20).
 date(J, M) :-
     month(M),
     daysPermonth(Max),
-    between(info1, Max, J).
+    between(1, Max, J).
 
 /**
  * dateBefore(+J1, +M1, +J2, +M2)
@@ -272,7 +272,7 @@ dateBefore( _, M1,  _, M2) :- M1 < M2, !.
 dateBefore(J1, M1, J2, M2) :- M1 = M2, J1 < J2, !.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%          info                     Type de cours                                  %
+%                              Type de cours                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /**
@@ -342,7 +342,7 @@ ClassRoom(S, N) :- ClassRoom(S, N, _). % TODO add tests
 /**
  * accueille(+ClassRoom, ?TypeCours)
  *
- * @arg ClassRoom       name d'une ClassRoom
+ * @arg ClassRoom       name dune ClassRoom
  * @arg TypeCours   Type de cours que la ClassRoom accueille
  */
 
@@ -381,6 +381,9 @@ accueille(S, T) :-
      td_mnedp1_2_1, td_mnedp1_2_2, td_mnedp1_2_3, td_mnedp1_2_4,
      td_mnedp1_2_5
  ]).
+
+
+
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
