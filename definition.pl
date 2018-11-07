@@ -464,39 +464,44 @@ Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, 
 ]).
 
 Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
-    ds_bdd
+    ds_ananum1
 ]).
 
 
-
-
-Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, info, [
-    cm_bdd_1, cm_bdd_2, cm_bdd_3, cm_bdd_4,
-    cm_bdd_5, cm_bdd_6, cm_bdd_7, cm_bdd_8
+Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
+    cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
 ]).
 
-Sessions('TD BDD', connaissances_bdd, raschia, td, id, [
-    td_bdd_id_1,
-    td_bdd_id_2,
-       td_bdd_id_3,
-    td_bdd_id_4,
-    td_bdd_id_5
+Sessions('TD Mesure et distribution Groupe 1', mesure_distribution, el_assoudi, td, GM3_1, [
+    td_mesure_1_1, td_mesure_1_2, td_mesure_1_3, td_mesure_1_4, td_mesure_1_5
 ]).
 
-Sessions('TP BDD', connaissances_bdd, raschia, tp, id, [
-    tp_bdd_id_1,
-    tp_bdd_id_2,
-    tp_bdd_id_3,
-    tp_bdd_id_4,
-    tp_bdd_id_5,
-    tp_bdd_id_6
+Sessions('TD Mesure et distribution Groupe 2', mesure_distribution, el_assoudi, td, GM3_2, [
+    td_mesure_2_1, td_mesure_2_2, td_mesure_2_3, td_mesure_2_4, td_mesure_2_5
+]).
+
+Sessions('DS Mesure et distribution', mesure_distribution, el_assoudi, ds, GM3, [
+    ds_mesure
 ]).
 
 
-
-Sessions('DS BDD', connaissances_bdd, raschia, ds, info, [
-    ds_bdd
+Sessions('CM Fortran', mesure_distribution, el_assoudi, cm, GM3, [
+    cm_fortran_1, cm_fortran_2, cm_fortran_3, cm_fortran_4, cm_fortran_5
 ]).
+
+Sessions('TD Fortran Groupe 1', mesure_distribution, el_assoudi, td, GM3_1, [
+    td_fortran_1_1, td_fortran_1_2, td_fortran_1_3, td_fortran_1_4, td_fortran_1_5
+]).
+
+Sessions('TD Fortran Groupe 2', mesure_distribution, el_assoudi, td, GM3_2, [
+    td_fortran_2_1, td_fortran_2_2, td_fortran_2_3, td_fortran_2_4, td_fortran_2_5
+]).
+
+Sessions('DS Fortran', mesure_distribution, el_assoudi, ds, GM3, [
+    ds_fortran
+]).
+
+
 
 
 
