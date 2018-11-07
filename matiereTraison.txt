@@ -1,162 +1,140 @@
-% Ajout de matière fichier à part %
+
+%matiere GM5%
+%
 
 
-%s9%
 
-% MNEDP2 %
-
-Sessions('CM mnedp2', mnedp2, gout , cm, GM4, [
-    cm_mnedp2_1, cm_mnedp2_2, cm_mnedp2_3, cm_mnedp2_4,
-    cm_mnedp2_5
-]).
-
-Sessions('TD mnedp2 groupe1', mnedp2, gout, td, GM4_1, [
-    td_mnedp2_1_1, td_mnedp2_1_2, td_mnedp2_1_3, td_mnedp2_1_4,
-    td_mnedp2_1_5
-]).
-
-Sessions('TD mnedp2 groupe2', mnedp2, gout, td, GM4_2, [
-    td_mnedp2_2_1, td_mnedp2_2_2, td_mnedp2_2_3, td_mnedp2_2_4,
-    td_mnedp2_2_5
-]).
-
-Sessions('DS mnedp2', mnedp2, gout, ds, GM4, [
-    ds_mnedp2
-]).
+%s11%
+subject(machine_learning).
+subject(traitement_image).
+subject(calcul_sto).
+subject(realite_virtuelle).
 
 
-% B SPLINES %
+%% REGRESSION NON LINEAIRE %%
 
-Sessions('CM b_spline', b_spline, le_guyader , cm, GM4, [
-    cm_b_spline_1, cm_b_spline_2, cm_b_spline_3, cm_b_spline_4,
-    cm_b_spline_5
-]).
+ Sessions('CM regression_non_lineaire', regression_non_lineaire, portier , cm, GM4, [
+     cm_regression_non_lineaire_1, cm_regression_non_lineaire_2, cm_regression_non_lineaire_3, cm_regression_non_lineaire_4,
+     cm_regression_non_lineaire_5
+ ]).
 
-Sessions('TD b_spline groupe1', b_spline, le_guyader, td, GM4_1, [
-    td_b_spline_1_1, td_b_spline_1_2, td_b_spline_1_3, td_b_spline_1_4,
-    td_b_spline_1_5
-]).
+ Sessions('TD regression non lineaire groupe1', regression_non_lineaire, portier, tp, GM4_1, [
+     tp_regression_non_lineaire_1_1, tp_regression_non_lineaire_1_2, tp_regression_non_lineaire_1_3, tp_regression_non_lineaire_1_4,
+     tp_regression_non_lineaire_1_5
+ ]).
 
-Sessions('TD b_spline groupe2', b_spline, le_guyader, td, GM4_2, [
-    td_b_spline_2_1, td_b_spline_2_2, td_b_spline_2_3
-]).
+ Sessions('TP regression non lineaire groupe2', regression_non_lineaire, portier, tp, GM4_2, [
+     tp_regression_non_lineaire_2_1, tp_regression_non_lineaire_2_2, tp_regression_non_lineaire_2_3, tp_regression_non_lineaire_2_4,
+     tp_regression_non_lineaire_2_5
+ ]).
 
-Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_1, [
-    tp_b_spline_1_1, tp_b_spline_1_2
-]).
+ Sessions('DS regression non lineaire', regression_non_lineaire, portier, ds, GM4, [
+     ds_regression_non_lineaire
+ ]).
 
-Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_2, [
-    tp_b_spline_2_1, tp_b_spline_2_2
-]).
+ % HAD %%
 
-Sessions('DS b_spline', b_spline, le_guyader, ds, GM4, [
-    ds_b_spline
-]).
+  Sessions('CM had', had, itmi , cm, GM4, [
+      cm_had_1, cm_had_2, cm_had_3, cm_had_4,
+      cm_had_5
+  ]).
 
+  Sessions('TD regression non lineaire groupe1', had, itmi, td, GM4_1, [
+      td_had_1_1, td_had_1_2, td_had_1_3, td_had_1_4,
+      td_had_1_5
+  ]).
 
-% SIGNAL 2 %
+  Sessions('TD regression non lineaire groupe2', had, itmi, td, GM4_2, [
+      td_had_2_1, td_had_2_2, td_had_2_3, td_had_2_4,
+      td_had_2_5
+  ]).
 
-Sessions('CM signal2', signal2, fortier , cm, GM4, [
-    cm_signal2_1, cm_signal2_2, cm_signal2_3, cm_signal2_4,
-    cm_signal2_5
-]).
-
-Sessions('TD signal2 groupe1', signal2, fortier, td, GM4_1, [
-    td_signal2_1_1, td_signal2_1_2, td_signal2_1_3, td_signal2_1_4,
-    td_signal2_1_5
-]).
-
-Sessions('TD signal2 groupe2', signal2, fortier, td, GM4_2, [
-    td_signal2_2_1, td_signal2_2_2, td_signal2_2_3, td_signal2_2_4,
-    td_signal2_2_5
-]).
-
-Sessions('DS signal2', signal2, fortier, ds, GM4, [
-    ds_b_spline
-]).
+  Sessions('DS regression non lineaire', had, itmi, ds, GM4, [
+      ds_had
+  ]).
 
 
-% OTPIMISATION COMBINATOIRE %
+  % HAMILTON JACOBI %%
 
-Sessions('CM opti combinatoire', opti_combinatoire, knippel , cm, GM4, [
-    cm_opti_combinatoire_1, cm_opti_combinatoire_2, cm_opti_combinatoire_3, cm_opti_combinatoire_4,
-    cm_opti_combinatoire_5
-]).
+   Sessions('CM hamilton_jacobi', hamilton_jacobi, forcadel , cm, GM4, [
+       cm_hamilton_jacobi_1, cm_hamilton_jacobi_2, cm_hamilton_jacobi_3, cm_hamilton_jacobi_4,
+       cm_hamilton_jacobi_5
+   ]).
 
-Sessions('TD opti combinatoire groupe1', opti_combinatoire, knippel, td, GM4_1, [
-    td_opti_combinatoire_1_1, td_opti_combinatoire_1_2, td_opti_combinatoire_1_3, td_opti_combinatoire_1_4,
-    td_opti_combinatoire_1_5
-]).
+   Sessions('TD regression non lineaire groupe1', hamilton_jacobi, forcadel, td, GM4_1, [
+       td_hamilton_jacobi_1_1, td_hamilton_jacobi_1_2, td_hamilton_jacobi_1_3, td_hamilton_jacobi_1_4,
+       td_hamilton_jacobi_1_5
+   ]).
 
-Sessions('TD opti combinatoire groupe2', opti_combinatoire, knippel, td, GM4_2, [
-    td_opti_combinatoire_2_1, td_opti_combinatoire_2_2, td_opti_combinatoire_2_3, td_opti_combinatoire_2_4,
-    td_opti_combinatoire_2_5
-]).
+   Sessions('TD regression non lineaire groupe2', hamilton_jacobi, forcadel, td, GM4_2, [
+       td_hamilton_jacobi_2_1, td_hamilton_jacobi_2_2, td_hamilton_jacobi_2_3, td_hamilton_jacobi_2_4,
+       td_hamilton_jacobi_2_5
+   ]).
 
-Sessions('DS opti combinatoire', opti_combinatoire, knippel, ds, GM4, [
-    ds_b_spline
-]).
+   Sessions('DS regression non lineaire', hamilton_jacobi, forcadel, ds, GM4, [
+       ds_hamilton_jacobi
+   ]).
 
 
-% TECHNO WEB %
+   % AUTOMATIQUE NON LINEAIRE %%
 
-Sessions('CM technoweb', technoweb, zanni_merk , cm, GM4, [
-    cm_technoweb_1, cm_technoweb_2, cm_technoweb_3, cm_technoweb_4,
-    cm_technoweb_5
-]).
+    Sessions('CM auto_non_lineaire', auto_non_lineaire, el_assoudi , cm, GM4, [
+        cm_auto_non_lineaire_1, cm_auto_non_lineaire_2, cm_auto_non_lineaire_3, cm_auto_non_lineaire_4,
+        cm_auto_non_lineaire_5
+    ]).
 
-Sessions('TP technoweb groupe1', technoweb, zanni_merk, tp, GM4_1, [
-    tp_technoweb_1_1, tp_technoweb_1_2, tp_technoweb_1_3, tp_technoweb_1_4,
-    tp_technoweb_1_5
-]).
+    Sessions('TD regression non lineaire groupe1', auto_non_lineaire, el_assoudi, td, GM4_1, [
+        td_auto_non_lineaire_1_1, td_auto_non_lineaire_1_2, td_auto_non_lineaire_1_3, td_auto_non_lineaire_1_4,
+        td_auto_non_lineaire_1_5
+    ]).
 
-Sessions('TP technoweb groupe2', technoweb, zanni_merk, tp, GM4_2, [
-    tp_technoweb_2_1, tp_technoweb_2_2, tp_technoweb_2_3, tp_technoweb_2_4,
-    tp_technoweb_2_5
-]).
+    Sessions('td regression non lineaire groupe2', auto_non_lineaire, el_assoudi, td, GM4_2, [
+        td_auto_non_lineaire_2_1, td_auto_non_lineaire_2_2, td_auto_non_lineaire_2_3, td_auto_non_lineaire_2_4,
+        td_auto_non_lineaire_2_5
+    ]).
 
-Sessions('DS techno web', technoweb, zanni_merk, ds, GM4, [
-    ds_b_spline
-]).
+    Sessions('DS regression non lineaire', auto_non_lineaire, el_assoudi, ds, GM4, [
+        ds_auto_non_lineaire
+    ]).
 
-% C++ %
+    % CALCUL PARALLELLE %%
 
-Sessions('CM c++', c++, kotowicz , cm, GM4, [
-    cm_c++_1, cm_c++_2, cm_c++_3, cm_c++_4,
-    cm_c++_5
-]).
+     Sessions('CM calcul_parallelle', calcul_parallelle, le_guyader , cm, GM4, [
+         cm_calcul_parallelle_1, cm_calcul_parallelle_2, cm_calcul_parallelle_3, cm_calcul_parallelle_4,
+         cm_calcul_parallelle_5
+     ]).
 
-Sessions('TD c++ groupe1', c++, kotowicz, td, GM4_1, [
-    td_c++_1_1, td_c++_1_2, td_c++_1_3, td_c++_1_4,
-    td_c++_1_5
-]).
+     Sessions('TD regression non lineaire groupe1', calcul_parallelle, le_guyader, td, GM4_1, [
+         td_calcul_parallelle_1_1, td_calcul_parallelle_1_2, td_calcul_parallelle_1_3, td_calcul_parallelle_1_4,
+         td_calcul_parallelle_1_5
+     ]).
 
-Sessions('TD c++ groupe2', c++, kotowicz, td, GM4_2, [
-    td_c++_2_1, td_c++_2_2, td_c++_2_3, td_c++_2_4,
-    td_c++_2_5
-]).
+     Sessions('td regression non lineaire groupe2', calcul_parallelle, le_guyader, td, GM4_2, [
+         td_calcul_parallelle_2_1, td_calcul_parallelle_2_2, td_calcul_parallelle_2_3, td_calcul_parallelle_2_4,
+         td_calcul_parallelle_2_5
+     ]).
 
-Sessions('DS c++', c++, kotowicz, ds, GM4, [
-    ds_b_spline
-]).
+     Sessions('DS regression non lineaire', calcul_parallelle, le_guyader, ds, GM4, [
+         ds_calcul_parallelle
+     ]).
 
-% BASE DONNES %
+     % PROGRAMMATION LOGIQUE CONTRAINTE %%
 
-Sessions('CM base de donnee', base_de_donnee, chaignaud , cm, GM4, [
-    cm_base_de_donnee_1, cm_base_de_donnee_2, cm_base_de_donnee_3, cm_base_de_donnee_4,
-    cm_base_de_donnee_5
-]).
+      Sessions('CM programmation_logique_contrainte', programmation_logique_contrainte, abdulrab , cm, GM4, [
+          cm_programmation_logique_contrainte_1, cm_programmation_logique_contrainte_2, cm_programmation_logique_contrainte_3, cm_programmation_logique_contrainte_4,
+          cm_programmation_logique_contrainte_5
+      ]).
 
-Sessions('TD base de donnees groupe1', base_de_donnee, chaignaud, td, GM4_1, [
-    td_base_de_donnee_1_1, td_base_de_donnee_1_2, td_base_de_donnee_1_3, td_base_de_donnee_1_4,
-    td_base_de_donnee_1_5
-]).
+      Sessions('TD programmation_logique_contrainte groupe1', programmation_logique_contrainte, abdulrab, td, GM4_1, [
+          td_programmation_logique_contrainte_1_1, td_programmation_logique_contrainte_1_2, td_programmation_logique_contrainte_1_3, td_programmation_logique_contrainte_1_4,
+          td_programmation_logique_contrainte_1_5
+      ]).
 
-Sessions('TD base de donnees groupe2', base_de_donnee, chaignaud, td, GM4_2, [
-    td_base_de_donnee_2_1, td_base_de_donnee_2_2, td_base_de_donnee_2_3, td_base_de_donnee_2_4,
-    td_base_de_donnee_2_5
-]).
+      Sessions('td programmation_logique_contrainte groupe2', programmation_logique_contrainte, abdulrab, td, GM4_2, [
+          td_programmation_logique_contrainte_2_1, td_programmation_logique_contrainte_2_2, td_programmation_logique_contrainte_2_3, td_programmation_logique_contrainte_2_4,
+          td_programmation_logique_contrainte_2_5
+      ]).
 
-Sessions('DS base de donnees', base_de_donnee, chaignaud, ds, GM4, [
-    ds_b_spline
-]).
+      Sessions('DS programmation_logique_contrainte', programmation_logique_contrainte, abdulrab, ds, GM4, [
+          ds_programmation_logique_contrainte
+      ]).
