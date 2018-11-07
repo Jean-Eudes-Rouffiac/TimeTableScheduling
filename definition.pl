@@ -200,6 +200,7 @@ professor(le_guyader).
 professor(milou).
 professor(portier).
 professor(rennoux).
+professor(respondek).
 professor(tonnoir).
 professor(vercouter).
 professor(zakarova).
@@ -369,8 +370,354 @@ accueille(S, T) :-
 
 
 
+
+
+
+
+% GM3 %
+
+% S5 %
+
+% Analyse numérique 1 %
+
+
+Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+Sessions('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, GM3_1, [
+    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
+]).
+
+Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, GM3_2, [
+    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
+]).
+
+Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
+    ds_ananum1
+]).
+
+
+% Mesure et distribution %
+
+Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
+    cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
+]).
+
+Sessions('TD Mesure et distribution Groupe 1', mesure_distribution, el_assoudi, td, GM3_1, [
+    td_mesure_1_1, td_mesure_1_2, td_mesure_1_3, td_mesure_1_4, td_mesure_1_5
+]).
+
+Sessions('TD Mesure et distribution Groupe 2', mesure_distribution, el_assoudi, td, GM3_2, [
+    td_mesure_2_1, td_mesure_2_2, td_mesure_2_3, td_mesure_2_4, td_mesure_2_5
+]).
+
+Sessions('DS Mesure et distribution', mesure_distribution, el_assoudi, ds, GM3, [
+    ds_mesure
+]).
+
+
+% Fortran %
+
+Sessions('CM Fortran', mesure_distribution, caputo, cm, GM3, [
+    cm_fortran_1, cm_fortran_2, cm_fortran_3, cm_fortran_4, cm_fortran_5
+]).
+
+Sessions('TD Fortran Groupe 1', mesure_distribution, caputo, td, GM3_1, [
+    td_fortran_1_1, td_fortran_1_2, td_fortran_1_3, td_fortran_1_4, td_fortran_1_5
+]).
+
+Sessions('TD Fortran Groupe 2', mesure_distribution, caputo, td, GM3_2, [
+    td_fortran_2_1, td_fortran_2_2, td_fortran_2_3, td_fortran_2_4, td_fortran_2_5
+]).
+
+Sessions('DS Fortran', mesure_distribution, caputo, ds, GM3, [
+    ds_fortran
+]).
+
+
+% Probabilité %
+
+Sessions('CM Probabilité', probabilite, ciotir, cm, GM3, [
+    cm_proba_1, cm_proba_2, cm_proba_3, cm_proba_4, cm_proba_5
+]).
+
+Sessions('TD Probabilité Groupe 1', probabilite, ciotir, td, GM3_1, [
+    td_proba_1_1, td_proba_1_2, td_proba_1_3, td_proba_1_4, td_proba_1_5
+]).
+
+Sessions('TD Probabilité Groupe 2', probabilite, ciotir, td, GM3_2, [
+    td_proba_2_1, td_proba_2_2, td_proba_2_3, td_proba_2_4, td_proba_2_5
+]).
+
+Sessions('DS Probabilité', probabilite, ciotir, ds, GM3, [
+    ds_proba
+]).
+
+
+
+% Optimisation discrète %
+
+Sessions('CM Optimisation discrète', optimisation_discrete, beveraggi, cm, GM3, [
+    cm_opti_discrete_1, cm_opti_discrete_2, cm_opti_discrete_3, cm_opti_discrete_4, cm_opti_discrete_5
+]).
+
+Sessions('TD Optimisation discrète Groupe 1', optimisation_discrete, beveraggi, td, GM3_1, [
+    td_opti_discrete_1_1, td_opti_discrete_1_2, td_opti_discrete_1_3, td_opti_discrete_1_4, td_opti_discrete_1_5
+]).
+
+Sessions('TD Optimisation discrète Groupe 2', optimisation_discrete, beveraggi, td, GM3_2, [
+    td_opti_discrete_2_1, td_opti_discrete_2_2, td_opti_discrete_2_3, td_opti_discrete_2_4, td_opti_discrete_2_5
+]).
+
+Sessions('DS Optimisation discrète', optimisation_discrete, beveraggi, ds, GM3, [
+    ds_opti_discrete
+]).
+
+
+
+% Signal 1 %
+
+Sessions('CM Signal 1', signal_1, fortier, cm, GM3, [
+    cm_signal1_1, cm_signal1_2, cm_signal1_3, cm_signal1_4, cm_signal1_5
+]).
+
+Sessions('TD Signal 1 Groupe 1', signal_1, fortier, td, GM3_1, [
+    td_signal1_1_1, td_signal1_1_2, td_signal1_1_3, td_signal1_1_4, td_signal1_1_5
+]).
+
+Sessions('TD Signal 1 Groupe 2', signal_1, fortier, td, GM3_2, [
+    td_signal1_2_1, td_signal1_2_2, td_signal1_2_3, td_signal1_2_4, td_signal1_2_5
+]).
+
+Sessions('TP Signal 1 Groupe 1', signal_1, fortier, tp, GM3_1, [
+    tp_signal1_1_1, tp_signal1_1_2
+]).
+
+Sessions('TP Signal 1 Groupe 2', signal_1, fortier, tp, GM3_2, [
+    tp_signal1_2_1, tp_signal1_2_2
+]).
+
+Sessions('DS Signal 1', signal_1, fortier, ds, GM3, [
+    ds_signal1
+]).
+
+
+% Langage C %
+
+Sessions('CM Langage C', C, kotowicz, cm, GM3, [
+    cm_C_1, cm_C_2, cm_C_3, cm_C_4, cm_C_5
+]).
+
+Sessions('TD Langage C Groupe 1', C, kotowicz, tp, GM3_1, [
+    tp_C_1_1, tp_C_1_2, tp_C_1_3, tp_C_1_4, tp_C_1_5
+]).
+
+Sessions('TD Langage C Groupe 2', C, kotowicz, tp, GM3_2, [
+    tp_C_2_1, tp_C_2_2, tp_C_2_3, tp_C_2_4, tp_C_2_5
+]).
+
+Sessions('DS Langage C', C, kotowicz, ds, GM3, [
+    ds_C
+]).
+
+
+% Algo %
+
+Sessions('CM Algo', algo, chaignaud, cm, GM3, [
+    cm_algo_1, cm_algo_2, cm_algo_3, cm_algo_4, cm_algo_5
+]).
+
+Sessions('TD Algo Groupe 1', algo, chaignaud, td, GM3_1, [
+    td_algo_1_1, td_algo_1_2, td_algo_1_3, td_algo_1_4, td_algo_1_5
+]).
+
+Sessions('TD Algo Groupe 2', algo, chaignaud, td, GM3_2, [
+    td_algo_2_1, td_algo_2_2, td_algo_2_3, td_algo_2_4, td_algo_2_5
+]).
+
+Sessions('DS Algo', algo, chaignaud, ds, GM3, [
+    ds_algo
+]).
+
+
+% S6 %
+
+% Analyse numérique 2 %
+
+Sessions('CM Analyse numérique 2', analyse_numerique_2, forcadel, cm, GM3, [
+    cm_ananum2_1, cm_ananum2_2, cm_ananum2_3, cm_ananum2_4, cm_ananum2_5
+]).
+
+Sessions('CM Analyse numérique 2', analyse_numerique_2, forcadel, cm, GM3, [
+    cm_ananum2_1, cm_ananum2_2, cm_ananum2_3, cm_ananum2_4, cm_ananum2_5
+]).
+
+Sessions('TD Analyse numérique 2 Groupe 1', analyse_numerique_2, forcadel, td, GM3_1, [
+    td_ananum2_1_1, td_ananum2_1_2, td_ananum2_1_3, td_ananum2_1_4, td_ananum2_1_5
+]).
+
+Sessions('TD Analyse numérique 2 Groupe 2', analyse_numerique_2, forcadel, td, GM3_2, [
+    td_ananum2_2_1, td_ananum2_2_2, td_ananum2_2_3, td_ananum2_2_4, td_ananum2_2_5
+]).
+
+Sessions('TP Analyse numérique 2 Groupe 1', analyse_numerique_2, forcadel, tp, GM3_1, [
+    tp_ananum2_1_1, tp_ananum2_1_2
+]).
+
+Sessions('TP Analyse numérique 2 Groupe 2', analyse_numerique_2, forcadel, tp, GM3_2, [
+    tp_ananum2_2_1, tp_ananum2_2_2
+]).
+
+Sessions('DS Analyse numérique 2', analyse_numerique_2, forcadel, ds, GM3, [
+    ds_ananum2
+]).
+
+
+% Analyse fonctionnelle %
+
+Sessions('CM Analyse fonctionnelle', analyse_fonctionnelle, zakarova, cm, GM3, [
+    cm_anafonc_1, cm_anafonc_2, cm_anafonc_3, cm_anafonc_4, cm_anafonc_5
+]).
+
+Sessions('TD Analyse fonctionnelle Groupe 1', analyse_fonctionnelle, zakarova, td, GM3_1, [
+    td_anafonc_1_1, td_anafonc_1_2, td_anafonc_1_3, td_anafonc_1_4, td_anafonc_1_5
+]).
+
+Sessions('TD Analyse fonctionnelle Groupe 2', analyse_fonctionnelle, zakarova, td, GM3_2, [
+    td_anafonc_2_1, td_anafonc_2_2, td_anafonc_2_3, td_anafonc_2_4, td_anafonc_2_5
+]).
+
+Sessions('DS Analyse fonctionnelle', analyse_fonctionnelle, zakarova, ds, GM3, [
+    ds_anafonc
+]).
+
+% Algorithmique numérique et arithmétique %
+
+Sessions('CM Algorithmique numérique et arithmétique', algo_num_arith, gleyse, cm, GM3, [
+    cm_algo_num_arith_1, cm_algo_num_arith_2, cm_algo_num_arith_3, cm_algo_num_arith_4, cm_algo_num_arith_5
+]).
+
+Sessions('TD Algorithmique numérique et arithmétique Groupe 1', algo_num_arith, gleyse, td, GM3_1, [
+    td_algo_num_arith_1_1, td_algo_num_arith_1_2, td_algo_num_arith_1_3, td_algo_num_arith_1_4, td_algo_num_arith_1_5
+]).
+
+Sessions('TD Algorithmique numérique et arithmétique Groupe 2', algo_num_arith, gleyse, td, GM3_2, [
+    td_algo_num_arith_2_1, td_algo_num_arith_2_2, td_algo_num_arith_2_3, td_algo_num_arith_2_4, td_algo_num_arith_2_5
+]).
+
+Sessions('DS Algorithmique numérique et arithmétique', algo_num_arith, gleyse, ds, GM3, [
+    ds_algo_num_arith
+]).
+
+
+% Statistiques 1 %
+
+Sessions('CM Statistiques 1', statistiques1, el_machkouri, cm, GM3, [
+    cm_stat1_1, cm_stat1_2, cm_stat1_3, cm_stat1_4, cm_stat1_5
+]).
+
+Sessions('TD Statistiques 1 Groupe 1', statistiques1, el_machkouri, td, GM3_1, [
+    td_stat1_1_1, td_stat1_1_2, td_stat1_1_3, td_stat1_1_4, td_stat1_1_5
+]).
+
+Sessions('TD Statistiques 1 Groupe 2', statistiques1, el_machkouri, td, GM3_2, [
+    td_stat1_2_1, td_stat1_2_2, td_stat1_2_3, td_stat1_2_4, td_stat1_2_5
+]).
+
+Sessions('DS Statistiques 1', statistiques1, el_machkouri, ds, GM3, [
+    ds_stat1
+]).
+
+
+% Analyse de données %
+
+Sessions('CM Analyse de données', analyse_donnees, beveraggi, cm, GM3, [
+    cm_anadon_1, cm_anadon_2, cm_anadon_3, cm_anadon_4, cm_anadon_5
+]).
+
+Sessions('TD Analyse de données Groupe 1', analyse_donnees, beveraggi, td, GM3_1, [
+    td_anadon_1_1, td_anadon_1_2, td_anadon_1_3, td_anadon_1_4, td_anadon_1_5
+]).
+
+Sessions('TD Analyse de données Groupe 2', analyse_donnees, beveraggi, td, GM3_2, [
+    td_anadon_2_1, td_anadon_2_2, td_anadon_2_3, td_anadon_2_4, td_anadon_2_5
+]).
+
+Sessions('DS Analyse de données', analyse_donnees, beveraggi, ds, GM3, [
+    ds_anadon
+]).
+
+
+% Equation différentiel %
+
+Sessions('CM Equation différentiel', equa_diff, respondek, cm, GM3, [
+    cm_equadiff_1, cm_equadiff_2, cm_equadiff_3, cm_equadiff_4, cm_equadiff_5
+]).
+
+Sessions('TD Equation différentiel Groupe 1', equa_diff, respondek, td, GM3_1, [
+    td_equadiff_1_1, td_equadiff_1_2, td_equadiff_1_3, td_equadiff_1_4, td_equadiff_1_5
+]).
+
+Sessions('TD Equation différentiel Groupe 2', equa_diff, respondek, td, GM3_2, [
+    td_equadiff_2_1, td_equadiff_2_2, td_equadiff_2_3, td_equadiff_2_4, td_equadiff_2_5
+]).
+
+Sessions('DS Equation différentiel', equa_diff, respondek, ds, GM3, [
+    ds_equadiff
+]).
+
+
+
+% Langage orienté objet %
+
+Sessions('CM Langage orienté objet', langage_oriente_objet, itmi, cm, GM3, [
+    cm_lanorientobjet_1, cm_lanorientobjet_2, cm_lanorientobjet_3, cm_lanorientobjet_4, cm_lanorientobjet_5
+]).
+
+Sessions('TD Langage orienté objet Groupe 1', langage_oriente_objet, itmi, td, GM3_1, [
+    td_lanorientobjet_1_1, td_lanorientobjet_1_2, td_lanorientobjet_1_3, td_lanorientobjet_1_4, td_lanorientobjet_1_5
+]).
+
+Sessions('TD Langage orienté objet Groupe 2', langage_oriente_objet, itmi, td, GM3_2, [
+    td_lanorientobjet_2_1, td_lanorientobjet_2_2, td_lanorientobjet_2_3, td_lanorientobjet_2_4, td_lanorientobjet_2_5
+]).
+
+Sessions('DS Langage orienté objet', langage_oriente_objet, itmi, ds, GM3, [
+    ds_lanorientobjet
+]).
+
+
+
+
+% Système d'exploitation %
+
+Sessions('CM Système d'exploitation', syst_exploitation, jaumat, cm, GM3, [
+    cm_systexploit_1, cm_systexploit_2, cm_systexploit_3, cm_systexploit_4, cm_systexploit_5
+]).
+
+Sessions('TP Système d'exploitation Groupe 1', syst_exploitation, jaumat, td, GM3_1, [
+    tp_systexploit_1_1, tp_systexploit_1_2, tp_systexploit_1_3, tp_systexploit_1_4, tp_systexploit_1_5
+]).
+
+Sessions('TP Système d'exploitation Groupe 2', syst_exploitation, jaumat, td, GM3_2, [
+    tp_systexploit_2_1, tp_systexploit_2_2, tp_systexploit_2_3, tp_systexploit_2_4, tp_systexploit_2_5
+]).
+
+SessionSystème d'exploitation objet', syst_exploitation, jaumat, ds, GM3, [
+    ds_systexploit
+]).
+
+
+
 % GM4 %
 
+
+% S7 %
 
 %% MNEDP1 %%
 
@@ -544,175 +891,6 @@ Sessions('DS algo_structure_donne', algo_structure_donne, abdulrab, ds, GM4, [
     ds_algo_structure_donne
 ]).
 
-
-
-% GM3 %
-
-% Analyse numérique 1 %
-
-
-Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
-    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
-]).
-
-Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
-    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
-]).
-
-Sessions('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, GM3_1, [
-    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
-]).
-
-Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, GM3_2, [
-    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
-]).
-
-Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
-    ds_ananum1
-]).
-
-
-% Mesure et distribution %
-
-Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
-    cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
-]).
-
-Sessions('TD Mesure et distribution Groupe 1', mesure_distribution, el_assoudi, td, GM3_1, [
-    td_mesure_1_1, td_mesure_1_2, td_mesure_1_3, td_mesure_1_4, td_mesure_1_5
-]).
-
-Sessions('TD Mesure et distribution Groupe 2', mesure_distribution, el_assoudi, td, GM3_2, [
-    td_mesure_2_1, td_mesure_2_2, td_mesure_2_3, td_mesure_2_4, td_mesure_2_5
-]).
-
-Sessions('DS Mesure et distribution', mesure_distribution, el_assoudi, ds, GM3, [
-    ds_mesure
-]).
-
-
-% Fortran %
-
-Sessions('CM Fortran', mesure_distribution, caputo, cm, GM3, [
-    cm_fortran_1, cm_fortran_2, cm_fortran_3, cm_fortran_4, cm_fortran_5
-]).
-
-Sessions('TD Fortran Groupe 1', mesure_distribution, caputo, td, GM3_1, [
-    td_fortran_1_1, td_fortran_1_2, td_fortran_1_3, td_fortran_1_4, td_fortran_1_5
-]).
-
-Sessions('TD Fortran Groupe 2', mesure_distribution, caputo, td, GM3_2, [
-    td_fortran_2_1, td_fortran_2_2, td_fortran_2_3, td_fortran_2_4, td_fortran_2_5
-]).
-
-Sessions('DS Fortran', mesure_distribution, caputo, ds, GM3, [
-    ds_fortran
-]).
-
-
-% Probabilité %
-
-Sessions('CM Probabilité', probabilite, ciotir, cm, GM3, [
-    cm_proba_1, cm_proba_2, cm_proba_3, cm_proba_4, cm_proba_5
-]).
-
-Sessions('TD Probabilité Groupe 1', probabilite, ciotir, td, GM3_1, [
-    td_proba_1_1, td_proba_1_2, td_proba_1_3, td_proba_1_4, td_proba_1_5
-]).
-
-Sessions('TD Probabilité Groupe 2', probabilite, ciotir, td, GM3_2, [
-    td_proba_2_1, td_proba_2_2, td_proba_2_3, td_proba_2_4, td_proba_2_5
-]).
-
-Sessions('DS Probabilité', probabilite, ciotir, ds, GM3, [
-    ds_proba
-]).
-
-
-
-% Optimisation discrète %
-
-Sessions('CM Optimisation discrète', optimisation_discrete, beveraggi, cm, GM3, [
-    cm_opti_discrete_1, cm_opti_discrete_2, cm_opti_discrete_3, cm_opti_discrete_4, cm_opti_discrete_5
-]).
-
-Sessions('TD Optimisation discrète Groupe 1', optimisation_discrete, beveraggi, td, GM3_1, [
-    td_opti_discrete_1_1, td_opti_discrete_1_2, td_opti_discrete_1_3, td_opti_discrete_1_4, td_opti_discrete_1_5
-]).
-
-Sessions('TD Optimisation discrète Groupe 2', optimisation_discrete, beveraggi, td, GM3_2, [
-    td_opti_discrete_2_1, td_opti_discrete_2_2, td_opti_discrete_2_3, td_opti_discrete_2_4, td_opti_discrete_2_5
-]).
-
-Sessions('DS Optimisation discrète', optimisation_discrete, beveraggi, ds, GM3, [
-    ds_opti_discrete
-]).
-
-
-
-% Signal 1 %
-
-Sessions('CM Signal 1', signal_1, fortier, cm, GM3, [
-    cm_signal1_1, cm_signal1_2, cm_signal1_3, cm_signal1_4, cm_signal1_5
-]).
-
-Sessions('TD Signal 1 Groupe 1', signal_1, fortier, td, GM3_1, [
-    td_signal1_1_1, td_signal1_1_2, td_signal1_1_3, td_signal1_1_4, td_signal1_1_5
-]).
-
-Sessions('TD Signal 1 Groupe 2', signal_1, fortier, td, GM3_2, [
-    td_signal1_2_1, td_signal1_2_2, td_signal1_2_3, td_signal1_2_4, td_signal1_2_5
-]).
-
-Sessions('TP Signal 1 Groupe 1', signal_1, fortier, tp, GM3_1, [
-    tp_signal1_1_1, tp_signal1_1_2
-]).
-
-Sessions('TP Signal 1 Groupe 2', signal_1, fortier, tp, GM3_2, [
-    tp_signal1_2_1, tp_signal1_2_2
-]).
-
-Sessions('DS Signal 1', signal_1, fortier, ds, GM3, [
-    ds_signal1
-]).
-
-
-% Langage C %
-
-Sessions('CM Langage C', C, kotowicz, cm, GM3, [
-    cm_C_1, cm_C_2, cm_C_3, cm_C_4, cm_C_5
-]).
-
-Sessions('TD Langage C Groupe 1', C, kotowicz, tp, GM3_1, [
-    tp_C_1_1, tp_C_1_2, tp_C_1_3, tp_C_1_4, tp_C_1_5
-]).
-
-Sessions('TD Langage C Groupe 2', C, kotowicz, tp, GM3_2, [
-    tp_C_2_1, tp_C_2_2, tp_C_2_3, tp_C_2_4, tp_C_2_5
-]).
-
-Sessions('DS Langage C', C, kotowicz, ds, GM3, [
-    ds_C
-]).
-
-
-% Algo %
-
-Sessions('CM Algo', algo, chaignaud, cm, GM3, [
-    cm_algo_1, cm_algo_2, cm_algo_3, cm_algo_4, cm_algo_5
-]).
-
-Sessions('TD Algo Groupe 1', algo, chaignaud, td, GM3_1, [
-    td_algo_1_1, td_algo_1_2, td_algo_1_3, td_algo_1_4, td_algo_1_5
-]).
-
-Sessions('TD Algo Groupe 2', algo, chaignaud, td, GM3_2, [
-    td_algo_2_1, td_algo_2_2, td_algo_2_3, td_algo_2_4, td_algo_2_5
-]).
-
-Sessions('DS Algo', algo, chaignaud, ds, GM3, [
-    ds_algo
-]).
 
 
 
