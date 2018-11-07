@@ -317,10 +317,32 @@ ClassRoom(DU-RJ-02, 100, [cm]).
 ClassRoom(DU-RJ-06, 100, [cm]).
 ClassRoom(DU-RJ-12, 100, [cm]).
 
+<<<<<<< HEAD
 ClassRoom(BO-R2-03, 35, [tp]).
 ClassRoom(BO-R2-05, 35, [tp]).
 ClassRoom(BO-R2-07, 35, [tp]).
 
+=======
+ClassRoom(a2, 200, [cm, ds]).
+ClassRoom(b001, 26, [tp, mp, ds_machine]).
+ClassRoom(c001, 26, [tp, mp, ds_machine]).
+ClassRoom(c002, 26, [tp, mp, ds_machine]).
+ClassRoom(c008, 50, [cm, td, ds]).
+ClassRoom(c009, 26, [tp, tp_para, mp, ds_machine]).
+ClassRoom(c007, 10, [tp_rez]).
+ClassRoom(e101, 24, [cm, td]).
+ClassRoom(e102, 24, [cm, td]).
+ClassRoom(e103, 24, [td]).
+ClassRoom(e104, 24, [td]).
+ClassRoom(e202, 50, [cm, td]).
+ClassRoom(iht_aronax, 100, [cm, td]).
+ClassRoom(iht_nemo, 50, [td]).
+ClassRoom(isitem_TD1, 30, [cm, td]).
+ClassRoom(isitem_TD2, 30, [cm, td]).
+ClassRoom(isitem_exam, 100, [ds]).
+ClassRoom(maison_project, 1000, [project]).
+ClassRoom(maison_project_2, 1000, [project]).
+>>>>>>> c121b59079bb84c6ced7d9c541215c2000702f3c
 
 /**
  * ClassRoom(?name, ?Effectif)
@@ -348,7 +370,7 @@ accueille(S, T) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /*
- * seances(?name, ?Mat, ?Prof, ?Type, ?group, ?Ids).
+ * Sessions(?name, ?Mat, ?Prof, ?Type, ?group, ?Ids).
  *
  * Définition de plusieurs séances à la volée
  *
@@ -365,12 +387,12 @@ accueille(S, T) :-
  * INFO
  */
 
-seances('CM BDD', connaissances_bdd, raschia, cm, info, [
+Sessions('CM BDD', connaissances_bdd, raschia, cm, info, [
     cm_bdd_1, cm_bdd_2, cm_bdd_3, cm_bdd_4,
     cm_bdd_5, cm_bdd_6, cm_bdd_7, cm_bdd_8
 ]).
 
-seances('TD BDD', connaissances_bdd, raschia, td, id, [
+Sessions('TD BDD', connaissances_bdd, raschia, td, id, [
     td_bdd_id_1,
     td_bdd_id_2,
        td_bdd_id_3,
@@ -378,7 +400,7 @@ seances('TD BDD', connaissances_bdd, raschia, td, id, [
     td_bdd_id_5
 ]).
 
-seances('TP BDD', connaissances_bdd, raschia, tp, id, [
+Sessions('TP BDD', connaissances_bdd, raschia, tp, id, [
     tp_bdd_id_1,
     tp_bdd_id_2,
     tp_bdd_id_3,
@@ -387,7 +409,7 @@ seances('TP BDD', connaissances_bdd, raschia, tp, id, [
     tp_bdd_id_6
 ]).
 
-seances('TD BDD', connaissances_bdd, nachouki, td, silr1, [
+Sessions('TD BDD', connaissances_bdd, nachouki, td, silr1, [
     td_bdd_silr1_1,
     td_bdd_silr1_2,
     td_bdd_silr1_3,
@@ -395,7 +417,7 @@ seances('TD BDD', connaissances_bdd, nachouki, td, silr1, [
     td_bdd_silr1_5
 ]).
 
-seances('TP BDD', connaissances_bdd, nachouki, tp, silr1, [
+Sessions('TP BDD', connaissances_bdd, nachouki, tp, silr1, [
     tp_bdd_silr1_1,
     tp_bdd_silr1_2,
     tp_bdd_silr1_3,
@@ -404,7 +426,7 @@ seances('TP BDD', connaissances_bdd, nachouki, tp, silr1, [
     tp_bdd_silr1_6
 ]).
 
-seances('TD BDD', connaissances_bdd, nachouki, td, silr2, [
+Sessions('TD BDD', connaissances_bdd, nachouki, td, silr2, [
     td_bdd_silr2_1,
     td_bdd_silr2_2,
     td_bdd_silr2_3,
@@ -412,7 +434,7 @@ seances('TD BDD', connaissances_bdd, nachouki, td, silr2, [
     td_bdd_silr2_5
 ]).
 
-seances('TP BDD', connaissances_bdd, nachouki, tp, silr2, [
+Sessions('TP BDD', connaissances_bdd, nachouki, tp, silr2, [
     tp_bdd_silr2_1,
     tp_bdd_silr2_2,
     tp_bdd_silr2_3,
@@ -421,11 +443,11 @@ seances('TP BDD', connaissances_bdd, nachouki, tp, silr2, [
     tp_bdd_silr2_6
 ]).
 
-seances('DS BDD', connaissances_bdd, raschia, ds, info, [
+Sessions('DS BDD', connaissances_bdd, raschia, ds, info, [
     ds_bdd
 ]).
 
-seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, id, [
+Sessions('TP mini project IA', connaissances_project_ia, lecapitaine, tp, id, [
     tp_project_ia_id_1,
     tp_project_ia_id_2,
     tp_project_ia_id_3,
@@ -434,7 +456,7 @@ seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, id, [
     tp_project_ia_id_6
 ]).
 
-seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, silr1, [
+Sessions('TP mini project IA', connaissances_project_ia, lecapitaine, tp, silr1, [
     tp_project_ia_silr1_1,
     tp_project_ia_silr1_2,
     tp_project_ia_silr1_3,
@@ -443,7 +465,7 @@ seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, silr1, 
     tp_project_ia_silr1_6
 ]).
 
-seances('TP mini project IA', connaissances_project_ia, raschia, tp, silr2, [
+Sessions('TP mini project IA', connaissances_project_ia, raschia, tp, silr2, [
     tp_project_ia_silr2_1,
     tp_project_ia_silr2_2,
     tp_project_ia_silr2_3,
@@ -452,7 +474,7 @@ seances('TP mini project IA', connaissances_project_ia, raschia, tp, silr2, [
     tp_project_ia_silr2_6
 ]).
 
-seances('CM IA', connaissances_ia, martinez, cm, info, [
+Sessions('CM IA', connaissances_ia, martinez, cm, info, [
     cm_IA_1,
     cm_IA_2,
     cm_IA_3,
@@ -461,25 +483,25 @@ seances('CM IA', connaissances_ia, martinez, cm, info, [
     cm_IA_6
 ]).
 
-seances('TD IA', connaissances_ia, lecapitaine, td, id, [
+Sessions('TD IA', connaissances_ia, lecapitaine, td, id, [
     td_IA_id_1,
     td_IA_id_2,
     td_IA_id_3
 ]).
 
-seances('TD IA', connaissances_ia, martinez, td, silr1, [
+Sessions('TD IA', connaissances_ia, martinez, td, silr1, [
     td_IA_silr1_1,
     td_IA_silr1_2,
     td_IA_silr1_3
 ]).
 
-seances('TD IA', connaissances_ia, raschia, td, silr2, [
+Sessions('TD IA', connaissances_ia, raschia, td, silr2, [
     td_IA_silr2_1,
     td_IA_silr2_2,
     td_IA_silr2_3
 ]).
 
-seances('DS IA', connaissances_ia, martinez, ds, info, [
+Sessions('DS IA', connaissances_ia, martinez, ds, info, [
     ds_ia
 ]).
 
@@ -489,21 +511,21 @@ seances('DS IA', connaissances_ia, martinez, ds, info, [
  * INFO
  */
 
-seances('CM multimédia', logiciel_multimedia, jpeg, cm, id, [
+Sessions('CM multimédia', logiciel_multimedia, jpeg, cm, id, [
     cm_multimedia_1,
     cm_multimedia_2,
     cm_multimedia_3,
     cm_multimedia_4
 ]).
 
-seances('CM multimédia', logiciel_multimedia, gelgon, cm, id, [
+Sessions('CM multimédia', logiciel_multimedia, gelgon, cm, id, [
     cm_multimedia_5,
     cm_multimedia_6,
     cm_multimedia_7,
     cm_multimedia_8
 ]).
 
-seances('TP multimédia', logiciel_multimedia, gelgon, tp, id, [
+Sessions('TP multimédia', logiciel_multimedia, gelgon, tp, id, [
     tp_multimedia_1,
     tp_multimedia_2,
     tp_multimedia_3,
@@ -512,11 +534,11 @@ seances('TP multimédia', logiciel_multimedia, gelgon, tp, id, [
     tp_multimedia_6
 ]).
 
-seances('DS multimedia', logiciel_multimedia, [jpeg, gelgon], ds, info, [
+Sessions('DS multimedia', logiciel_multimedia, [jpeg, gelgon], ds, info, [
     ds_multimedia
 ]).
 
-seances('CM optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, cm, id, [
+Sessions('CM optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, cm, id, [
     cm_meta_heuristique_1,
     cm_meta_heuristique_2,
     cm_meta_heuristique_3,
@@ -526,11 +548,11 @@ seances('CM optimisation et meta heuristique', logiciel_meta_heuristique, kuntz,
     cm_meta_heuristique_7
 ]).
 
-seances('DS optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, ds, id, [
+Sessions('DS optimisation et meta heuristique', logiciel_meta_heuristique, kuntz, ds, id, [
     ds_meta_heuristique
 ]).
 
-seances('CM C++', logiciel_c, picarougne, cm, info, [
+Sessions('CM C++', logiciel_c, picarougne, cm, info, [
     cm_c_1,
     cm_c_2,
     cm_c_3,
@@ -543,7 +565,7 @@ seances('CM C++', logiciel_c, picarougne, cm, info, [
     cm_c_10
 ]).
 
-seances('TP C++', logiciel_c, soufiane, tp, id, [
+Sessions('TP C++', logiciel_c, soufiane, tp, id, [
     tp_c_id_1,
     tp_c_id_2,
     tp_c_id_3,
@@ -556,7 +578,7 @@ seances('TP C++', logiciel_c, soufiane, tp, id, [
     tp_c_id_10
 ]).
 
-seances('TP C++', logiciel_c, milliat, tp, silr1, [
+Sessions('TP C++', logiciel_c, milliat, tp, silr1, [
     tp_c_silr1_1,
     tp_c_silr1_2,
     tp_c_silr1_3,
@@ -569,7 +591,7 @@ seances('TP C++', logiciel_c, milliat, tp, silr1, [
     tp_c_silr1_10
 ]).
 
-seances('TP C++', logiciel_c, picarougne, tp, silr2, [
+Sessions('TP C++', logiciel_c, picarougne, tp, silr2, [
     tp_c_silr2_1,
     tp_c_silr2_2,
     tp_c_silr2_3,
@@ -582,21 +604,21 @@ seances('TP C++', logiciel_c, picarougne, tp, silr2, [
     tp_c_silr2_10
 ]).
 
-seances('DS C++', logiciel_c, picarougne, ds, info, [
+Sessions('DS C++', logiciel_c, picarougne, ds, info, [
     ds_c
 ]).
 
-seances('CM Mini-project C++', logiciel_project_c, picarougne, cm, info, [
+Sessions('CM Mini-project C++', logiciel_project_c, picarougne, cm, info, [
     cm_project_c_1,
     cm_project_c_2
 ]).
 
-seances('CM outils ingénierie logiciel', logiciel_outils, cohen, cm, silr, [
+Sessions('CM outils ingénierie logiciel', logiciel_outils, cohen, cm, silr, [
     cm_outils_ingenierie_silr_1,
     cm_outils_ingenierie_silr_2
 ]).
 
-seances('TP outils ingénierie logiciel', logiciel_outils, cohen, tp, silr1, [
+Sessions('TP outils ingénierie logiciel', logiciel_outils, cohen, tp, silr1, [
     tp_outils_ingenierie_silr1_1,
     tp_outils_ingenierie_silr1_2,
     tp_outils_ingenierie_silr1_3,
@@ -605,7 +627,7 @@ seances('TP outils ingénierie logiciel', logiciel_outils, cohen, tp, silr1, [
     tp_outils_ingenierie_silr1_6
 ]).
 
-seances('TP outils ingénierie logiciel', logiciel_outils, vigier, tp, silr2, [
+Sessions('TP outils ingénierie logiciel', logiciel_outils, vigier, tp, silr2, [
     tp_outils_ingenierie_silr2_1,
     tp_outils_ingenierie_silr2_2,
     tp_outils_ingenierie_silr2_3,
@@ -614,7 +636,7 @@ seances('TP outils ingénierie logiciel', logiciel_outils, vigier, tp, silr2, [
     tp_outils_ingenierie_silr2_6
 ]).
 
-seances('DS outils ingénierie logiciel', logiciel_outils, cohen, ds, silr, [
+Sessions('DS outils ingénierie logiciel', logiciel_outils, cohen, ds, silr, [
     ds_outils_ingenierie
 ]).
 
@@ -623,7 +645,7 @@ seances('DS outils ingénierie logiciel', logiciel_outils, cohen, ds, silr, [
  * ID
  */
 
-seances('CM analyse de données', math_analyse_donnees, kuntz, cm, id, [
+Sessions('CM analyse de données', math_analyse_donnees, kuntz, cm, id, [
     cm_analyse_donnees_1,
     cm_analyse_donnees_2,
     cm_analyse_donnees_3,
@@ -633,13 +655,13 @@ seances('CM analyse de données', math_analyse_donnees, kuntz, cm, id, [
     cm_analyse_donnees_7
 ]).
 
-seances('TD analyse de données', math_analyse_donnees, lecapitaine, td, id, [
+Sessions('TD analyse de données', math_analyse_donnees, lecapitaine, td, id, [
     td_analyse_donnees_1,
     td_analyse_donnees_2,
     td_analyse_donnees_3
 ]).
 
-seances('TP analyse de données', math_analyse_donnees, [lecapitaine, peter], tp, id, [
+Sessions('TP analyse de données', math_analyse_donnees, [lecapitaine, peter], tp, id, [
     tp_analyse_donnees_1,
     tp_analyse_donnees_2,
     tp_analyse_donnees_3,
@@ -648,25 +670,25 @@ seances('TP analyse de données', math_analyse_donnees, [lecapitaine, peter], tp
     tp_analyse_donnees_6
 ]).
 
-seances('DS analyse de données', math_analyse_donnees, kuntz, ds, id, [
+Sessions('DS analyse de données', math_analyse_donnees, kuntz, ds, id, [
     ds_analyse_donnees
 ]).
 
-seances('CM architecture para et parallélisation de données', math_archi_parallèle, martinez, cm, id, [
+Sessions('CM architecture para et parallélisation de données', math_archi_parallèle, martinez, cm, id, [
     cm_archi_parallèle_1,
     cm_archi_parallèle_2
 ]).
 
-seances('TD architecture para et parallélisation de données', math_archi_parallèle, martinez, td, id, [
+Sessions('TD architecture para et parallélisation de données', math_archi_parallèle, martinez, td, id, [
     td_archi_parallèle_1,
     td_archi_parallèle_2
 ]).
 
-seances('DS architecture para et parallélisation de données', math_archi_parallèle, martinez, ds, id, [
+Sessions('DS architecture para et parallélisation de données', math_archi_parallèle, martinez, ds, id, [
     ds_archi_parallèle
 ]).
 
-seances('TD comptabilite', math_compta, goncalves, td, id, [
+Sessions('TD comptabilite', math_compta, goncalves, td, id, [
     td_compta_1,
     td_compta_2,
     td_compta_3,
@@ -676,7 +698,7 @@ seances('TD comptabilite', math_compta, goncalves, td, id, [
     td_compta_7
 ]).
 
-seances('DS comptabilite', math_compta, goncalves, ds, id, [
+Sessions('DS comptabilite', math_compta, goncalves, ds, id, [
     ds_compta
 ]).
 
@@ -685,7 +707,7 @@ seances('DS comptabilite', math_compta, goncalves, ds, id, [
  * Info
  */
 
-seances('CM crypto', math_crypto, parrein, cm, info, [
+Sessions('CM crypto', math_crypto, parrein, cm, info, [
     cm_crypto_1,
     cm_crypto_2,
     cm_crypto_3,
@@ -694,28 +716,28 @@ seances('CM crypto', math_crypto, parrein, cm, info, [
     cm_crypto_6
 ]).
 
-seances('TD crypto', math_crypto, raschia, td, id, [
+Sessions('TD crypto', math_crypto, raschia, td, id, [
     td_crypto_id_1,
     td_crypto_id_2,
     td_crypto_id_3,
     td_crypto_id_4
 ]).
 
-seances('TD crypto', math_crypto, normand, td, silr1, [
+Sessions('TD crypto', math_crypto, normand, td, silr1, [
     td_crypto_silr1_1,
     td_crypto_silr1_2,
     td_crypto_silr1_3,
     td_crypto_silr1_4
 ]).
 
-seances('TD crypto', math_crypto, parrein, td, silr2, [
+Sessions('TD crypto', math_crypto, parrein, td, silr2, [
     td_crypto_silr2_1,
     td_crypto_silr2_2,
     td_crypto_silr2_3,
     td_crypto_silr2_4
 ]).
 
-seances('DS crypto', math_crypto, parrein, ds, info, [
+Sessions('DS crypto', math_crypto, parrein, ds, info, [
     ds_crypto
 ]).
 
@@ -724,7 +746,7 @@ seances('DS crypto', math_crypto, parrein, ds, info, [
  * Silr
  */
 
-seances('CM réseaux', logiciel_reseau, lehn, cm, silr, [
+Sessions('CM réseaux', logiciel_reseau, lehn, cm, silr, [
     cm_reseaux_1,
     cm_reseaux_2,
     cm_reseaux_3,
@@ -734,7 +756,7 @@ seances('CM réseaux', logiciel_reseau, lehn, cm, silr, [
     cm_reseaux_7
 ]).
 
-seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr1, [
+Sessions('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr1, [
     tp_reseaux_silr1_1,
     tp_reseaux_silr1_2,
     tp_reseaux_silr1_3,
@@ -745,7 +767,7 @@ seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr1, [
     tp_reseaux_silr1_8
 ]).
 
-seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr2, [
+Sessions('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr2, [
     tp_reseaux_silr2_1,
     tp_reseaux_silr2_2,
     tp_reseaux_silr2_3,
@@ -756,11 +778,11 @@ seances('TP réseaux', logiciel_reseau, [leman, parrein], tp, silr2, [
     tp_reseaux_silr2_8
 ]).
 
-seances('DS réseaux', logiciel_reseau, lehn, ds, silr, [
+Sessions('DS réseaux', logiciel_reseau, lehn, ds, silr, [
     ds_reseaux
 ]).
 
-seances('CM traitement d\'image', logiciel_traitement_image, jpeg, cm, silr, [
+Sessions('CM traitement d\'image', logiciel_traitement_image, jpeg, cm, silr, [
     cm_traitement_image_1,
     cm_traitement_image_2,
     cm_traitement_image_3,
@@ -775,7 +797,7 @@ seances('CM traitement d\'image', logiciel_traitement_image, jpeg, cm, silr, [
     cm_traitement_image_12
 ]).
 
-seances('TP traitement d\'image', logiciel_traitement_image, [gelgon, perreira], tp, silr1, [
+Sessions('TP traitement d\'image', logiciel_traitement_image, [gelgon, perreira], tp, silr1, [
     tp_traitement_image_silr1_1,
     tp_traitement_image_silr1_2,
     tp_traitement_image_silr1_3,
@@ -785,7 +807,7 @@ seances('TP traitement d\'image', logiciel_traitement_image, [gelgon, perreira],
     tp_traitement_image_silr1_7
 ]).
 
-seances('TP traitement d\'image', logiciel_traitement_image, marcus, tp, silr2, [
+Sessions('TP traitement d\'image', logiciel_traitement_image, marcus, tp, silr2, [
     tp_traitement_image_silr2_1,
     tp_traitement_image_silr2_2,
     tp_traitement_image_silr2_3,
@@ -795,11 +817,11 @@ seances('TP traitement d\'image', logiciel_traitement_image, marcus, tp, silr2, 
     tp_traitement_image_silr2_7
 ]).
 
-seances('DS traitement d\'image', logiciel_traitement_image, jpeg, ds, silr, [
+Sessions('DS traitement d\'image', logiciel_traitement_image, jpeg, ds, silr, [
     ds_traitement_image
 ]).
 
-seances('CM traitement du signal', logiciel_signal, le_callet, cm, silr, [
+Sessions('CM traitement du signal', logiciel_signal, le_callet, cm, silr, [
     cm_traitement_signal_1,
     cm_traitement_signal_2,
     cm_traitement_signal_3,
@@ -808,7 +830,7 @@ seances('CM traitement du signal', logiciel_signal, le_callet, cm, silr, [
     cm_traitement_signal_6
 ]).
 
-seances('TD traitement du signal', logiciel_signal, le_callet, td, silr2, [
+Sessions('TD traitement du signal', logiciel_signal, le_callet, td, silr2, [
     td_traitement_signal_silr1_1,
     td_traitement_signal_silr1_2,
     td_traitement_signal_silr1_3,
@@ -817,7 +839,7 @@ seances('TD traitement du signal', logiciel_signal, le_callet, td, silr2, [
     td_traitement_signal_silr1_6
 ]).
 
-seances('TD traitement du signal', logiciel_signal, ricordel, td, silr2, [
+Sessions('TD traitement du signal', logiciel_signal, ricordel, td, silr2, [
     td_traitement_signal_silr2_1,
     td_traitement_signal_silr2_2,
     td_traitement_signal_silr2_3,
@@ -826,7 +848,7 @@ seances('TD traitement du signal', logiciel_signal, ricordel, td, silr2, [
     td_traitement_signal_silr2_6
 ]).
 
-seances('TP traitement du signal', logiciel_signal, [le_callet, vigier], tp, silr1, [
+Sessions('TP traitement du signal', logiciel_signal, [le_callet, vigier], tp, silr1, [
     tp_traitement_signal_silr1_1,
     tp_traitement_signal_silr1_2,
     tp_traitement_signal_silr1_3,
@@ -835,7 +857,7 @@ seances('TP traitement du signal', logiciel_signal, [le_callet, vigier], tp, sil
     tp_traitement_signal_silr1_6
 ]).
 
-seances('TP traitement du signal', logiciel_signal, ricordel, tp, silr2, [
+Sessions('TP traitement du signal', logiciel_signal, ricordel, tp, silr2, [
     tp_traitement_signal_silr2_1,
     tp_traitement_signal_silr2_2,
     tp_traitement_signal_silr2_3,
@@ -844,7 +866,7 @@ seances('TP traitement du signal', logiciel_signal, ricordel, tp, silr2, [
     tp_traitement_signal_silr2_6
 ]).
 
-seances('DS traitement du signal', logiciel_signal, le_callet, ds, silr, [
+Sessions('DS traitement du signal', logiciel_signal, le_callet, ds, silr, [
     ds_traitement_signal
 ]).
 
@@ -853,23 +875,23 @@ seances('DS traitement du signal', logiciel_signal, le_callet, ds, silr, [
  * Info
  */
 
-seances('CM marketing', hes_marketing, moreau, cm, silr, [
+Sessions('CM marketing', hes_marketing, moreau, cm, silr, [
     cm_marketing_silr_1
 ]).Matiere
 
-seances('CM marketing', hes_marketing, oili, cm, silr, [
+Sessions('CM marketing', hes_marketing, oili, cm, silr, [
     cm_marketing_silr_2
 ]).
 
-seances('CM marketing', hes_marketing, moreau, cm, id, [
+Sessions('CM marketing', hes_marketing, moreau, cm, id, [
     cm_marketing_id_1
 ]).
 
-seances('CM marketing', hes_marketing, oili, cm, silr, [
+Sessions('CM marketing', hes_marketing, oili, cm, silr, [
     cm_marketing_id_2
 ]).
 
-seances('TD marketing', hes_marketing, oili, cm, silr, [
+Sessions('TD marketing', hes_marketing, oili, cm, silr, [
     td_marketing_silr_1,
     td_marketing_silr_2,
     td_marketing_silr_3,
@@ -879,7 +901,7 @@ seances('TD marketing', hes_marketing, oili, cm, silr, [
     td_marketing_silr_7
 ]).
 
-seances('TD marketing', hes_marketing, oili, cm, id, [
+Sessions('TD marketing', hes_marketing, oili, cm, id, [
     td_marketing_id_1,
     td_marketing_id_2,
     td_marketing_id_3,
@@ -889,12 +911,12 @@ seances('TD marketing', hes_marketing, oili, cm, id, [
     td_marketing_id_7
 ]).
 
-seances('DS marketing', hes_marketing, [moreau, oili], ds, info, [
+Sessions('DS marketing', hes_marketing, [moreau, oili], ds, info, [
     ds_marketing
 ]).
 
 
-seances('TD anglais', hes_anglais, prof_anglais1, td, anglais_A, [
+Sessions('TD anglais', hes_anglais, prof_anglais1, td, anglais_A, [
     td_anglais_A_1,
     td_anglais_A_2,
     td_anglais_A_3,
@@ -909,7 +931,7 @@ seances('TD anglais', hes_anglais, prof_anglais1, td, anglais_A, [
     td_anglais_A_12
 ]).
 
-seances('TD anglais', hes_anglais, prof_anglais2, td, anglais_B, [
+Sessions('TD anglais', hes_anglais, prof_anglais2, td, anglais_B, [
     td_anglais_B_1,
     td_anglais_B_2,
     td_anglais_B_3,
@@ -924,7 +946,7 @@ seances('TD anglais', hes_anglais, prof_anglais2, td, anglais_B, [
     td_anglais_B_12
 ]).
 
-seances('TD anglais', hes_anglais, prof_anglais3, td, anglais_C, [
+Sessions('TD anglais', hes_anglais, prof_anglais3, td, anglais_C, [
     td_anglais_C_1,
     td_anglais_C_2,
     td_anglais_C_3,
@@ -939,7 +961,7 @@ seances('TD anglais', hes_anglais, prof_anglais3, td, anglais_C, [
     td_anglais_C_12
 ]).
 
-seances('TD anglais', hes_anglais, prof_anglais4, td, anglais_D, [
+Sessions('TD anglais', hes_anglais, prof_anglais4, td, anglais_D, [
     td_anglais_D_1,
     td_anglais_D_2,
     td_anglais_D_3,
@@ -959,101 +981,101 @@ seances('TD anglais', hes_anglais, prof_anglais4, td, anglais_D, [
  * Info
  */
 
-seances('CM génie logiciel gestion projects', project_genie_logiciel, marcus, cm, info, [
+Sessions('CM génie logiciel gestion projects', project_genie_logiciel, marcus, cm, info, [
     cm_genie_logi_1,
     cm_genie_logi_2,
     cm_genie_logi_3
 ]).
 
-seances('CM génie logiciel gestion projects', project_genie_logiciel, prie, cm, info, [
+Sessions('CM génie logiciel gestion projects', project_genie_logiciel, prie, cm, info, [
     cm_genie_logi_4,
     cm_genie_logi_5,
     cm_genie_logi_6
 ]).
 
-seances('TD génie logiciel gestion projects', project_genie_logiciel, marcus, td, id, [
+Sessions('TD génie logiciel gestion projects', project_genie_logiciel, marcus, td, id, [
     td_genie_logi_id_1,
     td_genie_logi_id_2,
     td_genie_logi_id_3
 ]).
 
-seances('TD génie logiciel gestion projects', project_genie_logiciel, nachouki, td, silr1, [
+Sessions('TD génie logiciel gestion projects', project_genie_logiciel, nachouki, td, silr1, [
     td_genie_logi_silr1_1,
     td_genie_logi_silr1_2,
     td_genie_logi_silr1_3
 ]).
 
-seances('TD génie logiciel gestion projects', project_genie_logiciel, prie, td, silr2, [
+Sessions('TD génie logiciel gestion projects', project_genie_logiciel, prie, td, silr2, [
     td_genie_logi_silr2_1,
     td_genie_logi_silr2_2,
     td_genie_logi_silr2_3
 ]).
 
-seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, id, [
+Sessions('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, id, [
     tp_genie_logi_id_1
 ]).
 
-seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr1, [
+Sessions('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr1, [
     tp_genie_logi_silr1_1
 ]).
 
-seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr2, [
+Sessions('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr2, [
     tp_genie_logi_silr2_1
 ]).
 
-seances('DS génie logiciel gestion projects', project_genie_logiciel, [marcus, prie], ds, info, [
+Sessions('DS génie logiciel gestion projects', project_genie_logiciel, [marcus, prie], ds, info, [
     ds_genie_logi
 ]).
 
-seances('CM patrons conception', logiciel_patrons, pigeau, cm, info, [
+Sessions('CM patrons conception', logiciel_patrons, pigeau, cm, info, [
     cm_patrons_1,
     cm_patrons_2,
     cm_patrons_3
 ]).
 
-seances('TD patrons conception', logiciel_patrons, marcus, td, id, [
+Sessions('TD patrons conception', logiciel_patrons, marcus, td, id, [
     td_patrons_id_1,
     td_patrons_id_2
 ]).
 
-seances('TD patrons conception', logiciel_patrons, prie, td, silr1, [
+Sessions('TD patrons conception', logiciel_patrons, prie, td, silr1, [
     td_patrons_silr1_1,
     td_patrons_silr1_2
 ]).
 
-seances('TD patrons conception', logiciel_patrons, pigeau, td, silr2, [
+Sessions('TD patrons conception', logiciel_patrons, pigeau, td, silr2, [
     td_patrons_silr2_1,
     td_patrons_silr2_2
 ]).
 
-seances('TP patrons conception', logiciel_patrons, marcus, tp, id, [
+Sessions('TP patrons conception', logiciel_patrons, marcus, tp, id, [
     tp_patrons_id_1,
     tp_patrons_id_2
 ]).
 
-seances('TP patrons conception', logiciel_patrons, prie, tp, silr1, [
+Sessions('TP patrons conception', logiciel_patrons, prie, tp, silr1, [
     tp_patrons_silr1_1,
     tp_patrons_silr1_2
 ]).
 
-seances('TP patrons conception', logiciel_patrons, pigeau, tp, silr2, [
+Sessions('TP patrons conception', logiciel_patrons, pigeau, tp, silr2, [
     tp_patrons_silr2_1,
     tp_patrons_silr2_2
 ]).
 
-seances('DS patrons conception', logiciel_patrons, pigeau, ds, info, [
+Sessions('DS patrons conception', logiciel_patrons, pigeau, ds, info, [
     ds_patrons
 ]).
 
-seances('CM project transversal', project_transversal, jpeg, cm, info, [
+Sessions('CM project transversal', project_transversal, jpeg, cm, info, [
     cm_project_transversal_1
 ]).
 
-seances('CM project transversal', project_transversal, marcus, cm, info, [
+Sessions('CM project transversal', project_transversal, marcus, cm, info, [
     cm_project_transversal_2
 ]).
 
-seances('project project transversal', project_transversal, prof_ptrans_id, project, id, [
+Sessions('project project transversal', project_transversal, prof_ptrans_id, project, id, [
     project_transversal_id_1,
     project_transversal_id_2,
     project_transversal_id_3,
@@ -1089,7 +1111,7 @@ seances('project project transversal', project_transversal, prof_ptrans_id, proj
     project_transversal_id_33
 ]).
 
-seances('project project transversal', project_transversal, prof_ptrans_silr, project, silr, [
+Sessions('project project transversal', project_transversal, prof_ptrans_silr, project, silr, [
     project_transversal_silr_1,
     project_transversal_silr_2,
     project_transversal_silr_3,
@@ -1128,9 +1150,9 @@ seances('project project transversal', project_transversal, prof_ptrans_silr, pr
 
 /**
 <<<<<<< HEAD
- * seance(?Id, ?TypeCours, ?subject, ?name)
+ * Session(?Id, ?TypeCours, ?subject, ?name)
 =======
- * seance(?Id, ?TypeCours, ?subject, ?Nom)
+ * Session(?Id, ?TypeCours, ?subject, ?Nom)
 >>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
  *
  * @arg Id          Id de la séance
@@ -1142,194 +1164,194 @@ seances('project project transversal', project_transversal, prof_ptrans_silr, pr
  * @arg Nom         Nom de la séance
 >>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
 */
-:- dynamic seance/4.
+:- dynamic Session/4.
 
 /**
- * groupSeance(?group, ?Seance)
+ * groupSession(?group, ?Session)
  *
  * Définit la participation d'un group à une séance
  *
  * @arg group      name du group
- * @arg Seance      Id de la séance
+ * @arg Session      Id de la séance
  */
-:- dynamic groupSeance/2.
+:- dynamic groupSession/2.
 
 /**
- * profSeance(?Prof, ?Seance)
+ * profSession(?Prof, ?Session)
  *
  * Définit la participation d'un enseignant à une séance
  *
  * @arg Prof        name de l'enseignant
- * @arg Seance      Id de la séance
+ * @arg Session      Id de la séance
  */
-:- dynamic profSeance/2.
+:- dynamic profSession/2.
 
 /**
- * suitSeance(+Seance_suivante, ?Seance_suivie)
+ * followingSession(+Session_suivante, ?Session_suivie)
  *
  * On remarque que le prédicat nous permet également d'implémenter la relation
- * de suite entre les matière (dernière séance matière 1 - première séance
+ * de followinge entre les matière (dernière séance matière 1 - première séance
  * matière 2)
  *
- * @arg Seance_suivante     Id de la séance qui suit
- * @arg Seance_suivie       Id de la séance suivit
+ * @arg Session_suivante     Id de la séance qui following
+ * @arg Session_suivie       Id de la séance suivit
  */
-:- dynamic suitSeance/2.
-suitSeance(td_bdd_id_1, cm_bdd_8).
-suitSeance(tp_bdd_id_1, cm_bdd_8).
-suitSeance(td_bdd_silr1_1, cm_bdd_8).
-suitSeance(tp_bdd_silr1_1, cm_bdd_8).
-suitSeance(td_bdd_silr2_1, cm_bdd_8).
-suitSeance(tp_bdd_silr2_1, cm_bdd_8).
+:- dynamic followingSession/2.
+followingSession(td_bdd_id_1, cm_bdd_8).
+followingSession(tp_bdd_id_1, cm_bdd_8).
+followingSession(td_bdd_silr1_1, cm_bdd_8).
+followingSession(tp_bdd_silr1_1, cm_bdd_8).
+followingSession(td_bdd_silr2_1, cm_bdd_8).
+followingSession(tp_bdd_silr2_1, cm_bdd_8).
 
-suitSeance(td_IA_silr2_1, cm_IA_6).
-suitSeance(td_IA_silr1_1, cm_IA_6).
-suitSeance(td_IA_id_1, cm_IA_6).
+followingSession(td_IA_silr2_1, cm_IA_6).
+followingSession(td_IA_silr1_1, cm_IA_6).
+followingSession(td_IA_id_1, cm_IA_6).
 
-suitSeance(tp_project_ia_silr2_1, td_IA_silr2_3).
-suitSeance(tp_project_ia_silr1_1, td_IA_silr1_3).
-suitSeance(tp_project_ia_id_1, td_IA_id_3).
+followingSession(tp_project_ia_silr2_1, td_IA_silr2_3).
+followingSession(tp_project_ia_silr1_1, td_IA_silr1_3).
+followingSession(tp_project_ia_id_1, td_IA_id_3).
 
-suitSeance(tp_multimedia_1, cm_multimedia_8).
-suitSeance(tp_multimedia_1, cm_multimedia_4).
+followingSession(tp_multimedia_1, cm_multimedia_8).
+followingSession(tp_multimedia_1, cm_multimedia_4).
 
-suitSeance(tp_c_id_1, cm_c_10).
-suitSeance(tp_c_silr1_1, cm_c_10).
-suitSeance(tp_c_silr2_1, cm_c_10).
+followingSession(tp_c_id_1, cm_c_10).
+followingSession(tp_c_silr1_1, cm_c_10).
+followingSession(tp_c_silr2_1, cm_c_10).
 
-suitSeance(cm_project_c_1, tp_c_id_10).
-suitSeance(cm_project_c_1, tp_c_silr1_10).
-suitSeance(cm_project_c_1, tp_c_silr2_10).
+followingSession(cm_project_c_1, tp_c_id_10).
+followingSession(cm_project_c_1, tp_c_silr1_10).
+followingSession(cm_project_c_1, tp_c_silr2_10).
 
-suitSeance(tp_outils_ingenierie_silr2_1, cm_outils_ingenierie_silr_2).
-suitSeance(tp_outils_ingenierie_silr1_1, cm_outils_ingenierie_silr_2).
+followingSession(tp_outils_ingenierie_silr2_1, cm_outils_ingenierie_silr_2).
+followingSession(tp_outils_ingenierie_silr1_1, cm_outils_ingenierie_silr_2).
 
-suitSeance(td_analyse_donnees_1, cm_analyse_donnees_7).
-suitSeance(tp_analyse_donnees_1, td_analyse_donnees_3).
+followingSession(td_analyse_donnees_1, cm_analyse_donnees_7).
+followingSession(tp_analyse_donnees_1, td_analyse_donnees_3).
 
-suitSeance(td_archi_parallèle_1, cm_archi_parallèle_2).
+followingSession(td_archi_parallèle_1, cm_archi_parallèle_2).
 
-suitSeance(td_crypto_silr2_1, cm_crypto_6).
-suitSeance(td_crypto_silr1_1, cm_crypto_6).
-suitSeance(td_crypto_id_1, cm_crypto_6).
+followingSession(td_crypto_silr2_1, cm_crypto_6).
+followingSession(td_crypto_silr1_1, cm_crypto_6).
+followingSession(td_crypto_id_1, cm_crypto_6).
 
-suitSeance(tp_reseaux_silr1_1, cm_reseaux_7).
-suitSeance(tp_reseaux_silr2_1, cm_reseaux_7).
+followingSession(tp_reseaux_silr1_1, cm_reseaux_7).
+followingSession(tp_reseaux_silr2_1, cm_reseaux_7).
 
-suitSeance(tp_traitement_image_silr2_1, cm_traitement_image_12).
-suitSeance(tp_traitement_image_silr1_1, cm_traitement_image_12).
+followingSession(tp_traitement_image_silr2_1, cm_traitement_image_12).
+followingSession(tp_traitement_image_silr1_1, cm_traitement_image_12).
 
-suitSeance(td_traitement_signal_silr1_1, cm_traitement_signal_6).
-suitSeance(td_traitement_signal_silr2_1, cm_traitement_signal_6).
-suitSeance(tp_traitement_signal_silr1_1, cm_traitement_signal_6).
-suitSeance(tp_traitement_signal_silr2_1, cm_traitement_signal_6).
+followingSession(td_traitement_signal_silr1_1, cm_traitement_signal_6).
+followingSession(td_traitement_signal_silr2_1, cm_traitement_signal_6).
+followingSession(tp_traitement_signal_silr1_1, cm_traitement_signal_6).
+followingSession(tp_traitement_signal_silr2_1, cm_traitement_signal_6).
 
-suitSeance(cm_marketing_id_2, cm_marketing_id_1).
-suitSeance(cm_marketing_silr_2, cm_marketing_silr_1).
-suitSeance(td_marketing_id_1, cm_marketing_id_2).
-suitSeance(td_marketing_silr_1, cm_marketing_silr_2).
+followingSession(cm_marketing_id_2, cm_marketing_id_1).
+followingSession(cm_marketing_silr_2, cm_marketing_silr_1).
+followingSession(td_marketing_id_1, cm_marketing_id_2).
+followingSession(td_marketing_silr_1, cm_marketing_silr_2).
 
-suitSeance(td_genie_logi_id_1, cm_genie_logi_6).
-suitSeance(td_genie_logi_silr1_1, cm_genie_logi_6).
-suitSeance(td_genie_logi_silr2_1, cm_genie_logi_6).
-suitSeance(tp_genie_logi_id_1, cm_genie_logi_6).
-suitSeance(tp_genie_logi_silr1_1, cm_genie_logi_6).
-suitSeance(tp_genie_logi_silr2_1, cm_genie_logi_6).
+followingSession(td_genie_logi_id_1, cm_genie_logi_6).
+followingSession(td_genie_logi_silr1_1, cm_genie_logi_6).
+followingSession(td_genie_logi_silr2_1, cm_genie_logi_6).
+followingSession(tp_genie_logi_id_1, cm_genie_logi_6).
+followingSession(tp_genie_logi_silr1_1, cm_genie_logi_6).
+followingSession(tp_genie_logi_silr2_1, cm_genie_logi_6).
 
-suitSeance(td_patrons_id_1, cm_patrons_3).
-suitSeance(td_patrons_silr1_1, cm_patrons_3).
-suitSeance(td_patrons_silr2_1, cm_patrons_3).
-suitSeance(tp_patrons_id_1, td_patrons_id_2).
-suitSeance(tp_patrons_silr1_1, td_patrons_silr1_2).
-suitSeance(tp_patrons_silr2_1, td_patrons_silr2_2).
+followingSession(td_patrons_id_1, cm_patrons_3).
+followingSession(td_patrons_silr1_1, cm_patrons_3).
+followingSession(td_patrons_silr2_1, cm_patrons_3).
+followingSession(tp_patrons_id_1, td_patrons_id_2).
+followingSession(tp_patrons_silr1_1, td_patrons_silr1_2).
+followingSession(tp_patrons_silr2_1, td_patrons_silr2_2).
 
-suitSeance(cm_project_transversal_2, cm_project_transversal_1).
-suitSeance(project_transversal_id_1, cm_project_transversal_2).
-suitSeance(project_transversal_silr_1, cm_project_transversal_2).
+followingSession(cm_project_transversal_2, cm_project_transversal_1).
+followingSession(project_transversal_id_1, cm_project_transversal_2).
+followingSession(project_transversal_silr_1, cm_project_transversal_2).
 
 /**
- * suitSeance(?Seance_suivante, ?Seance_suivie, ?tempsMin, ?tempsMax)
+ * followingSession(?Session_suivante, ?Session_suivie, ?tempsMin, ?tempsMax)
  *
- * @arg Seance_suivante     Id de la séance qui suit
- * @arg Seance_suivie       Id de la séance suivit
+ * @arg Session_suivante     Id de la séance qui following
+ * @arg Session_suivie       Id de la séance suivit
  * @arg tempsMin            namebre de days min avant la prochaine séance
  * @arg tempsMax            namebre de days max avant la prochaine séance
  */
-suitSeance(ds_bdd, tp_bdd_id_6, 7, 12).
-suitSeance(ds_bdd, tp_bdd_silr1_6, 7, 12).
-suitSeance(ds_bdd, tp_bdd_silr2_6, 7, 12).
+followingSession(ds_bdd, tp_bdd_id_6, 7, 12).
+followingSession(ds_bdd, tp_bdd_silr1_6, 7, 12).
+followingSession(ds_bdd, tp_bdd_silr2_6, 7, 12).
 
-suitSeance(ds_ia, td_IA_id_3, 7, 12).
-suitSeance(ds_ia, td_IA_silr1_3, 7, 12).
-suitSeance(ds_ia, td_IA_silr2_3, 7, 12).
+followingSession(ds_ia, td_IA_id_3, 7, 12).
+followingSession(ds_ia, td_IA_silr1_3, 7, 12).
+followingSession(ds_ia, td_IA_silr2_3, 7, 12).
 
-suitSeance(ds_multimedia, tp_multimedia_6, 7, 12).
+followingSession(ds_multimedia, tp_multimedia_6, 7, 12).
 
-suitSeance(ds_meta_heuristique, cm_meta_heuristique_7, 7, 12).
+followingSession(ds_meta_heuristique, cm_meta_heuristique_7, 7, 12).
 
-suitSeance(ds_c, tp_c_id_10, 7, 12).
-suitSeance(ds_c, tp_c_silr2_10, 7, 12).
-suitSeance(ds_c, tp_c_silr1_10, 7, 12).
+followingSession(ds_c, tp_c_id_10, 7, 12).
+followingSession(ds_c, tp_c_silr2_10, 7, 12).
+followingSession(ds_c, tp_c_silr1_10, 7, 12).
 
-suitSeance(ds_outils_ingenierie, tp_outils_ingenierie_silr2_6, 7, 12).
-suitSeance(ds_outils_ingenierie, tp_outils_ingenierie_silr1_6, 7, 12).
+followingSession(ds_outils_ingenierie, tp_outils_ingenierie_silr2_6, 7, 12).
+followingSession(ds_outils_ingenierie, tp_outils_ingenierie_silr1_6, 7, 12).
 
-suitSeance(ds_analyse_donnees, tp_analyse_donnees_6, 7, 12).
+followingSession(ds_analyse_donnees, tp_analyse_donnees_6, 7, 12).
 
-suitSeance(ds_archi_parallèle, td_archi_parallèle_2, 7, 12).
+followingSession(ds_archi_parallèle, td_archi_parallèle_2, 7, 12).
 
-suitSeance(ds_compta, td_compta_7, 7, 12).
+followingSession(ds_compta, td_compta_7, 7, 12).
 
-suitSeance(ds_crypto, td_crypto_id_4, 7, 12).
-suitSeance(ds_crypto, td_crypto_silr1_4, 7, 12).
-suitSeance(ds_crypto, td_crypto_silr2_4, 7, 12).
+followingSession(ds_crypto, td_crypto_id_4, 7, 12).
+followingSession(ds_crypto, td_crypto_silr1_4, 7, 12).
+followingSession(ds_crypto, td_crypto_silr2_4, 7, 12).
 
-suitSeance(ds_reseaux, tp_reseaux_silr1_8, 7, 12).
-suitSeance(ds_reseaux, tp_reseaux_silr2_8, 7, 12).
+followingSession(ds_reseaux, tp_reseaux_silr1_8, 7, 12).
+followingSession(ds_reseaux, tp_reseaux_silr2_8, 7, 12).
 
-suitSeance(ds_traitement_image, tp_traitement_image_silr1_7, 7, 12).
-suitSeance(ds_traitement_image, tp_traitement_image_silr2_7, 7, 12).
+followingSession(ds_traitement_image, tp_traitement_image_silr1_7, 7, 12).
+followingSession(ds_traitement_image, tp_traitement_image_silr2_7, 7, 12).
 
-suitSeance(ds_traitement_signal, tp_traitement_signal_silr1_6, 7, 12).
-suitSeance(ds_traitement_signal, tp_traitement_signal_silr2_6, 7, 12).
+followingSession(ds_traitement_signal, tp_traitement_signal_silr1_6, 7, 12).
+followingSession(ds_traitement_signal, tp_traitement_signal_silr2_6, 7, 12).
 
-suitSeance(ds_marketing, td_marketing_id_7, 7, 12).
-suitSeance(ds_marketing, td_marketing_silr_7, 7, 12).
+followingSession(ds_marketing, td_marketing_id_7, 7, 12).
+followingSession(ds_marketing, td_marketing_silr_7, 7, 12).
 
-suitSeance(ds_genie_logi, td_genie_logi_id_3, 5, 20).
-suitSeance(ds_genie_logi, td_genie_logi_silr1_3, 5, 20).
-suitSeance(ds_genie_logi, td_genie_logi_silr2_3, 5, 20).
-suitSeance(ds_genie_logi, tp_genie_logi_id_1, 5, 20).
-suitSeance(ds_genie_logi, tp_genie_logi_silr1_1, 5, 20).
-suitSeance(ds_genie_logi, tp_genie_logi_silr2_1, 5, 20).
+followingSession(ds_genie_logi, td_genie_logi_id_3, 5, 20).
+followingSession(ds_genie_logi, td_genie_logi_silr1_3, 5, 20).
+followingSession(ds_genie_logi, td_genie_logi_silr2_3, 5, 20).
+followingSession(ds_genie_logi, tp_genie_logi_id_1, 5, 20).
+followingSession(ds_genie_logi, tp_genie_logi_silr1_1, 5, 20).
+followingSession(ds_genie_logi, tp_genie_logi_silr2_1, 5, 20).
 
-suitSeance(ds_patrons, tp_patrons_id_2, 7, 12).
-suitSeance(ds_patrons, tp_patrons_silr1_2, 7, 12).
-suitSeance(ds_patrons, tp_patrons_silr2_2, 7, 12).
+followingSession(ds_patrons, tp_patrons_id_2, 7, 12).
+followingSession(ds_patrons, tp_patrons_silr1_2, 7, 12).
+followingSession(ds_patrons, tp_patrons_silr2_2, 7, 12).
 
 
-suitSeance(cm_project_c_2, cm_project_c_1, 7, 12).
+followingSession(cm_project_c_2, cm_project_c_1, 7, 12).
 
 % Écriture dynamique de la base de donnée -------------------------------------
 
 /**
- * computeProfSeance(+P, +Seance)
+ * computeProfSession(+P, +Session)
  *
- * assert profSeance
+ * assert profSession
  *
  * @arg P       Un enseignant ou une liste d'enseignants
- * @arg Seance  Une séance
+ * @arg Session  Une séance
  */
-computeProfSeance(P, Seance) :-
+computeProfSession(P, Session) :-
     \+ is_list(P),
-    assertz(profSeance(P, Seance)).
-computeProfSeance([], _).
-computeProfSeance([P|Profs], Seance) :- % si plusieurs profs par séance
-    computeProfSeance(P, Seance),
-    computeProfSeance(Profs, Seance).
+    assertz(profSession(P, Session)).
+computeProfSession([], _).
+computeProfSession([P|Profs], Session) :- % si plusieurs profs par séance
+    computeProfSession(P, Session),
+    computeProfSession(Profs, Session).
 
 /**
- * computeSeance(+name, +Mat, +Profs, +Type, +group, +S)
+ * computeSession(+name, +Mat, +Profs, +Type, +group, +S)
  *
  * @arg name     name de la séance
  * @arg Mat     Matière
@@ -1338,19 +1360,19 @@ computeProfSeance([P|Profs], Seance) :- % si plusieurs profs par séance
  * @arg group
  * @arg Ss      Listes d'id de séances
  */
-computeSeance(name, Mat, Profs, Type, group, [X]) :-
-    computeProfSeance(Profs, X),
-    assertz(groupSeance(group, X)),
-    assertz(seance(X, Type, Mat, name)).
-computeSeance(name, Mat, Profs, Type, group, [X, Y|S]) :-
-    (suitSeance(Y, X, _, _); assertz(suitSeance(Y, X))),
-    computeSeance(name, Mat, Profs, Type, group, [X]),
-    computeSeance(name, Mat, Profs, Type, group, [Y|S]).
+computeSession(name, Mat, Profs, Type, group, [X]) :-
+    computeProfSession(Profs, X),
+    assertz(groupSession(group, X)),
+    assertz(Session(X, Type, Mat, name)).
+computeSession(name, Mat, Profs, Type, group, [X, Y|S]) :-
+    (followingSession(Y, X, _, _); assertz(followingSession(Y, X))),
+    computeSession(name, Mat, Profs, Type, group, [X]),
+    computeSession(name, Mat, Profs, Type, group, [Y|S]).
 
 % On génère la base de donnée dynamique des séances et des prédicats en lien
 :- forall(
-    seances(name, Mat, Prof, Type, group, Ids),
+    Sessions(name, Mat, Prof, Type, group, Ids),
     (
-        computeSeance(name, Mat, Prof, Type, group, Ids)
+        computeSession(name, Mat, Prof, Type, group, Ids)
     )
 ).

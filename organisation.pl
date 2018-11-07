@@ -1,4 +1,4 @@
-/**
+Session/**
  * typesCoursIdentiques(+X, +Y).
  *
  * @arg X Un type de cours
@@ -36,7 +36,7 @@ memeSalle(L, [_, _, _, _, L]) :- !.
  * @arg Ps  Des enseignant
  * @arg C   Un créneau [S, H, J, M, L]
  */
-memeProfs([P|_], [S, _, _, _, _]) :- profSeance(P2, S), P2 = P, !.
+memeProfs([P|_], [S, _, _, _, _]) :- profSession(P2, S), P2 = P, !.
 memeProfs([_|Ps], [S, H, J, M, L]) :- memeProfs(Ps, [S, H, J, M, L]), !.
 
 /**
@@ -48,7 +48,7 @@ memeProfs([_|Ps], [S, H, J, M, L]) :- memeProfs(Ps, [S, H, J, M, L]), !.
  * @arg C   Un créneau [S, H, J, M, L]
  */
 groupesIncompatibleCreneau([G|_], [S, _, _, _, _]) :-
-    groupeSeance(G2, S),
+    groupeSession(G2, S),
     incompatibles(G, G2),
     !.
 groupesIncompatibleCreneau([_|Gs], [S, H, J, M, L]) :-
@@ -108,25 +108,25 @@ customSequenceValide(J1, M1, J2, M2, Jmin, Jmax) :-
  */
  % la séance n'est pas en lien avec le créneau transmis
 sequencementValideCreneau(S, _, _, _, [S2, _, _, _, _]):-
-    \+ suitSeance(S, S2),
-    \+ suitSeance(S, S2, _, _),
-    \+ suitSeance(S2, S),
-    \+ suitSeance(S2, S, _, _),
+    \+ suitSession(S, S2),
+    \+ suitSession(S, S2, _, _),
+    \+ suitSession(S2, S),
+    \+ suitSession(S2, S, _, _),
     !.
 sequencementValideCreneau(S, H, J, M, [S2, H2, J2, M2, _]) :-
-    suitSeance(S, S2), % S suit S2
+    suitSession(S, S2), % S suit S2
     momentBefore(H, J, M, H2, J2, M2),
     !.
 sequencementValideCreneau(S, H, J, M, [S2, H2, J2, M2, _]) :-
-    suitSeance(S2, S), % S2 suit S
+    suitSession(S2, S), % S2 suit S
     momentBefore(H2, J2, M2, H, J, M),
     !.
 sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
-    suitSeance(S, S2, Jmin, Jmax), % S suit S2
+    suitSession(S, S2, Jmin, Jmax), % S suit S2
     customSequenceValide(J, M, J2, M2, Jmin, Jmax),
     !.
 sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
-    suitSeance(S2, S, Jmin, Jmax), % S2 suit S
+    suitSession(S2, S, Jmin, Jmax), % S2 suit S
     customSequenceValide(J2, M2, J, M, Jmin, Jmax),
     !.
 
@@ -142,8 +142,8 @@ sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
  * @arg C   Un créneau
  */
 conflitExamen(S, J, M, [S2, _, J, M, _]) :-
-    seance(S, ds, _, _),
-    seance(S2, ds, _, _).
+    Session(S, ds, _, _),
+    Session(S2, ds, _, _).
 
 /**
  * creneauValideCreneau(+S, +Ps, +Gs, +H, +J, +M, +L, +C).
@@ -258,7 +258,7 @@ planifier(Ss, Ds, [C|Cs]) :-
 
     % Création du créneau et tests ---------------------------------------------
 
-    seance(S, TypeS, _, _),
+    Session(S, TypeS, _, _),
 
     date(J, M),     % une date
     \+ tropDeCoursCeJour(J, M, 5, Cs2), % max 5 cours par jour
@@ -273,7 +273,7 @@ planifier(Ss, Ds, [C|Cs]) :-
     accueille(L, TypeL),
     typesCoursIdentiques(TypeS, TypeL), % type de salle valide
 
-    findall(G, groupeSeance(G, S), Gs), % tous les groupes de la séance
+    findall(G, groupeSession(G, S), Gs), % tous les groupes de la séance
     effectifGroupes(Gs, Effectif),
     Effectif =< TailleL, % taille de salle valide
 
