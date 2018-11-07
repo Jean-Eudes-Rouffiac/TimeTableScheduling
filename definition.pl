@@ -7,8 +7,9 @@
  * groupe(?Groupe, ?Effectif)
  *
  * @arg Groupe      Nom du groupe
- * @arg Effectif    Nombre d'étudiants dans le groupe
+ * @arg Effectif    Nombre détudiants dans le groupe
  **/
+
 groupe(info,      62).
 groupe(id,        24).
 groupe(silr,      38).
@@ -39,7 +40,7 @@ incomp(anglais_D, info).
 /**
  * incompatibles(-Groupe1, -Groupe2)
  *
- * Définit l'incompatibilité entre 2 groupes (si il y a des étudiants en commun)
+ * Définit lincompatibilité entre 2 groupes (si il y a des étudiants en commun)
  *
  * @arg Groupe1     Nom du groupe 1
  * @arg Groupe2     Nom du groupe 2
@@ -166,7 +167,7 @@ subject(sport).
 /**
  * prof(?Prof)
  *
- * @arg Prof     Nom de l'enseignant
+ * @arg Prof     Nom de lenseignant
  **/
 
 professor(abdulrab).
@@ -346,7 +347,7 @@ accueille(S, T) :-
     member(T, L).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                  Séances                                     %
+%                                  Sessions                                     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /*
@@ -1129,27 +1130,21 @@ Sessions('project project transversal', project_transversal, prof_ptrans_silr, p
 
 
 /**
-<<<<<<< HEAD
- * Session(?Id, ?TypeCours, ?subject, ?name)
-=======
- * Session(?Id, ?TypeCours, ?subject, ?Nom)
->>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
+
+ * Session(?Id, ?TypeCours, ?subject, ?Name)
+
  *
  * @arg Id          Id de la séance
  * @arg TypeCours   Type de cours de la séance
  * @arg subject     subject à laquelle la séance appartient
-<<<<<<< HEAD
  * @arg name         name de la séance
-=======
- * @arg Nom         Nom de la séance
->>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
-*/
+
 :- dynamic Session/4.
 
 /**
  * groupSession(?group, ?Session)
  *
- * Définit la participation d'un group à une séance
+ * Définit la participation dun group à une séance
  *
  * @arg group      name du group
  * @arg Session      Id de la séance
@@ -1159,9 +1154,9 @@ Sessions('project project transversal', project_transversal, prof_ptrans_silr, p
 /**
  * profSession(?Prof, ?Session)
  *
- * Définit la participation d'un enseignant à une séance
+ * Définit la participation dun enseignant à une séance
  *
- * @arg Prof        name de l'enseignant
+ * @arg Prof        name de lenseignant
  * @arg Session      Id de la séance
  */
 :- dynamic profSession/2.
@@ -1169,7 +1164,7 @@ Sessions('project project transversal', project_transversal, prof_ptrans_silr, p
 /**
  * followingSession(+Session_suivante, ?Session_suivie)
  *
- * On remarque que le prédicat nous permet également d'implémenter la relation
+ * On remarque que le prédicat nous permet également dimplémenter la relation
  * de followinge entre les matière (dernière séance matière 1 - première séance
  * matière 2)
  *
