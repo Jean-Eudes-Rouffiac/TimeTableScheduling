@@ -51,40 +51,61 @@ incompatibles(X, X) :- !.
 incompatibles(X, Y) :- incomp(X, Y), !.
 incompatibles(X, Y) :- incomp(Y, X), !.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                               Matières                                       %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%
+%%
+%%%
+%%%%%%%%%%%%%%% matiere INSA ROUEN GM %%%%%%%%%%%%%%%
+%%%
+%%
+%
 /**
- * matiere(?Matiere)
+ * subject(?subject)
  *
- * @arg Matiere     Nom de la matière
+ * @arg matiere     Nom de la matière
  **/
-matiere(projet_genie_logiciel).
-matiere(projet_transversal).
 
-matiere(hes_anglais).
-matiere(hes_marketing).
+%matiere info%
+%
+subject(base_de_donnee).
+subject(C).
+subject(C++).
+subject(java).
+subject(programmation_logique_contrainte).
+subject(techno_web).
 
-matiere(connaissances_bdd).
-matiere(connaissances_projet_ia).
-matiere(connaissances_ia).
+%matiere opti%
+%
+subject(calcul_stochastique).
+subject(controle_optimal).
+subject(markov).
+subject(optimisation_combinatoire).
+subject(probabilite).
+subject(regression_non_lineaire).
+subject(signal_aleatoire).
+subject(signal_discret).
+subject(statistiques).
 
-matiere(math_analyse_donnees).
-matiere(math_compta).
-matiere(math_crypto).
-matiere(math_opti).
-matiere(math_archi_parallèle).
+%matiere huma%
+%
+subject(allemand).
+subject(anglais).
+subject(espagnol).
+subject(gestion).
+subject(sport).
+subject(theatre).
 
-matiere(logiciel_patrons).
-matiere(logiciel_projet_c).
-matiere(logiciel_c).
-matiere(logiciel_multimedia).
-matiere(logiciel_traitement_image).
-matiere(logiciel_reseau).
-matiere(logiciel_signal).
-matiere(logiciel_outils).
-matiere(logiciel_meta_heuristique).
+%matiere mnsn%
+%
+subject(analyse_fonctionnelle).
+subject(analyse_numerique).
+subject(b_splines).
+subject(calcul_parallele).
+subject(calcul_scientifique).
+subject(equation_hamilton_jacobi).
+subject(mnedp1).
+subject(mnedp2).
+subject(resolution_systeme_lineaire).
+
 
 %
 %%
@@ -778,7 +799,7 @@ seances('DS traitement du signal', logiciel_signal, le_callet, ds, silr, [
 
 seances('CM marketing', hes_marketing, moreau, cm, silr, [
     cm_marketing_silr_1
-]).
+]).Matiere
 
 seances('CM marketing', hes_marketing, oili, cm, silr, [
     cm_marketing_silr_2
@@ -1050,11 +1071,11 @@ seances('PROJET projet transversal', projet_transversal, prof_ptrans_silr, proje
 
 
 /**
- * seance(?Id, ?TypeCours, ?Matiere, ?Nom)
+ * seance(?Id, ?TypeCours, ?subject, ?Nom)
  *
  * @arg Id          Id de la séance
  * @arg TypeCours   Type de cours de la séance
- * @arg Matiere     Matiere à laquelle la séance appartient
+ * @arg subject     subject à laquelle la séance appartient
  * @arg Nom         Nom de la séance
 */
 :- dynamic seance/4.
