@@ -24,11 +24,11 @@
  * @arg S   Id de séance
  * @arg I   L'indice
  */
-indiceSession(S, 0) :- \+ followingSession(S, _), \+ followingSession(S, _, _, _), !.
-indiceSession(S, N) :-
+indexSession(S, 0) :- \+ followingSession(S, _), \+ followingSession(S, _, _, _), !.
+indexSession(S, N) :-
     (followingSession(S, S1); followingSession(S, S1, _, _)),
     !,
-    indiceSession(S1, N1),
+    indexSession(S1, N1),
     N is N1 + 1,
     !.
 
@@ -41,9 +41,10 @@ indiceSession(S, N) :-
  * @arg S1      Id de séance
  * @arg S2      Id de séance
  */
+
 beforeSession(R, S1, S2) :-
-    indiceSession(S1, N1),
-    indiceSession(S2, N2),
+    indexSession(S1, N1),
+    indexSession(S2, N2),
     N2 > N1 -> R = <; R = > .
 
 
@@ -52,6 +53,7 @@ beforeSession(R, S1, S2) :-
  *
  * @arg S
  */
+
 displaySession(S) :-
     Session(S, TypeCours, Mat, Nom),
     write('Séance:\t\t'),
@@ -66,6 +68,7 @@ displaySession(S) :-
  * @arg M
  * @arg H
  */
+
 displayMoment(J, M, H) :-
     plage(H, Start, End),
     write('Date:\t\t'),
@@ -77,28 +80,32 @@ displayMoment(J, M, H) :-
  *
  * @arg Gs   liste de groupes
  */
-displayGroupe([G]) :-
+
+displayGroup([G]) :-
     write(G),
     !.
-displayGroupe([G, G2|Gs]) :-
+displayGroup([G, G2|Gs]) :-
     write(G), write(', '),
-    displayGroupe([G2|Gs]).
+    displayGroup([G2|Gs]).
 
 /**
  * displayGroupes(+S)
  *
  * @arg S   Une séance
  */
-displayGroupes(S) :-
-    findall(G, groupeSession(G, S), Gs), % tous les groupes de la séance
+
+displayGroups(S) :-
+    findall(G, groupSession(G, S), Gs), % tous les groupes de la séance
     write('Groupes:\t'),
-    displayGroupe(Gs).
+    displayGroup(Gs).
 
 /**
  * displayProf(+Ps)
  *
  * @arg Ps   liste d'enseignants
  */
+
+
 displayProf([P]) :-
     write(P),
     !.
@@ -111,29 +118,33 @@ displayProf([P, P2|Ps]) :-
  *
  * @arg S   Une séance
  */
+
+
 displayProfs(S) :-
-    findall(P, profSession(P, S), Ps), % tous les profs de la séance
+    findall(P, profesorSession(P, S), Ps), % tous les profs de la séance
     write('Profs:\t\t'),
     displayProf(Ps).
 
 /**
- * displaySalle(+L)
+ * displayClassRoom(+L)
  *
  * @arg L Une salle
  */
-displaySalle(L) :-
-    salle(L, Nb),
+
+displayClassRoom(L) :-
+    ClassRoom(L, Nb),
     write('Salle:\t\t'), write(L), write('('), write(Nb), write(')').
 
 /**
- * displayPlanification(+Cs)
+ * displayOrganisation(+Cs)
  *
  * Affiche la planification dans l'ordre chronologique
  *
  * @arg Cs  Une liste de créneaux
  */
-displayPlanification([]) :- !.
-displayPlanification(Cs) :-
+
+displayOrganisation([]) :- !.
+displayOrganisation(Cs) :-
     date(J, M),
     plage(H, _, _),
     member(C, Cs),
@@ -141,9 +152,9 @@ displayPlanification(Cs) :-
     write('--------------------------------------------------------------'), nl,
     displaySession(S), nl,
     displayMoment(J, M, H), nl,
-    displayGroupes(S), nl,
+    displayGroups(S), nl,
     displayProfs(S), nl,
-    displaySalle(L), nl,
+    displayClassRoom(L), nl,
     delete(Cs, C, Cs2),
-    displayPlanification(Cs2),
+    displayOrganisation(Cs2),
     !.

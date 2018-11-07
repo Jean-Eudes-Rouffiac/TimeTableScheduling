@@ -1444,7 +1444,7 @@ Sessions('CM Sport', sport, dubois, cm, GM3, [
  * @arg Prof        name de lenseignant
  * @arg Session      Id de la séance
  */
-:- dynamic profSession/2.
+:- dynamic profesorSession/2.
 
 /**
  * followingSession(+Session_suivante, ?Session_suivie)
@@ -1456,78 +1456,16 @@ Sessions('CM Sport', sport, dubois, cm, GM3, [
  * @arg Session_suivante     Id de la séance qui following
  * @arg Session_suivie       Id de la séance suivit
  */
+
+
 :- dynamic followingSession/2.
-followingSession(td_bdd_id_1, cm_bdd_8).
-followingSession(tp_bdd_id_1, cm_bdd_8).
-followingSession(td_bdd_silr1_1, cm_bdd_8).
-followingSession(tp_bdd_silr1_1, cm_bdd_8).
-followingSession(td_bdd_silr2_1, cm_bdd_8).
-followingSession(tp_bdd_silr2_1, cm_bdd_8).
 
-followingSession(td_IA_silr2_1, cm_IA_6).
-followingSession(td_IA_silr1_1, cm_IA_6).
-followingSession(td_IA_id_1, cm_IA_6).
 
-followingSession(tp_project_ia_silr2_1, td_IA_silr2_3).
-followingSession(tp_project_ia_silr1_1, td_IA_silr1_3).
-followingSession(tp_project_ia_id_1, td_IA_id_3).
+followingSession(td_signal1_1_5, cm_signal1_5).
+followingSession(td_signal1_2_5, cm_signal1_5).
 
-followingSession(tp_multimedia_1, cm_multimedia_8).
-followingSession(tp_multimedia_1, cm_multimedia_4).
 
-followingSession(tp_c_id_1, cm_c_10).
-followingSession(tp_c_silr1_1, cm_c_10).
-followingSession(tp_c_silr2_1, cm_c_10).
 
-followingSession(cm_project_c_1, tp_c_id_10).
-followingSession(cm_project_c_1, tp_c_silr1_10).
-followingSession(cm_project_c_1, tp_c_silr2_10).
-
-followingSession(tp_outils_ingenierie_silr2_1, cm_outils_ingenierie_silr_2).
-followingSession(tp_outils_ingenierie_silr1_1, cm_outils_ingenierie_silr_2).
-
-followingSession(td_analyse_donnees_1, cm_analyse_donnees_7).
-followingSession(tp_analyse_donnees_1, td_analyse_donnees_3).
-
-followingSession(td_archi_parallèle_1, cm_archi_parallèle_2).
-
-followingSession(td_crypto_silr2_1, cm_crypto_6).
-followingSession(td_crypto_silr1_1, cm_crypto_6).
-followingSession(td_crypto_id_1, cm_crypto_6).
-
-followingSession(tp_reseaux_silr1_1, cm_reseaux_7).
-followingSession(tp_reseaux_silr2_1, cm_reseaux_7).
-
-followingSession(tp_traitement_image_silr2_1, cm_traitement_image_12).
-followingSession(tp_traitement_image_silr1_1, cm_traitement_image_12).
-
-followingSession(td_traitement_signal_silr1_1, cm_traitement_signal_6).
-followingSession(td_traitement_signal_silr2_1, cm_traitement_signal_6).
-followingSession(tp_traitement_signal_silr1_1, cm_traitement_signal_6).
-followingSession(tp_traitement_signal_silr2_1, cm_traitement_signal_6).
-
-followingSession(cm_marketing_id_2, cm_marketing_id_1).
-followingSession(cm_marketing_silr_2, cm_marketing_silr_1).
-followingSession(td_marketing_id_1, cm_marketing_id_2).
-followingSession(td_marketing_silr_1, cm_marketing_silr_2).
-
-followingSession(td_genie_logi_id_1, cm_genie_logi_6).
-followingSession(td_genie_logi_silr1_1, cm_genie_logi_6).
-followingSession(td_genie_logi_silr2_1, cm_genie_logi_6).
-followingSession(tp_genie_logi_id_1, cm_genie_logi_6).
-followingSession(tp_genie_logi_silr1_1, cm_genie_logi_6).
-followingSession(tp_genie_logi_silr2_1, cm_genie_logi_6).
-
-followingSession(td_patrons_id_1, cm_patrons_3).
-followingSession(td_patrons_silr1_1, cm_patrons_3).
-followingSession(td_patrons_silr2_1, cm_patrons_3).
-followingSession(tp_patrons_id_1, td_patrons_id_2).
-followingSession(tp_patrons_silr1_1, td_patrons_silr1_2).
-followingSession(tp_patrons_silr2_1, td_patrons_silr2_2).
-
-followingSession(cm_project_transversal_2, cm_project_transversal_1).
-followingSession(project_transversal_id_1, cm_project_transversal_2).
-followingSession(project_transversal_silr_1, cm_project_transversal_2).
 
 /**
  * followingSession(?Session_suivante, ?Session_suivie, ?tempsMin, ?tempsMax)
@@ -1537,60 +1475,20 @@ followingSession(project_transversal_silr_1, cm_project_transversal_2).
  * @arg tempsMin            namebre de days min avant la prochaine séance
  * @arg tempsMax            namebre de days max avant la prochaine séance
  */
-followingSession(ds_bdd, tp_bdd_id_6, 7, 12).
-followingSession(ds_bdd, tp_bdd_silr1_6, 7, 12).
-followingSession(ds_bdd, tp_bdd_silr2_6, 7, 12).
-
-followingSession(ds_ia, td_IA_id_3, 7, 12).
-followingSession(ds_ia, td_IA_silr1_3, 7, 12).
-followingSession(ds_ia, td_IA_silr2_3, 7, 12).
-
-followingSession(ds_multimedia, tp_multimedia_6, 7, 12).
-
-followingSession(ds_meta_heuristique, cm_meta_heuristique_7, 7, 12).
-
-followingSession(ds_c, tp_c_id_10, 7, 12).
-followingSession(ds_c, tp_c_silr2_10, 7, 12).
-followingSession(ds_c, tp_c_silr1_10, 7, 12).
-
-followingSession(ds_outils_ingenierie, tp_outils_ingenierie_silr2_6, 7, 12).
-followingSession(ds_outils_ingenierie, tp_outils_ingenierie_silr1_6, 7, 12).
-
-followingSession(ds_analyse_donnees, tp_analyse_donnees_6, 7, 12).
-
-followingSession(ds_archi_parallèle, td_archi_parallèle_2, 7, 12).
-
-followingSession(ds_compta, td_compta_7, 7, 12).
-
-followingSession(ds_crypto, td_crypto_id_4, 7, 12).
-followingSession(ds_crypto, td_crypto_silr1_4, 7, 12).
-followingSession(ds_crypto, td_crypto_silr2_4, 7, 12).
-
-followingSession(ds_reseaux, tp_reseaux_silr1_8, 7, 12).
-followingSession(ds_reseaux, tp_reseaux_silr2_8, 7, 12).
-
-followingSession(ds_traitement_image, tp_traitement_image_silr1_7, 7, 12).
-followingSession(ds_traitement_image, tp_traitement_image_silr2_7, 7, 12).
-
-followingSession(ds_traitement_signal, tp_traitement_signal_silr1_6, 7, 12).
-followingSession(ds_traitement_signal, tp_traitement_signal_silr2_6, 7, 12).
-
-followingSession(ds_marketing, td_marketing_id_7, 7, 12).
-followingSession(ds_marketing, td_marketing_silr_7, 7, 12).
-
-followingSession(ds_genie_logi, td_genie_logi_id_3, 5, 20).
-followingSession(ds_genie_logi, td_genie_logi_silr1_3, 5, 20).
-followingSession(ds_genie_logi, td_genie_logi_silr2_3, 5, 20).
-followingSession(ds_genie_logi, tp_genie_logi_id_1, 5, 20).
-followingSession(ds_genie_logi, tp_genie_logi_silr1_1, 5, 20).
-followingSession(ds_genie_logi, tp_genie_logi_silr2_1, 5, 20).
-
-followingSession(ds_patrons, tp_patrons_id_2, 7, 12).
-followingSession(ds_patrons, tp_patrons_silr1_2, 7, 12).
-followingSession(ds_patrons, tp_patrons_silr2_2, 7, 12).
 
 
-followingSession(cm_project_c_2, cm_project_c_1, 7, 12).
+
+followingSession(ds_ananum1, td_ananum1_2_5, 5, 15).
+followingSession(ds_ananum2, td_ananum2_2_5, 5, 15).
+followingSession(ds_mesure, td_mesure_2_5, 5, 15).
+followingSession(ds_fortran, td_fortran_2_5, 5, 15).
+followingSession(ds_proba, td_proba_2_5, 5, 15).
+followingSession(ds_opti_discrete, td_opti_discrete_2_5, 5, 15).
+followingSession(ds_signal1, td_signal1_2_5, 5, 15).
+followingSession(ds_signal2, td_signal2_2_5, 5, 15).
+followingSession(ds_C, td_C_2_5, 5, 15).
+
+
 
 % Écriture dynamique de la base de donnée -------------------------------------
 
@@ -1602,13 +1500,15 @@ followingSession(cm_project_c_2, cm_project_c_1, 7, 12).
  * @arg P       Un enseignant ou une liste d'enseignants
  * @arg Session  Une séance
  */
-computeProfSession(P, Session) :-
+
+
+computeProfesorSession(P, Session) :-
     \+ is_list(P),
-    assertz(profSession(P, Session)).
-computeProfSession([], _).
-computeProfSession([P|Profs], Session) :- % si plusieurs profs par séance
-    computeProfSession(P, Session),
-    computeProfSession(Profs, Session).
+    assertz(profesorSession(P, Session)).
+computeProfesorSession([], _).
+computeProfesorSession([P|Profesors], Session) :- % si plusieurs profs par séance
+    computeProfesorSession(P, Session),
+    computeProfesorSession(Profesors, Session).
 
 /**
  * computeSession(+name, +Mat, +Profs, +Type, +group, +S)
@@ -1620,19 +1520,19 @@ computeProfSession([P|Profs], Session) :- % si plusieurs profs par séance
  * @arg group
  * @arg Ss      Listes d'id de séances
  */
-computeSession(name, Mat, Profs, Type, group, [X]) :-
-    computeProfSession(Profs, X),
+computeSession(name, Mat, Profesors, Type, group, [X]) :-
+    computeProfesorSession(Profesors, X),
     assertz(groupSession(group, X)),
     assertz(Session(X, Type, Mat, name)).
-computeSession(name, Mat, Profs, Type, group, [X, Y|S]) :-
+computeSession(name, Mat, Profesors, Type, group, [X, Y|S]) :-
     (followingSession(Y, X, _, _); assertz(followingSession(Y, X))),
-    computeSession(name, Mat, Profs, Type, group, [X]),
-    computeSession(name, Mat, Profs, Type, group, [Y|S]).
+    computeSession(name, Mat, Profesors, Type, group, [X]),
+    computeSession(name, Mat, Profesorss, Type, group, [Y|S]).
 
 % On génère la base de donnée dynamique des séances et des prédicats en lien
 :- forall(
-    Sessions(name, Mat, Prof, Type, group, Ids),
+    Sessions(name, Mat, Profesor, Type, group, Ids),
     (
-        computeSession(name, Mat, Prof, Type, group, Ids)
+        computeSession(name, Mat, Profesor, Type, group, Ids)
     )
 ).
