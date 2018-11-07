@@ -64,47 +64,95 @@ incompatibles(X, Y) :- incomp(Y, X), !.
  * @arg matiere     Nom de la matière
  **/
 
-%matiere info%
+%matiere GM3%
 %
-subject(base_de_donnee).
-subject(C).
-subject(C++).
-subject(java).
-subject(programmation_logique_contrainte).
-subject(techno_web).
 
-%matiere opti%
-%
-subject(calcul_stochastique).
-subject(controle_optimal).
-subject(markov).
-subject(optimisation_combinatoire).
+%s5%
+subject(analyse_numerique_1).
+subject(fortran).
+subject(mesure_distribution).
+
 subject(probabilite).
-subject(regression_non_lineaire).
-subject(signal_aleatoire).
-subject(signal_discret).
-subject(statistiques).
+subject(signal_1).
+subject(optimisation_discrete).
 
-%matiere huma%
-%
-subject(allemand).
-subject(anglais).
-subject(espagnol).
-subject(gestion).
-subject(sport).
-subject(theatre).
+subject(C).
+subject(algo).
 
-%matiere mnsn%
-%
+%s6%
+subject(analyse_numerique_2).
 subject(analyse_fonctionnelle).
-subject(analyse_numerique).
-subject(b_splines).
-subject(calcul_parallele).
-subject(calcul_scientifique).
-subject(equation_hamilton_jacobi).
+subject(algo_num_arith).
+
+subject(statistiques1).
+subject(analyse_donnees).
+subject(equa_diff).
+
+subject(langage_oriente_objet).
+subject(syst_exploitation).
+
+
+
+
+%matiere GM4%
+%
+
+%s7%
 subject(mnedp1).
+subject(edp).
+subject(opti_lineaire).
+
+
+subject(automatique).
+subject(markov).
+subject(statistiques2).
+
+subject(java).
+subject(algo_structure_donnees).
+
+%s9%
 subject(mnedp2).
-subject(resolution_systeme_lineaire).
+subject(b_spline).
+
+subject(signal2).
+subject(opti_combinatoire).
+
+subject(technoweb).
+subject(c++).
+subject(base_de_donnee).
+
+
+
+
+%matiere GM5%
+%
+
+%s10%
+subject(regression_non_lineaire).
+subject(had).
+subject(hamilton_jacobi).
+subject(auto_non_lineaire).
+subject(calcul_parallelle).
+subject(programmation_logique_contrainte).
+subject(opti_grande_dimension).
+
+%s11%
+subject(meth_iterative).
+subject(machine_learning).
+subject(traitement_image).
+subject(calcul_sto).
+subject(realite_virtuelle).
+subject(finance).
+subject(IA).
+
+
+
+
+%huma
+%
+subject(anglais).
+subject(gsf).
+subject(sport).
 
 
 %
@@ -243,8 +291,8 @@ typeCours(ds).
  * @arg Types       List de types de cours
  **/
 
-ClassRoom(Ma-h-R1-01, 60, [cm, ds]).
-ClassRoom(Ma-h-R1-03, 60, [cm, ds]).
+ClassRoom(Ma-H-R1-01, 60, [cm, ds]).
+ClassRoom(Ma-H-R1-03, 60, [cm, ds]).
 ClassRoom(Ma-B-RC-17, 50, [td, cm]).
 ClassRoom(Ma-B-RC-01, 50, [td, cm]).
 ClassRoom(Ma-G-RC-01-02-03, 150, [cm, ds]).
@@ -257,31 +305,22 @@ ClassRoom(Ma-G-RC-05, 30, [td]).
 ClassRoom(Ma-G-RC-07, 30, [td]).
 ClassRoom(Ma-C-RC-01, 65, [cm, ds]).
 
+ClassRoom(DU-RJ-01, 30, [td]).
+ClassRoom(DU-RJ-03, 30, [td]).
+ClassRoom(DU-RJ-05, 30, [td]).
+ClassRoom(DU-RJ-07, 30, [td]).
+ClassRoom(DU-RJ-09, 30, [td]).
+ClassRoom(DU-RJ-11, 30, [td]).
+ClassRoom(DU-RJ-13, 30, [td]).
+ClassRoom(DU-RJ-15, 30, [td]).
+ClassRoom(DU-RJ-02, 100, [cm]).
+ClassRoom(DU-RJ-06, 100, [cm]).
+ClassRoom(DU-RJ-12, 100, [cm]).
 
+ClassRoom(BO-R2-03, 35, [tp]).
+ClassRoom(BO-R2-05, 35, [tp]).
+ClassRoom(BO-R2-07, 35, [tp]).
 
-
-
-
-
-ClassRoom(a2, 200, [cm, ds]).
-ClassRoom(b001, 26, [tp, mp, ds_machine]).
-ClassRoom(c001, 26, [tp, mp, ds_machine]).
-ClassRoom(c002, 26, [tp, mp, ds_machine]).
-ClassRoom(c008, 50, [cm, td, ds]).
-ClassRoom(c009, 26, [tp, tp_para, mp, ds_machine]).
-ClassRoom(c007, 10, [tp_rez]).
-ClassRoom(e101, 24, [cm, td]).
-ClassRoom(e102, 24, [cm, td]).
-ClassRoom(e103, 24, [td]).
-ClassRoom(e104, 24, [td]).
-ClassRoom(e202, 50, [cm, td]).
-ClassRoom(iht_aronax, 100, [cm, td]).
-ClassRoom(iht_nemo, 50, [td]).
-ClassRoom(isitem_TD1, 30, [cm, td]).
-ClassRoom(isitem_TD2, 30, [cm, td]).
-ClassRoom(isitem_exam, 100, [ds]).
-ClassRoom(maison_project, 1000, [project]).
-ClassRoom(maison_project_2, 1000, [project]).
 
 /**
  * ClassRoom(?name, ?Effectif)
@@ -289,7 +328,9 @@ ClassRoom(maison_project_2, 1000, [project]).
  * @arg name         name de la ClassRoom
  * @arg Effectif    namebre de place disponibles
  **/
+
 ClassRoom(S, N) :- ClassRoom(S, N, _). % TODO add tests
+
 
 /**
  * accueille(+ClassRoom, ?TypeCours)
@@ -297,6 +338,7 @@ ClassRoom(S, N) :- ClassRoom(S, N, _). % TODO add tests
  * @arg ClassRoom       name d'une ClassRoom
  * @arg TypeCours   Type de cours que la ClassRoom accueille
  */
+
 accueille(S, T) :-
     ClassRoom(S, _, L),
     member(T, L).
