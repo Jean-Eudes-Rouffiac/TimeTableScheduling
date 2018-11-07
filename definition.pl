@@ -829,22 +829,22 @@ Sessions('DS markov', markov, fourati, ds, GM4, [
 
 % STATISTIQUES 2 %
 
-Sessions('CM statistiques2', statistiques2, godichon , cm, GM4, [
+Sessions('CM statistiques 2', statistiques2, godichon , cm, GM4, [
     cm_statistiques2_1, cm_statistiques2_2, cm_statistiques2_3, cm_statistiques2_4,
     cm_statistiques2_5
 ]).
 
-Sessions('TD statistiques2 groupe1', statistiques2, godichon, td, GM4_1, [
+Sessions('TD statistiques 2 groupe1', statistiques2, godichon, td, GM4_1, [
     td_statistiques2_1_1, td_statistiques2_1_2, td_statistiques2_1_3, td_statistiques2_1_4,
     td_statistiques2_1_5
 ]).
 
-Sessions('TD statistiques2 groupe2', statistiques2, godichon, td, GM4_2, [
+Sessions('TD statistiques 2 groupe2', statistiques2, godichon, td, GM4_2, [
     td_statistiques2_2_1, td_statistiques2_2_2, td_statistiques2_2_3, td_statistiques2_2_4,
     td_statistiques2_2_5
 ]).
 
-Sessions('DS statistiques2', statistiques2, godichon, ds, GM4, [
+Sessions('DS statistiques 2', statistiques2, godichon, ds, GM4, [
     ds_statistiques2
 ]).
 
@@ -872,23 +872,186 @@ Sessions('DS java', java, vercouter, ds, GM4, [
 
 % ALGORITHME STRUCTURE DONNEES %
 
-Sessions('CM algo struc donne', algo_structure_donne, abdulrab , cm, GM4, [
+Sessions('CM algo structure de données', algo_structure_donne, abdulrab , cm, GM4, [
     cm_algo_structure_donne_1, cm_algo_structure_donne_2, cm_algo_structure_donne_3, cm_algo_structure_donne_4,
     cm_algo_structure_donne_5
 ]).
 
-Sessions('TD algo_structure_donne groupe1', algo_structure_donne, abdulrab, td, GM4_1, [
+Sessions('TD algo structure de données groupe 1', algo_structure_donne, abdulrab, td, GM4_1, [
     td_algo_structure_donne_1_1, td_algo_structure_donne_1_2, td_algo_structure_donne_1_3, td_algo_structure_donne_1_4,
     td_algo_structure_donne_1_5
 ]).
 
-Sessions('TD algo_structure_donne groupe2', algo_structure_donne, abdulrab, td, GM4_2, [
+Sessions('TD algo structure de données groupe 2', algo_structure_donne, abdulrab, td, GM4_2, [
     td_algo_structure_donne_2_1, td_algo_structure_donne_2_2, td_algo_structure_donne_2_3, td_algo_structure_donne_2_4,
     td_algo_structure_donne_2_5
 ]).
 
-Sessions('DS algo_structure_donne', algo_structure_donne, abdulrab, ds, GM4, [
+Sessions('DS algo structure de données', algo_structure_donne, abdulrab, ds, GM4, [
     ds_algo_structure_donne
+]).
+
+
+
+%s9%
+
+% MNEDP2 %
+
+Sessions('CM mnedp2', mnedp2, gout , cm, GM4, [
+    cm_mnedp2_1, cm_mnedp2_2, cm_mnedp2_3, cm_mnedp2_4,
+    cm_mnedp2_5
+]).
+
+Sessions('TD mnedp2 groupe1', mnedp2, gout, td, GM4_1, [
+    td_mnedp2_1_1, td_mnedp2_1_2, td_mnedp2_1_3, td_mnedp2_1_4,
+    td_mnedp2_1_5
+]).
+
+Sessions('TD mnedp2 groupe2', mnedp2, gout, td, GM4_2, [
+    td_mnedp2_2_1, td_mnedp2_2_2, td_mnedp2_2_3, td_mnedp2_2_4,
+    td_mnedp2_2_5
+]).
+
+Sessions('DS mnedp2', mnedp2, gout, ds, GM4, [
+    ds_mnedp2
+]).
+
+
+% B SPLINES %
+
+Sessions('CM b_spline', b_spline, le_guyader , cm, GM4, [
+    cm_b_spline_1, cm_b_spline_2, cm_b_spline_3, cm_b_spline_4,
+    cm_b_spline_5
+]).
+
+Sessions('TD b_spline groupe1', b_spline, le_guyader, td, GM4_1, [
+    td_b_spline_1_1, td_b_spline_1_2, td_b_spline_1_3, td_b_spline_1_4,
+    td_b_spline_1_5
+]).
+
+Sessions('TD b_spline groupe2', b_spline, le_guyader, td, GM4_2, [
+    td_b_spline_2_1, td_b_spline_2_2, td_b_spline_2_3
+]).
+
+Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_1, [
+    tp_b_spline_1_1, tp_b_spline_1_2
+]).
+
+Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_2, [
+    tp_b_spline_2_1, tp_b_spline_2_2
+]).
+
+Sessions('DS b_spline', b_spline, le_guyader, ds, GM4, [
+    ds_b_spline
+]).
+
+
+% SIGNAL 2 %
+
+Sessions('CM signal2', signal2, fortier , cm, GM4, [
+    cm_signal2_1, cm_signal2_2, cm_signal2_3, cm_signal2_4,
+    cm_signal2_5
+]).
+
+Sessions('TD signal2 groupe1', signal2, fortier, td, GM4_1, [
+    td_signal2_1_1, td_signal2_1_2, td_signal2_1_3, td_signal2_1_4,
+    td_signal2_1_5
+]).
+
+Sessions('TD signal2 groupe2', signal2, fortier, td, GM4_2, [
+    td_signal2_2_1, td_signal2_2_2, td_signal2_2_3, td_signal2_2_4,
+    td_signal2_2_5
+]).
+
+Sessions('DS signal2', signal2, fortier, ds, GM4, [
+    ds_signal2
+]).
+
+
+% OTPIMISATION COMBINATOIRE %
+
+Sessions('CM opti combinatoire', opti_combinatoire, knippel , cm, GM4, [
+    cm_opti_combinatoire_1, cm_opti_combinatoire_2, cm_opti_combinatoire_3, cm_opti_combinatoire_4,
+    cm_opti_combinatoire_5
+]).
+
+Sessions('TD opti combinatoire groupe1', opti_combinatoire, knippel, td, GM4_1, [
+    td_opti_combinatoire_1_1, td_opti_combinatoire_1_2, td_opti_combinatoire_1_3, td_opti_combinatoire_1_4,
+    td_opti_combinatoire_1_5
+]).
+
+Sessions('TD opti combinatoire groupe2', opti_combinatoire, knippel, td, GM4_2, [
+    td_opti_combinatoire_2_1, td_opti_combinatoire_2_2, td_opti_combinatoire_2_3, td_opti_combinatoire_2_4,
+    td_opti_combinatoire_2_5
+]).
+
+Sessions('DS opti combinatoire', opti_combinatoire, knippel, ds, GM4, [
+    ds_opti_combinatoire
+]).
+
+
+% TECHNO WEB %
+
+Sessions('CM technoweb', technoweb, zanni_merk , cm, GM4, [
+    cm_technoweb_1, cm_technoweb_2, cm_technoweb_3, cm_technoweb_4,
+    cm_technoweb_5
+]).
+
+Sessions('TP technoweb groupe1', technoweb, zanni_merk, tp, GM4_1, [
+    tp_technoweb_1_1, tp_technoweb_1_2, tp_technoweb_1_3, tp_technoweb_1_4,
+    tp_technoweb_1_5
+]).
+
+Sessions('TP technoweb groupe2', technoweb, zanni_merk, tp, GM4_2, [
+    tp_technoweb_2_1, tp_technoweb_2_2, tp_technoweb_2_3, tp_technoweb_2_4,
+    tp_technoweb_2_5
+]).
+
+Sessions('DS techno web', technoweb, zanni_merk, ds, GM4, [
+    ds_technoweb
+]).
+
+% C++ %
+
+Sessions('CM c++', c++, kotowicz , cm, GM4, [
+    cm_c++_1, cm_c++_2, cm_c++_3, cm_c++_4,
+    cm_c++_5
+]).
+
+Sessions('TP c++ groupe1', c++, kotowicz, td, GM4_1, [
+    tp_c++_1_1, tp_c++_1_2, tp_c++_1_3, tp_c++_1_4,
+    tp_c++_1_5
+]).
+
+Sessions('TP c++ groupe2', c++, kotowicz, td, GM4_2, [
+    tp_c++_2_1, tp_c++_2_2, tp_c++_2_3, tp_c++_2_4,
+    tp_c++_2_5
+]).
+
+Sessions('DS c++', c++, kotowicz, ds, GM4, [
+    ds_c++
+]).
+
+
+% BASE DONNEES %
+
+Sessions('CM base de donnees', base_de_donnee, chaignaud , cm, GM4, [
+    cm_base_de_donnee_1, cm_base_de_donnee_2, cm_base_de_donnee_3, cm_base_de_donnee_4,
+    cm_base_de_donnee_5
+]).
+
+Sessions('TD base de donnees groupe1', base_de_donnee, chaignaud, td, GM4_1, [
+    td_base_de_donnee_1_1, td_base_de_donnee_1_2, td_base_de_donnee_1_3, td_base_de_donnee_1_4,
+    td_base_de_donnee_1_5
+]).
+
+Sessions('TD base de donnees groupe2', base_de_donnee, chaignaud, td, GM4_2, [
+    td_base_de_donnee_2_1, td_base_de_donnee_2_2, td_base_de_donnee_2_3, td_base_de_donnee_2_4,
+    td_base_de_donnee_2_5
+]).
+
+Sessions('DS base de donnees', base_de_donnee, chaignaud, ds, GM4, [
+    ds_base_de_donnee
 ]).
 
 
