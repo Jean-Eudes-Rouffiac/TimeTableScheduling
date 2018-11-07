@@ -156,7 +156,7 @@ professor(zanni_merk).
 %                                   Plages                                     %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Selon les conseils de M. Le Capitaine, nous avons modifié les plages horaires
+% Plage horaire
 
 /**
  * plage(?Id, -Start, -End)
@@ -173,46 +173,46 @@ plage(5, '15h45', '17h15').
 plage(6, '17h30', '19h00').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                    Jour                                      %
+%                                    day                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /**
- * mois(?IdMois).
+ * month(?Idmonth).
  *
- * @arg IdMois  Id du mois
+ * @arg Idmonth  Id month
  */
-mois(1).
-mois(2).
-mois(3).
-mois(4).
+month(1).
+month(2).
+month(3).
+month(4).
 
 /**
-* joursParMois(-Nb).
+* daysPermonth(-Nb).
 *
-* @arg Nb  Nombre de jours par mois
+* @arg Nb  Number of days per month
 */
-joursParMois(20).
+daysPermonth(20).
 
 /**
-* date(?IdJour, ?IdMois)
+* date(?IdDay, ?Idmonth)
 *
-* @arg IdJour  Id du jour
-* @arg IdMois  Id du mois
+* @arg IdDay  Id day
+* @arg Idmonth  Id month
 */
 date(J, M) :-
-    mois(M),
-    joursParMois(Max),
+    month(M),
+    daysPermonth(Max),
     between(1, Max, J).
 
 /**
  * dateBefore(+J1, +M1, +J2, +M2)
  *
- * Test si date 1 < date 2
- * @arg J1  Jour date 1
+ * Test if date 1 < date 2
+ * @arg J1  day date 1
  *
- * @arg M1  Mois date 1
- * @arg J2  Jour date 2
- * @arg M2  Mois date 2
+ * @arg M1  month date 1
+ * @arg J2  day date 2
+ * @arg M2  month date 2
  */
 dateBefore( _, M1,  _, M2) :- M1 < M2, !.
 dateBefore(J1, M1, J2, M2) :- M1 = M2, J1 < J2, !.
@@ -227,64 +227,78 @@ dateBefore(J1, M1, J2, M2) :- M1 = M2, J1 < J2, !.
  * @arg Type  Un type de cours
  */
 typeCours(cm).
-typeCours(projet).
 typeCours(td).
 typeCours(tp).
 typeCours(ds).
-typeCours(mp).
-typeCours(tp_para).
-typeCours(tp_rez).
-typeCours(ds_machine).
-typeCours(anglais).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                   Salle                                      %
+%                                   ClassRoom                                      %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /**
- * salle(?Nom, ?Effectif, ?Types)
+ * ClassRoom(?name, ?Effectif, ?Types)
  *
- * @arg Nom         Nom de la salle
- * @arg Effectif    Nombre de place disponibles
- * @arg Types       Listes de types de cours
+ * @arg name         name of the ClassRoom
+ * @arg Effectif    nomber of available seat
+ * @arg Types       List de types de cours
  **/
-salle(a1, 300, [cm, ds]).
-salle(a2, 200, [cm, ds]).
-salle(b001, 26, [tp, mp, ds_machine]).
-salle(c001, 26, [tp, mp, ds_machine]).
-salle(c002, 26, [tp, mp, ds_machine]).
-salle(c008, 50, [cm, td, ds]).
-salle(c009, 26, [tp, tp_para, mp, ds_machine]).
-salle(c007, 10, [tp_rez]).
-salle(e101, 24, [cm, td]).
-salle(e102, 24, [cm, td]).
-salle(e103, 24, [td]).
-salle(e104, 24, [td]).
-salle(e202, 50, [cm, td]).
-salle(iht_aronax, 100, [cm, td]).
-salle(iht_nemo, 50, [td]).
-salle(isitem_TD1, 30, [cm, td]).
-salle(isitem_TD2, 30, [cm, td]).
-salle(isitem_exam, 100, [ds]).
-salle(maison_projet, 1000, [projet]).
-salle(maison_projet_2, 1000, [projet]).
+
+ClassRoom(Ma-h-R1-01, 60, [cm, ds]).
+ClassRoom(Ma-h-R1-03, 60, [cm, ds]).
+ClassRoom(Ma-B-RC-17, 50, [td, cm]).
+ClassRoom(Ma-B-RC-01, 50, [td, cm]).
+ClassRoom(Ma-G-RC-01-02-03, 150, [cm, ds]).
+ClassRoom(Ma-I-R1-06, 35, [td]).
+ClassRoom(Ma-I-R1-03, 35, [td]).
+ClassRoom(Ma-I-R1-08, 35, [td]).
+ClassRoom(Ma-E-R1-06, 60, [td, cm]).
+ClassRoom(Ma-E-R1-01, 60, [td, cm]).
+ClassRoom(Ma-G-RC-05, 30, [td]).
+ClassRoom(Ma-G-RC-07, 30, [td]).
+ClassRoom(Ma-C-RC-01, 65, [cm, ds]).
+
+
+
+
+
+
+
+ClassRoom(a2, 200, [cm, ds]).
+ClassRoom(b001, 26, [tp, mp, ds_machine]).
+ClassRoom(c001, 26, [tp, mp, ds_machine]).
+ClassRoom(c002, 26, [tp, mp, ds_machine]).
+ClassRoom(c008, 50, [cm, td, ds]).
+ClassRoom(c009, 26, [tp, tp_para, mp, ds_machine]).
+ClassRoom(c007, 10, [tp_rez]).
+ClassRoom(e101, 24, [cm, td]).
+ClassRoom(e102, 24, [cm, td]).
+ClassRoom(e103, 24, [td]).
+ClassRoom(e104, 24, [td]).
+ClassRoom(e202, 50, [cm, td]).
+ClassRoom(iht_aronax, 100, [cm, td]).
+ClassRoom(iht_nemo, 50, [td]).
+ClassRoom(isitem_TD1, 30, [cm, td]).
+ClassRoom(isitem_TD2, 30, [cm, td]).
+ClassRoom(isitem_exam, 100, [ds]).
+ClassRoom(maison_project, 1000, [project]).
+ClassRoom(maison_project_2, 1000, [project]).
 
 /**
- * salle(?Nom, ?Effectif)
+ * ClassRoom(?name, ?Effectif)
  *
- * @arg Nom         Nom de la salle
- * @arg Effectif    Nombre de place disponibles
+ * @arg name         name de la ClassRoom
+ * @arg Effectif    namebre de place disponibles
  **/
-salle(S, N) :- salle(S, N, _). % TODO add tests
+ClassRoom(S, N) :- ClassRoom(S, N, _). % TODO add tests
 
 /**
- * accueille(+Salle, ?TypeCours)
+ * accueille(+ClassRoom, ?TypeCours)
  *
- * @arg Salle       Nom d'une salle
- * @arg TypeCours   Type de cours que la salle accueille
+ * @arg ClassRoom       name d'une ClassRoom
+ * @arg TypeCours   Type de cours que la ClassRoom accueille
  */
 accueille(S, T) :-
-    salle(S, _, L),
+    ClassRoom(S, _, L),
     member(T, L).
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -292,15 +306,15 @@ accueille(S, T) :-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /*
- * seances(?Nom, ?Mat, ?Prof, ?Type, ?Groupe, ?Ids).
+ * seances(?name, ?Mat, ?Prof, ?Type, ?group, ?Ids).
  *
  * Définition de plusieurs séances à la volée
  *
- * @arg Nom     Nom des séances
+ * @arg name     name des séances
  * @arg Mat     Id Matière
  * @arg Prof    Id Prof
  * @arg Type    Type de cours
- * @arg Groupe  Id Groupe
+ * @arg group  Id group
  * @arg Ids     Liste d'atomes servant d'ids pour ces séances
  */
 
@@ -369,31 +383,31 @@ seances('DS BDD', connaissances_bdd, raschia, ds, info, [
     ds_bdd
 ]).
 
-seances('TP mini projet IA', connaissances_projet_ia, lecapitaine, tp, id, [
-    tp_projet_ia_id_1,
-    tp_projet_ia_id_2,
-    tp_projet_ia_id_3,
-    tp_projet_ia_id_4,
-    tp_projet_ia_id_5,
-    tp_projet_ia_id_6
+seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, id, [
+    tp_project_ia_id_1,
+    tp_project_ia_id_2,
+    tp_project_ia_id_3,
+    tp_project_ia_id_4,
+    tp_project_ia_id_5,
+    tp_project_ia_id_6
 ]).
 
-seances('TP mini projet IA', connaissances_projet_ia, lecapitaine, tp, silr1, [
-    tp_projet_ia_silr1_1,
-    tp_projet_ia_silr1_2,
-    tp_projet_ia_silr1_3,
-    tp_projet_ia_silr1_4,
-    tp_projet_ia_silr1_5,
-    tp_projet_ia_silr1_6
+seances('TP mini project IA', connaissances_project_ia, lecapitaine, tp, silr1, [
+    tp_project_ia_silr1_1,
+    tp_project_ia_silr1_2,
+    tp_project_ia_silr1_3,
+    tp_project_ia_silr1_4,
+    tp_project_ia_silr1_5,
+    tp_project_ia_silr1_6
 ]).
 
-seances('TP mini projet IA', connaissances_projet_ia, raschia, tp, silr2, [
-    tp_projet_ia_silr2_1,
-    tp_projet_ia_silr2_2,
-    tp_projet_ia_silr2_3,
-    tp_projet_ia_silr2_4,
-    tp_projet_ia_silr2_5,
-    tp_projet_ia_silr2_6
+seances('TP mini project IA', connaissances_project_ia, raschia, tp, silr2, [
+    tp_project_ia_silr2_1,
+    tp_project_ia_silr2_2,
+    tp_project_ia_silr2_3,
+    tp_project_ia_silr2_4,
+    tp_project_ia_silr2_5,
+    tp_project_ia_silr2_6
 ]).
 
 seances('CM IA', connaissances_ia, martinez, cm, info, [
@@ -530,9 +544,9 @@ seances('DS C++', logiciel_c, picarougne, ds, info, [
     ds_c
 ]).
 
-seances('CM Mini-Projet C++', logiciel_projet_c, picarougne, cm, info, [
-    cm_projet_c_1,
-    cm_projet_c_2
+seances('CM Mini-project C++', logiciel_project_c, picarougne, cm, info, [
+    cm_project_c_1,
+    cm_project_c_2
 ]).
 
 seances('CM outils ingénierie logiciel', logiciel_outils, cohen, cm, silr, [
@@ -899,53 +913,53 @@ seances('TD anglais', hes_anglais, prof_anglais4, td, anglais_D, [
 ]).
 
 /*
- * Stages et Projets
+ * Stages et projects
  * Info
  */
 
-seances('CM génie logiciel gestion projets', projet_genie_logiciel, marcus, cm, info, [
+seances('CM génie logiciel gestion projects', project_genie_logiciel, marcus, cm, info, [
     cm_genie_logi_1,
     cm_genie_logi_2,
     cm_genie_logi_3
 ]).
 
-seances('CM génie logiciel gestion projets', projet_genie_logiciel, prie, cm, info, [
+seances('CM génie logiciel gestion projects', project_genie_logiciel, prie, cm, info, [
     cm_genie_logi_4,
     cm_genie_logi_5,
     cm_genie_logi_6
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, marcus, td, id, [
+seances('TD génie logiciel gestion projects', project_genie_logiciel, marcus, td, id, [
     td_genie_logi_id_1,
     td_genie_logi_id_2,
     td_genie_logi_id_3
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, nachouki, td, silr1, [
+seances('TD génie logiciel gestion projects', project_genie_logiciel, nachouki, td, silr1, [
     td_genie_logi_silr1_1,
     td_genie_logi_silr1_2,
     td_genie_logi_silr1_3
 ]).
 
-seances('TD génie logiciel gestion projets', projet_genie_logiciel, prie, td, silr2, [
+seances('TD génie logiciel gestion projects', project_genie_logiciel, prie, td, silr2, [
     td_genie_logi_silr2_1,
     td_genie_logi_silr2_2,
     td_genie_logi_silr2_3
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, id, [
+seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, id, [
     tp_genie_logi_id_1
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, silr1, [
+seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr1, [
     tp_genie_logi_silr1_1
 ]).
 
-seances('TP génie logiciel gestion projets', projet_genie_logiciel, marcus, tp, silr2, [
+seances('TP génie logiciel gestion projects', project_genie_logiciel, marcus, tp, silr2, [
     tp_genie_logi_silr2_1
 ]).
 
-seances('DS génie logiciel gestion projets', projet_genie_logiciel, [marcus, prie], ds, info, [
+seances('DS génie logiciel gestion projects', project_genie_logiciel, [marcus, prie], ds, info, [
     ds_genie_logi
 ]).
 
@@ -989,113 +1003,121 @@ seances('DS patrons conception', logiciel_patrons, pigeau, ds, info, [
     ds_patrons
 ]).
 
-seances('CM projet transversal', projet_transversal, jpeg, cm, info, [
-    cm_projet_transversal_1
+seances('CM project transversal', project_transversal, jpeg, cm, info, [
+    cm_project_transversal_1
 ]).
 
-seances('CM projet transversal', projet_transversal, marcus, cm, info, [
-    cm_projet_transversal_2
+seances('CM project transversal', project_transversal, marcus, cm, info, [
+    cm_project_transversal_2
 ]).
 
-seances('PROJET projet transversal', projet_transversal, prof_ptrans_id, projet, id, [
-    projet_transversal_id_1,
-    projet_transversal_id_2,
-    projet_transversal_id_3,
-    projet_transversal_id_4,
-    projet_transversal_id_5,
-    projet_transversal_id_6,
-    projet_transversal_id_7,
-    projet_transversal_id_8,
-    projet_transversal_id_9,
-    projet_transversal_id_10,
-    projet_transversal_id_11,
-    projet_transversal_id_12,
-    projet_transversal_id_13,
-    projet_transversal_id_14,
-    projet_transversal_id_15,
-    projet_transversal_id_16,
-    projet_transversal_id_17,
-    projet_transversal_id_18,
-    projet_transversal_id_19,
-    projet_transversal_id_20,
-    projet_transversal_id_21,
-    projet_transversal_id_22,
-    projet_transversal_id_23,
-    projet_transversal_id_24,
-    projet_transversal_id_25,
-    projet_transversal_id_26,
-    projet_transversal_id_27,
-    projet_transversal_id_28,
-    projet_transversal_id_29,
-    projet_transversal_id_30,
-    projet_transversal_id_31,
-    projet_transversal_id_32,
-    projet_transversal_id_33
+seances('project project transversal', project_transversal, prof_ptrans_id, project, id, [
+    project_transversal_id_1,
+    project_transversal_id_2,
+    project_transversal_id_3,
+    project_transversal_id_4,
+    project_transversal_id_5,
+    project_transversal_id_6,
+    project_transversal_id_7,
+    project_transversal_id_8,
+    project_transversal_id_9,
+    project_transversal_id_10,
+    project_transversal_id_11,
+    project_transversal_id_12,
+    project_transversal_id_13,
+    project_transversal_id_14,
+    project_transversal_id_15,
+    project_transversal_id_16,
+    project_transversal_id_17,
+    project_transversal_id_18,
+    project_transversal_id_19,
+    project_transversal_id_20,
+    project_transversal_id_21,
+    project_transversal_id_22,
+    project_transversal_id_23,
+    project_transversal_id_24,
+    project_transversal_id_25,
+    project_transversal_id_26,
+    project_transversal_id_27,
+    project_transversal_id_28,
+    project_transversal_id_29,
+    project_transversal_id_30,
+    project_transversal_id_31,
+    project_transversal_id_32,
+    project_transversal_id_33
 ]).
 
-seances('PROJET projet transversal', projet_transversal, prof_ptrans_silr, projet, silr, [
-    projet_transversal_silr_1,
-    projet_transversal_silr_2,
-    projet_transversal_silr_3,
-    projet_transversal_silr_4,
-    projet_transversal_silr_5,
-    projet_transversal_silr_6,
-    projet_transversal_silr_7,
-    projet_transversal_silr_8,
-    projet_transversal_silr_9,
-    projet_transversal_silr_10,
-    projet_transversal_silr_11,
-    projet_transversal_silr_12,
-    projet_transversal_silr_13,
-    projet_transversal_silr_14,
-    projet_transversal_silr_15,
-    projet_transversal_silr_16,
-    projet_transversal_silr_17,
-    projet_transversal_silr_18,
-    projet_transversal_silr_19,
-    projet_transversal_silr_20,
-    projet_transversal_silr_21,
-    projet_transversal_silr_22,
-    projet_transversal_silr_23,
-    projet_transversal_silr_24,
-    projet_transversal_silr_25,
-    projet_transversal_silr_26,
-    projet_transversal_silr_27,
-    projet_transversal_silr_28,
-    projet_transversal_silr_29,
-    projet_transversal_silr_30,
-    projet_transversal_silr_31,
-    projet_transversal_silr_32,
-    projet_transversal_silr_33
+seances('project project transversal', project_transversal, prof_ptrans_silr, project, silr, [
+    project_transversal_silr_1,
+    project_transversal_silr_2,
+    project_transversal_silr_3,
+    project_transversal_silr_4,
+    project_transversal_silr_5,
+    project_transversal_silr_6,
+    project_transversal_silr_7,
+    project_transversal_silr_8,
+    project_transversal_silr_9,
+    project_transversal_silr_10,
+    project_transversal_silr_11,
+    project_transversal_silr_12,
+    project_transversal_silr_13,
+    project_transversal_silr_14,
+    project_transversal_silr_15,
+    project_transversal_silr_16,
+    project_transversal_silr_17,
+    project_transversal_silr_18,
+    project_transversal_silr_19,
+    project_transversal_silr_20,
+    project_transversal_silr_21,
+    project_transversal_silr_22,
+    project_transversal_silr_23,
+    project_transversal_silr_24,
+    project_transversal_silr_25,
+    project_transversal_silr_26,
+    project_transversal_silr_27,
+    project_transversal_silr_28,
+    project_transversal_silr_29,
+    project_transversal_silr_30,
+    project_transversal_silr_31,
+    project_transversal_silr_32,
+    project_transversal_silr_33
 ]).
 
 
 /**
+<<<<<<< HEAD
+ * seance(?Id, ?TypeCours, ?subject, ?name)
+=======
  * seance(?Id, ?TypeCours, ?subject, ?Nom)
+>>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
  *
  * @arg Id          Id de la séance
  * @arg TypeCours   Type de cours de la séance
  * @arg subject     subject à laquelle la séance appartient
+<<<<<<< HEAD
+ * @arg name         name de la séance
+=======
  * @arg Nom         Nom de la séance
+>>>>>>> 0aff67dbf960ff83bb00c8ca0b18523c8f573001
 */
 :- dynamic seance/4.
 
 /**
- * groupeSeance(?Groupe, ?Seance)
+ * groupSeance(?group, ?Seance)
  *
- * Définit la participation d'un groupe à une séance
+ * Définit la participation d'un group à une séance
  *
- * @arg Groupe      Nom du groupe
+ * @arg group      name du group
  * @arg Seance      Id de la séance
  */
-:- dynamic groupeSeance/2.
+:- dynamic groupSeance/2.
 
 /**
  * profSeance(?Prof, ?Seance)
  *
  * Définit la participation d'un enseignant à une séance
  *
- * @arg Prof        Nom de l'enseignant
+ * @arg Prof        name de l'enseignant
  * @arg Seance      Id de la séance
  */
 :- dynamic profSeance/2.
@@ -1122,9 +1144,9 @@ suitSeance(td_IA_silr2_1, cm_IA_6).
 suitSeance(td_IA_silr1_1, cm_IA_6).
 suitSeance(td_IA_id_1, cm_IA_6).
 
-suitSeance(tp_projet_ia_silr2_1, td_IA_silr2_3).
-suitSeance(tp_projet_ia_silr1_1, td_IA_silr1_3).
-suitSeance(tp_projet_ia_id_1, td_IA_id_3).
+suitSeance(tp_project_ia_silr2_1, td_IA_silr2_3).
+suitSeance(tp_project_ia_silr1_1, td_IA_silr1_3).
+suitSeance(tp_project_ia_id_1, td_IA_id_3).
 
 suitSeance(tp_multimedia_1, cm_multimedia_8).
 suitSeance(tp_multimedia_1, cm_multimedia_4).
@@ -1133,9 +1155,9 @@ suitSeance(tp_c_id_1, cm_c_10).
 suitSeance(tp_c_silr1_1, cm_c_10).
 suitSeance(tp_c_silr2_1, cm_c_10).
 
-suitSeance(cm_projet_c_1, tp_c_id_10).
-suitSeance(cm_projet_c_1, tp_c_silr1_10).
-suitSeance(cm_projet_c_1, tp_c_silr2_10).
+suitSeance(cm_project_c_1, tp_c_id_10).
+suitSeance(cm_project_c_1, tp_c_silr1_10).
+suitSeance(cm_project_c_1, tp_c_silr2_10).
 
 suitSeance(tp_outils_ingenierie_silr2_1, cm_outils_ingenierie_silr_2).
 suitSeance(tp_outils_ingenierie_silr1_1, cm_outils_ingenierie_silr_2).
@@ -1179,17 +1201,17 @@ suitSeance(tp_patrons_id_1, td_patrons_id_2).
 suitSeance(tp_patrons_silr1_1, td_patrons_silr1_2).
 suitSeance(tp_patrons_silr2_1, td_patrons_silr2_2).
 
-suitSeance(cm_projet_transversal_2, cm_projet_transversal_1).
-suitSeance(projet_transversal_id_1, cm_projet_transversal_2).
-suitSeance(projet_transversal_silr_1, cm_projet_transversal_2).
+suitSeance(cm_project_transversal_2, cm_project_transversal_1).
+suitSeance(project_transversal_id_1, cm_project_transversal_2).
+suitSeance(project_transversal_silr_1, cm_project_transversal_2).
 
 /**
  * suitSeance(?Seance_suivante, ?Seance_suivie, ?tempsMin, ?tempsMax)
  *
  * @arg Seance_suivante     Id de la séance qui suit
  * @arg Seance_suivie       Id de la séance suivit
- * @arg tempsMin     		Nombre de jours min avant la prochaine séance
- * @arg tempsMax       		Nombre de jours max avant la prochaine séance
+ * @arg tempsMin            namebre de days min avant la prochaine séance
+ * @arg tempsMax            namebre de days max avant la prochaine séance
  */
 suitSeance(ds_bdd, tp_bdd_id_6, 7, 12).
 suitSeance(ds_bdd, tp_bdd_silr1_6, 7, 12).
@@ -1244,7 +1266,7 @@ suitSeance(ds_patrons, tp_patrons_silr1_2, 7, 12).
 suitSeance(ds_patrons, tp_patrons_silr2_2, 7, 12).
 
 
-suitSeance(cm_projet_c_2, cm_projet_c_1, 7, 12).
+suitSeance(cm_project_c_2, cm_project_c_1, 7, 12).
 
 % Écriture dynamique de la base de donnée -------------------------------------
 
@@ -1265,28 +1287,28 @@ computeProfSeance([P|Profs], Seance) :- % si plusieurs profs par séance
     computeProfSeance(Profs, Seance).
 
 /**
- * computeSeance(+Nom, +Mat, +Profs, +Type, +Groupe, +S)
+ * computeSeance(+name, +Mat, +Profs, +Type, +group, +S)
  *
- * @arg Nom     Nom de la séance
+ * @arg name     name de la séance
  * @arg Mat     Matière
  * @arg Profs   Enseignant ou liste d'enseignants
  * @arg Type    Type de cours
- * @arg Groupe
+ * @arg group
  * @arg Ss      Listes d'id de séances
  */
-computeSeance(Nom, Mat, Profs, Type, Groupe, [X]) :-
+computeSeance(name, Mat, Profs, Type, group, [X]) :-
     computeProfSeance(Profs, X),
-    assertz(groupeSeance(Groupe, X)),
-    assertz(seance(X, Type, Mat, Nom)).
-computeSeance(Nom, Mat, Profs, Type, Groupe, [X, Y|S]) :-
+    assertz(groupSeance(group, X)),
+    assertz(seance(X, Type, Mat, name)).
+computeSeance(name, Mat, Profs, Type, group, [X, Y|S]) :-
     (suitSeance(Y, X, _, _); assertz(suitSeance(Y, X))),
-    computeSeance(Nom, Mat, Profs, Type, Groupe, [X]),
-    computeSeance(Nom, Mat, Profs, Type, Groupe, [Y|S]).
+    computeSeance(name, Mat, Profs, Type, group, [X]),
+    computeSeance(name, Mat, Profs, Type, group, [Y|S]).
 
 % On génère la base de donnée dynamique des séances et des prédicats en lien
 :- forall(
-    seances(Nom, Mat, Prof, Type, Groupe, Ids),
+    seances(name, Mat, Prof, Type, group, Ids),
     (
-        computeSeance(Nom, Mat, Prof, Type, Groupe, Ids)
+        computeSeance(name, Mat, Prof, Type, group, Ids)
     )
 ).
