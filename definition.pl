@@ -368,8 +368,8 @@ accueille(S, T) :-
  */
 
  Sessions('CM mnedp1', mnedp1, gout , cm, GM4, [
-     cm_mnedp1_1_1, cm_mnedp1_1_2, cm_mnedp1_1_3, cm_mnedp1_1_4,
-     cm_mnedp1_1_5
+     cm_mnedp1_1, cm_mnedp1_2, cm_mnedp1_3, cm_mnedp1_4,
+     cm_mnedp1_5
  ]).
 
  Sessions('TD mnedp1_groupe1', mnedp1, gout, td, GM4_1, [
@@ -384,6 +384,25 @@ accueille(S, T) :-
 
  Sessions('DS mnedp1', mnedp1, gout, ds, GM4, [
      ds_mnedp1
+ ]).
+
+ Sessions('CM edp', edp, le_guyader , cm, GM4, [
+     cm_edp_1, cm_edp_2, cm_edp_3, cm_edp_4,
+     cm_edp_5
+ ]).
+
+ Sessions('TD edp_groupe1', edp, le_guyader, td, GM4_1, [
+     td_edp_1_1, td_edp_1_2, td_edp_1_3, td_edp_1_4,
+     td_edp_1_5
+ ]).
+
+ Sessions('TD edp_groupe2', edp, le_guyader, td, GM4_2, [
+     td_edp_2_1, td_edp_2_2, td_edp_2_3, td_edp_2_4,
+     td_edp_2_5
+ ]).
+
+ Sessions('DS edp', edp, le_guyader, ds, GM4, [
+     ds_edp
  ]).
 
 
