@@ -168,6 +168,7 @@ subject(sport).
  *
  * @arg Prof     Nom de l'enseignant
  **/
+
 professor(abdulrab).
 professor(beveraggi).
 professor(borel).
@@ -317,32 +318,11 @@ ClassRoom(DU-RJ-02, 100, [cm]).
 ClassRoom(DU-RJ-06, 100, [cm]).
 ClassRoom(DU-RJ-12, 100, [cm]).
 
-<<<<<<< HEAD
 ClassRoom(BO-R2-03, 35, [tp]).
 ClassRoom(BO-R2-05, 35, [tp]).
 ClassRoom(BO-R2-07, 35, [tp]).
 
-=======
-ClassRoom(a2, 200, [cm, ds]).
-ClassRoom(b001, 26, [tp, mp, ds_machine]).
-ClassRoom(c001, 26, [tp, mp, ds_machine]).
-ClassRoom(c002, 26, [tp, mp, ds_machine]).
-ClassRoom(c008, 50, [cm, td, ds]).
-ClassRoom(c009, 26, [tp, tp_para, mp, ds_machine]).
-ClassRoom(c007, 10, [tp_rez]).
-ClassRoom(e101, 24, [cm, td]).
-ClassRoom(e102, 24, [cm, td]).
-ClassRoom(e103, 24, [td]).
-ClassRoom(e104, 24, [td]).
-ClassRoom(e202, 50, [cm, td]).
-ClassRoom(iht_aronax, 100, [cm, td]).
-ClassRoom(iht_nemo, 50, [td]).
-ClassRoom(isitem_TD1, 30, [cm, td]).
-ClassRoom(isitem_TD2, 30, [cm, td]).
-ClassRoom(isitem_exam, 100, [ds]).
-ClassRoom(maison_project, 1000, [project]).
-ClassRoom(maison_project_2, 1000, [project]).
->>>>>>> c121b59079bb84c6ced7d9c541215c2000702f3c
+
 
 /**
  * ClassRoom(?name, ?Effectif)
