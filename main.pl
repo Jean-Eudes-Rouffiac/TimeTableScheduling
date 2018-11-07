@@ -9,7 +9,7 @@
  */
 
 organisation(Cs) :-
-    findall(S, Session(S, _, _, _), Ss),
+    findall(S, session(S, _, _, _), Ss),
 
     % on trie les séances, les plus contraintes à la fin
     predsort(beforeSeance, Ss, Ss2),

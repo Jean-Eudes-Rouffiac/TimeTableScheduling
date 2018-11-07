@@ -55,7 +55,7 @@ beforeSession(R, S1, S2) :-
  */
 
 displaySession(S) :-
-    Session(S, TypeCours, Mat, Nom),
+    session(S, TypeCours, Mat, Nom),
     write('Séance:\t\t'),
     write(S), write(' "'), write(Nom), write('"'),
     write(' - '), write(TypeCours),
@@ -132,7 +132,7 @@ displayProfs(S) :-
  */
 
 displayClassRoom(L) :-
-    ClassRoom(L, Nb),
+    classRoom(L, Nb),
     write('Salle:\t\t'), write(L), write('('), write(Nb), write(')').
 
 /**

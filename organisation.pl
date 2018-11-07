@@ -152,8 +152,8 @@ sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
  */
 
 conflitExamen(S, J, M, [S2, _, J, M, _]) :-
-    Session(S, ds, _, _),
-    Session(S2, ds, _, _).
+    session(S, ds, _, _),
+    session(S2, ds, _, _).
 
 /**
  * creneauValideCreneau(+S, +Ps, +Gs, +H, +J, +M, +L, +C).
@@ -273,7 +273,7 @@ planifier(Ss, Ds, [C|Cs]) :-
 
     % Création du créneau et tests ---------------------------------------------
 
-    Session(S, TypeS, _, _),
+    session(S, TypeS, _, _),
 
     date(J, M),     % une date
     \+ tropDeCoursCeJour(J, M, 5, Cs2), % max 5 cours par jour
@@ -284,7 +284,7 @@ planifier(Ss, Ds, [C|Cs]) :-
     \+ jeudiApresMidi(H, J),
 
     % une salle
-    ClassRoom(L, TailleL),
+    classRoom(L, TailleL),
     accueille(L, TypeL),
     typesCoursIdentiques(TypeS, TypeL), % type de salle valide
 
