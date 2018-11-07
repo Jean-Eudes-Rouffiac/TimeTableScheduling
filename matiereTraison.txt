@@ -38,8 +38,15 @@ Sessions('TD b_spline groupe1', b_spline, le_guyader, td, GM4_1, [
 ]).
 
 Sessions('TD b_spline groupe2', b_spline, le_guyader, td, GM4_2, [
-    td_b_spline_2_1, td_b_spline_2_2, td_b_spline_2_3, td_b_spline_2_4,
-    td_b_spline_2_5
+    td_b_spline_2_1, td_b_spline_2_2, td_b_spline_2_3
+]).
+
+Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_1, [
+    tp_b_spline_1_1, tp_b_spline_1_2
+]).
+
+Sessions('TP b_spline groupe2', b_spline, le_guyader, tp, GM4_2, [
+    tp_b_spline_2_1, tp_b_spline_2_2
 ]).
 
 Sessions('DS b_spline', b_spline, le_guyader, ds, GM4, [
@@ -98,17 +105,17 @@ Sessions('CM technoweb', technoweb, zanni_merk , cm, GM4, [
     cm_technoweb_5
 ]).
 
-Sessions('TD opti combinatoire groupe1', technoweb, zanni_merk, td, GM4_1, [
-    td_technoweb_1_1, td_technoweb_1_2, td_technoweb_1_3, td_technoweb_1_4,
-    td_technoweb_1_5
+Sessions('TP technoweb groupe1', technoweb, zanni_merk, tp, GM4_1, [
+    tp_technoweb_1_1, tp_technoweb_1_2, tp_technoweb_1_3, tp_technoweb_1_4,
+    tp_technoweb_1_5
 ]).
 
-Sessions('TD opti combinatoire groupe2', technoweb, zanni_merk, td, GM4_2, [
-    td_technoweb_2_1, td_technoweb_2_2, td_technoweb_2_3, td_technoweb_2_4,
-    td_technoweb_2_5
+Sessions('TP technoweb groupe2', technoweb, zanni_merk, tp, GM4_2, [
+    tp_technoweb_2_1, tp_technoweb_2_2, tp_technoweb_2_3, tp_technoweb_2_4,
+    tp_technoweb_2_5
 ]).
 
-Sessions('DS opti combinatoire', technoweb, zanni_merk, ds, GM4, [
+Sessions('DS techno web', technoweb, zanni_merk, ds, GM4, [
     ds_b_spline
 ]).
 
@@ -119,37 +126,37 @@ Sessions('CM c++', c++, kotowicz , cm, GM4, [
     cm_c++_5
 ]).
 
-Sessions('TD opti combinatoire groupe1', c++, kotowicz, td, GM4_1, [
+Sessions('TD c++ groupe1', c++, kotowicz, td, GM4_1, [
     td_c++_1_1, td_c++_1_2, td_c++_1_3, td_c++_1_4,
     td_c++_1_5
 ]).
 
-Sessions('TD opti combinatoire groupe2', c++, kotowicz, td, GM4_2, [
+Sessions('TD c++ groupe2', c++, kotowicz, td, GM4_2, [
     td_c++_2_1, td_c++_2_2, td_c++_2_3, td_c++_2_4,
     td_c++_2_5
 ]).
 
-Sessions('DS opti combinatoire', c++, kotowicz, ds, GM4, [
+Sessions('DS c++', c++, kotowicz, ds, GM4, [
     ds_b_spline
 ]).
 
 % BASE DONNES %
 
-Sessions('CM base_de_donnee', base_de_donnee, chaignaud , cm, GM4, [
+Sessions('CM base de donnee', base_de_donnee, chaignaud , cm, GM4, [
     cm_base_de_donnee_1, cm_base_de_donnee_2, cm_base_de_donnee_3, cm_base_de_donnee_4,
     cm_base_de_donnee_5
 ]).
 
-Sessions('TD opti combinatoire groupe1', base_de_donnee, chaignaud, td, GM4_1, [
+Sessions('TD base de donnees groupe1', base_de_donnee, chaignaud, td, GM4_1, [
     td_base_de_donnee_1_1, td_base_de_donnee_1_2, td_base_de_donnee_1_3, td_base_de_donnee_1_4,
     td_base_de_donnee_1_5
 ]).
 
-Sessions('TD opti combinatoire groupe2', base_de_donnee, chaignaud, td, GM4_2, [
+Sessions('TD base de donnees groupe2', base_de_donnee, chaignaud, td, GM4_2, [
     td_base_de_donnee_2_1, td_base_de_donnee_2_2, td_base_de_donnee_2_3, td_base_de_donnee_2_4,
     td_base_de_donnee_2_5
 ]).
 
-Sessions('DS opti combinatoire', base_de_donnee, chaignaud, ds, GM4, [
+Sessions('DS base de donnees', base_de_donnee, chaignaud, ds, GM4, [
     ds_b_spline
 ]).
