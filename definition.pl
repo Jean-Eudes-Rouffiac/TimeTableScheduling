@@ -256,7 +256,7 @@ daysPermonth(20).
 date(J, M) :-
     month(M),
     daysPermonth(Max),
-    between(1, Max, J).
+    between(info1, Max, J).
 
 /**
  * dateBefore(+J1, +M1, +J2, +M2)
@@ -272,7 +272,7 @@ dateBefore( _, M1,  _, M2) :- M1 < M2, !.
 dateBefore(J1, M1, J2, M2) :- M1 = M2, J1 < J2, !.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                               Type de cours                                  %
+%          info                     Type de cours                                  %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 /**
@@ -367,6 +367,20 @@ accueille(S, T) :-
  * @arg Ids     Liste d'atomes servant d'ids pour ces séances
  */
 
+ Sessions('CM mnedp1', mnedp1, , cm, GM4, [
+     cm_mnedp1_1_1, cm_mnedp1_1_2, cm_mnedp1_1_3, cm_mnedp1_1_4,
+     cm_mnedp1_1_5
+ ]).
+
+ Sessions('TD mnedp1', mnedp1, , td, GM4_1, [
+     td_mnedp1_1_1, td_mnedp1_1_2, td_mnedp1_1_3, td_mnedp1_1_4,
+     td_mnedp1_1_5
+ ]).
+
+ Sessions('TD mnedp1', mnedp1, , td, GM4_2, [
+     td_mnedp1_2_1, td_mnedp1_2_2, td_mnedp1_2_3, td_mnedp1_2_4,
+     td_mnedp1_2_5
+ ]).
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, info, [
     cm_bdd_1, cm_bdd_2, cm_bdd_3, cm_bdd_4,
