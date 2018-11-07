@@ -545,6 +545,49 @@ Sessions('DS Algo', algo, chaignaud, ds, GM3, [
 ]).
 
 
+% Anglais %
+
+Sessions('CM Anglais', anglais, milou, cm, GM3, [
+    cm_anglais1_1, cm_anglais1_2, cm_anglais1_3, cm_anglais1_4, cm_anglais1_5
+]).
+
+Sessions('TD Anglais Groupe 1', anglais, milou, td, GM3_1, [
+    td_anglais1_1_1, td_anglais1_1_2, td_anglais1_1_3, td_anglais1_1_4, td_anglais1_1_5
+]).
+
+Sessions('TD Anglais Groupe 2', anglais, milou, td, GM3_2, [
+    td_anglais1_2_1, td_anglais1_2_2, td_anglais1_2_3, td_anglais1_2_4, td_anglais1_2_5
+]).
+
+Sessions('DS Anglais', anglais, milou, ds, GM3, [
+    ds_anglais1
+]).
+
+
+% GSF %
+
+Sessions('TD GSF Groupe 1', gsf, borel, td, GM3_1, [
+    td_gsf1_1_1, td_gsf1_1_2, td_gsf1_1_3, td_gsf1_1_4, td_gsf1_1_5
+]).
+
+Sessions('TD GSF Groupe 2', gsf, borel, td, GM3_2, [
+    td_gsf1_2_1, td_gsf1_2_2, td_gsf1_2_3, td_gsf1_2_4, td_gsf1_2_5
+]).
+
+Sessions('DS GSF', gsf, borel, ds, GM3, [
+    ds_gsf1
+]).
+
+
+% Sport %
+
+Sessions('CM Sport', sport, dubois, cm, GM3, [
+    cm_sport1_1, cm_sport1_2, cm_sport1_3, cm_sport1_4, cm_sport1_5,
+]).
+
+
+
+
 % S6 %
 
 % Analyse numérique 2 %
@@ -712,6 +755,48 @@ SessionSystème d'exploitation objet', syst_exploitation, jaumat, ds, GM3, [
     ds_systexploit
 ]).
 
+
+
+
+% Anglais %
+
+Sessions('CM Anglais', anglais, milou, cm, GM3, [
+    cm_anglais2_2, cm_anglais2_2, cm_anglais2_3, cm_anglais2_4, cm_anglais2_5
+]).
+
+Sessions('TD Anglais Groupe 1', anglais, milou, td, GM3_1, [
+    td_anglais2_1_1, td_anglais2_1_2, td_anglais2_1_3, td_anglais2_1_4, td_anglais2_1_5
+]).
+
+Sessions('TD Anglais Groupe 2', anglais, milou, td, GM3_2, [
+    td_anglais2_2_1, td_anglais2_2_2, td_anglais2_2_3, td_anglais2_2_4, td_anglais2_2_5
+]).
+
+Sessions('DS Anglais', anglais, milou, ds, GM3, [
+    ds_anglais2
+]).
+
+
+% GSF %
+
+Sessions('TD GSF Groupe 1', gsf, borel, td, GM3_1, [
+    td_gsf2_1_1, td_gsf2_1_2, td_gsf2_1_3, td_gsf2_1_4, td_gsf2_1_5
+]).
+
+Sessions('TD GSF Groupe 2', gsf, borel, td, GM3_2, [
+    td_gsf2_2_1, td_gsf2_2_2, td_gsf2_2_3, td_gsf2_2_4, td_gsf2_2_5
+]).
+
+Sessions('DS GSF', gsf, borel, ds, GM3, [
+    ds_gsf2
+]).
+
+
+% Sport %
+
+Sessions('CM Sport', sport, dubois, cm, GM3, [
+    cm_sport2_1, cm_sport2_2, cm_sport2_3, cm_sport2_4, cm_sport2_5,
+]).
 
 
 % GM4 %
@@ -892,6 +977,45 @@ Sessions('DS algo structure de données', algo_structure_donne, abdulrab, ds, GM
 ]).
 
 
+% Anglais %
+
+Sessions('CM Anglais', anglais, milou, cm, GM4, [
+    cm_anglais3_2, cm_anglais3_2, cm_anglais3_3, cm_anglais3_4, cm_anglais3_5
+]).
+
+Sessions('TD Anglais Groupe 1', anglais, milou, td, GM4_1, [
+    td_anglais3_1_1, td_anglais3_1_2, td_anglais3_1_3, td_anglais3_1_4, td_anglais3_1_5
+]).
+
+Sessions('TD Anglais Groupe 2', anglais, milou, td, GM4_2, [
+    td_anglais3_2_1, td_anglais3_2_2, td_anglais3_2_3, td_anglais3_2_4, td_anglais3_2_5
+]).
+
+Sessions('DS Anglais', anglais, milou, ds, GM4, [
+    ds_anglais3
+]).
+
+
+% GSF %
+
+Sessions('TD GSF Groupe 1', gsf, borel, td, GM4_1, [
+    td_gsf3_1_1, td_gsf3_1_2, td_gsf3_1_3, td_gsf3_1_4, td_gsf3_1_5
+]).
+
+Sessions('TD GSF Groupe 2', gsf, borel, td, GM4_2, [
+    td_gsf3_2_1, td_gsf3_2_2, td_gsf3_2_3, td_gsf3_2_4, td_gsf3_2_5
+]).
+
+Sessions('DS GSF', gsf, borel, ds, GM4, [
+    ds_gsf3
+]).
+
+% Sport %
+
+Sessions('CM Sport', sport, dubois, cm, GM3, [
+    cm_sport3_1, cm_sport3_2, cm_sport3_3, cm_sport3_4, cm_sport3_5,
+]).
+
 
 %s9%
 
@@ -1054,7 +1178,45 @@ Sessions('DS base de donnees', base_de_donnee, chaignaud, ds, GM4, [
     ds_base_de_donnee
 ]).
 
+% Anglais %
 
+Sessions('CM Anglais', anglais, milou, cm, GM4, [
+    cm_anglais4_2, cm_anglais4_2, cm_anglais4_3, cm_anglais4_4, cm_anglais4_5
+]).
+
+Sessions('TD Anglais Groupe 1', anglais, milou, td, GM4_1, [
+    td_anglais4_1_1, td_anglais4_1_2, td_anglais4_1_3, td_anglais4_1_4, td_anglais4_1_5
+]).
+
+Sessions('TD Anglais Groupe 2', anglais, milou, td, GM4_2, [
+    td_anglais4_2_1, td_anglais4_2_2, td_anglais4_2_3, td_anglais4_2_4, td_anglais4_2_5
+]).
+
+Sessions('DS Anglais', anglais, milou, ds, GM4, [
+    ds_anglais4
+]).
+
+
+% GSF %
+
+Sessions('TD GSF Groupe 1', gsf, borel, td, GM4_1, [
+    td_gsf4_1_1, td_gsf4_1_2, td_gsf4_1_3, td_gsf4_1_4, td_gsf4_1_5
+]).
+
+Sessions('TD GSF Groupe 2', gsf, borel, td, GM4_2, [
+    td_gsf4_2_1, td_gsf4_2_2, td_gsf4_2_3, td_gsf4_2_4, td_gsf4_2_5
+]).
+
+Sessions('DS GSF', gsf, borel, ds, GM4, [
+    ds_gsf4
+]).
+
+
+% Sport %
+
+Sessions('CM Sport', sport, dubois, cm, GM3, [
+    cm_sport4_1, cm_sport4_2, cm_sport4_3, cm_sport4_4, cm_sport4_5,
+]).
 
 
 /**
