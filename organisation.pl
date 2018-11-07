@@ -17,6 +17,7 @@ typesCoursIdentiques(X, X).
  * @arg M   Le mois
  * @arg C   Un créneau [S, H, J, M, L]
  */
+
 memeMomentCreneau(H, J, M, [_, H2, J2, M2, _]) :- H = H2, J = J2, M = M2, !.
 
 /**
@@ -27,6 +28,7 @@ memeMomentCreneau(H, J, M, [_, H2, J2, M2, _]) :- H = H2, J = J2, M = M2, !.
  * @arg L   Une salle
  * @arg C   Un créneau [S, H, J, M, L]
  */
+
 memeSalle(L, [_, _, _, _, L]) :- !.
 
 /**
@@ -37,7 +39,8 @@ memeSalle(L, [_, _, _, _, L]) :- !.
  * @arg Ps  Des enseignant
  * @arg C   Un créneau [S, H, J, M, L]
  */
-memeProfs([P|_], [S, _, _, _, _]) :- profSession(P2, S), P2 = P, !.
+
+memeProfs([P|_], [S, _, _, _, _]) :- profesorSession(P2, S), P2 = P, !.
 memeProfs([_|Ps], [S, H, J, M, L]) :- memeProfs(Ps, [S, H, J, M, L]), !.
 
 /**
@@ -48,8 +51,9 @@ memeProfs([_|Ps], [S, H, J, M, L]) :- memeProfs(Ps, [S, H, J, M, L]), !.
  * @arg Gs  Les groupes
  * @arg C   Un créneau [S, H, J, M, L]
  */
+
 groupesIncompatibleCreneau([G|_], [S, _, _, _, _]) :-
-    groupeSession(G2, S),
+    groupSession(G2, S),
     incompatibles(G, G2),
     !.
 groupesIncompatibleCreneau([_|Gs], [S, H, J, M, L]) :-
@@ -68,6 +72,7 @@ groupesIncompatibleCreneau([_|Gs], [S, H, J, M, L]) :-
  * @arg J2  Le jour
  * @arg M2  Le mois
  */
+
 momentBefore(_, J1, M1, _, J2, M2) :-
     dateBefore(J2, M2, J1, M1), % 2 se déroule un jour placé avant
     !.
@@ -89,8 +94,9 @@ momentBefore(H1, J1, M1, H2, J2, M2) :-
  * @arg Jmin Le nombre de jours minimum entre 1 et 2
  * @arg JMax Le nombre de jours maximum entre 1 et 2
  */
+
 customSequenceValide(J1, M1, J2, M2, Jmin, Jmax) :-
-    joursParMois(Nb),
+    daysPermonth(Nb),
     Offset is ((J1 + M1 * Nb) - (J2 + M2 * Nb)),
     Offset >= Jmin,
     Offset =< Jmax,
@@ -107,27 +113,29 @@ customSequenceValide(J1, M1, J2, M2, Jmin, Jmax) :-
  * @arg M   Le mois
  * @arg C   Un créneau [S, H, J, M, L]
  */
+
  % la séance n'est pas en lien avec le créneau transmis
+
 sequencementValideCreneau(S, _, _, _, [S2, _, _, _, _]):-
-    \+ suitSession(S, S2),
-    \+ suitSession(S, S2, _, _),
-    \+ suitSession(S2, S),
-    \+ suitSession(S2, S, _, _),
+    \+ followingSession(S, S2),
+    \+ followingSession(S, S2, _, _),
+    \+ followingSession(S2, S),
+    \+ followingSession(S2, S, _, _),
     !.
 sequencementValideCreneau(S, H, J, M, [S2, H2, J2, M2, _]) :-
-    suitSession(S, S2), % S suit S2
+    followingSession(S, S2), % S suit S2
     momentBefore(H, J, M, H2, J2, M2),
     !.
 sequencementValideCreneau(S, H, J, M, [S2, H2, J2, M2, _]) :-
-    suitSession(S2, S), % S2 suit S
+    followingSession(S2, S), % S2 suit S
     momentBefore(H2, J2, M2, H, J, M),
     !.
 sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
-    suitSession(S, S2, Jmin, Jmax), % S suit S2
+    followingSession(S, S2, Jmin, Jmax), % S suit S2
     customSequenceValide(J, M, J2, M2, Jmin, Jmax),
     !.
 sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
-    suitSession(S2, S, Jmin, Jmax), % S2 suit S
+    followingSession(S2, S, Jmin, Jmax), % S2 suit S
     customSequenceValide(J2, M2, J, M, Jmin, Jmax),
     !.
 
@@ -142,6 +150,7 @@ sequencementValideCreneau(S, _, J, M, [S2, _, J2, M2, _]) :-
  * @arg M   Mois
  * @arg C   Un créneau
  */
+
 conflitExamen(S, J, M, [S2, _, J, M, _]) :-
     Session(S, ds, _, _),
     Session(S2, ds, _, _).
@@ -160,6 +169,8 @@ conflitExamen(S, J, M, [S2, _, J, M, _]) :-
  * @arg L   La salle
  * @arg C   Un créneau [S, H, J, M, L]
  */
+
+
 creneauValideCreneau(S, Ps, Gs, H, J, M, L, C) :-
     % le créneau valide le séquencement avec C
     sequencementValideCreneau(S, H, J, M, C),
@@ -209,6 +220,7 @@ creneauValide(S, Ps, Gs, H, J, M, L, [C|Cs]) :-
  * @arg H   Plage horaire
  * @arg J   Jour
  */
+
 jeudiApresMidi(H, J) :-
     (J + 1) mod 5 is 0,
     H > 3.
@@ -220,10 +232,10 @@ jeudiApresMidi(H, J) :-
  * @arg S   Somme des effectifs des groupes
  */
 effectifGroupes([], 0) :- !.
-effectifGroupes([G], S) :- groupe(G, S), !.
+effectifGroupes([G], S) :- group(G, S), !.
 effectifGroupes([G|Gs], S) :-
     effectifGroupes(Gs, S1),
-    groupe(G, S2),
+    group(G, S2),
     S is S1 + S2,
     !.
 
@@ -235,6 +247,7 @@ effectifGroupes([G|Gs], S) :-
  * @arg Max Nombre max de cours par jour
  * @arg Cs  Liste de créneaux déjà planifiés
  */
+
 tropDeCoursCeJour(J, M, Max, Cs) :-
     findall(S, member([S, _, J, M, _], Cs), Csjour),
     length(Csjour, X),
@@ -247,6 +260,7 @@ tropDeCoursCeJour(J, M, Max, Cs) :-
  * @arg Ds  Listes des créneaux déjà planifié
  * @arg Cs  Listes des créneaux construits
  */
+
 planifier([], _, []) :- !.
 planifier(Ss, Ds, [C|Cs]) :-
 
@@ -270,7 +284,7 @@ planifier(Ss, Ds, [C|Cs]) :-
     \+ jeudiApresMidi(H, J),
 
     % une salle
-    salle(L, TailleL),
+    ClassRoom(L, TailleL),
     accueille(L, TypeL),
     typesCoursIdentiques(TypeS, TypeL), % type de salle valide
 
@@ -278,7 +292,7 @@ planifier(Ss, Ds, [C|Cs]) :-
     effectifGroupes(Gs, Effectif),
     Effectif =< TailleL, % taille de salle valide
 
-    findall(P, profSeance(P, S), Ps),   % tous les enseignants de la séance
+    findall(P, profesorSeance(P, S), Ps),   % tous les enseignants de la séance
 
     % test des contraintes (profs, incompatibilité groupes, séquencement)
     % sur cette proposition de créneau
