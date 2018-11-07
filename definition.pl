@@ -368,6 +368,36 @@ accueille(S, T) :-
  */
 
 
+Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, GM3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
+
+Sessions('TD BDD', connaissances_bdd, raschia, td, id, [
+    td_bdd_id_1,
+    td_bdd_id_2,
+       td_bdd_id_3,
+    td_bdd_id_4,
+    td_bdd_id_5
+]).
+
+Sessions('TP BDD', connaissances_bdd, raschia, tp, id, [
+    tp_bdd_id_1,
+    tp_bdd_id_2,
+    tp_bdd_id_3,
+    tp_bdd_id_4,
+    tp_bdd_id_5,
+    tp_bdd_id_6
+]).
+
+
+
+Sessions('DS BDD', connaissances_bdd, raschia, ds, info, [
+    ds_bdd
+]).
+
+
+
+
 Sessions('CM Analyse numérique 1', analyse_numerique_1, , cm, info, [
     cm_bdd_1, cm_bdd_2, cm_bdd_3, cm_bdd_4,
     cm_bdd_5, cm_bdd_6, cm_bdd_7, cm_bdd_8
