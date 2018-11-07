@@ -411,22 +411,22 @@ accueille(S, T) :-
 
 % OPTIMISATION_LINEAIRE %
 
-Sessions('CM opti_lineaire', opti_lineaire, forcadel , cm, GM4, [
+Sessions('CM opti lineaire', opti_lineaire, forcadel , cm, GM4, [
     cm_opti_lineaire_1, cm_opti_lineaire_2, cm_opti_lineaire_3, cm_opti_lineaire_4,
     cm_opti_lineaire_5
 ]).
 
-Sessions('TD opti_lineaire_groupe1', opti_lineaire, forcadel, td, GM4_1, [
+Sessions('TD opti lineaire groupe1', opti_lineaire, forcadel, td, GM4_1, [
     td_opti_lineaire_1_1, td_opti_lineaire_1_2, td_opti_lineaire_1_3, td_opti_lineaire_1_4,
     td_opti_lineaire_1_5
 ]).
 
-Sessions('TD opti_lineaire_groupe2', opti_lineaire, forcadel, td, GM4_2, [
+Sessions('TD opti lineaire groupe2', opti_lineaire, forcadel, td, GM4_2, [
     td_opti_lineaire_2_1, td_opti_lineaire_2_2, td_opti_lineaire_2_3, td_opti_lineaire_2_4,
     td_opti_lineaire_2_5
 ]).
 
-Sessions('DS opti_lineaire', opti_lineaire, forcadel, ds, GM4, [
+Sessions('DS opti lineaire', opti_lineaire, forcadel, ds, GM4, [
     ds_opti_lineaire
 ]).
 
@@ -437,12 +437,12 @@ Sessions('CM automatique', automatique,el_assoudil , cm, GM4, [
     cm_automatique_5
 ]).
 
-Sessions('TD automatique_groupe1', automatique, el_assoudi, td, GM4_1, [
+Sessions('TD automatique groupe1', automatique, el_assoudi, td, GM4_1, [
     td_automatique_1_1, td_automatique_1_2, td_automatique_1_3, td_automatique_1_4,
     td_automatique_1_5
 ]).
 
-Sessions('TD automatique_groupe2', automatique, el_assoudi, td, GM4_2, [
+Sessions('TD automatique groupe2', automatique, el_assoudi, td, GM4_2, [
     td_automatique_2_1, td_automatique_2_2, td_automatique_2_3, td_automatique_2_4,
     td_automatique_2_5
 ]).
@@ -458,12 +458,12 @@ Sessions('CM markov', markov, fourati , cm, GM4, [
     cm_markov_5
 ]).
 
-Sessions('TD markov_groupe1', markov, fourati, td, GM4_1, [
+Sessions('TD markov groupe1', markov, fourati, td, GM4_1, [
     td_markov_1_1, td_markov_1_2, td_markov_1_3, td_markov_1_4,
     td_markov_1_5
 ]).
 
-Sessions('TD markov_groupe2', markov, fourati, td, GM4_2, [
+Sessions('TD markov groupe2', markov, fourati, td, GM4_2, [
     td_markov_2_1, td_markov_2_2, td_markov_2_3, td_markov_2_4,
     td_markov_2_5
 ]).
@@ -472,20 +472,67 @@ Sessions('DS markov', markov, fourati, ds, GM4, [
     ds_markov
 ]).
 
-Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
-    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+% STATISTIQUES 2 %
+
+Sessions('CM statistiques2', statistiques2, godichon , cm, GM4, [
+    cm_statistiques2_1, cm_statistiques2_2, cm_statistiques2_3, cm_statistiques2_4,
+    cm_statistiques2_5
 ]).
 
-Sessions('TD Analyse numérique 1 Groupe 1', analyse_numerique_1, zakarova, td, GM3_1, [
-    td_ananum1_1_1, td_ananum1_1_2, td_ananum1_1_3, td_ananum1_1_4, td_ananum1_1_5
+Sessions('TD statistiques2 groupe1', statistiques2, godichon, td, GM4_1, [
+    td_statistiques2_1_1, td_statistiques2_1_2, td_statistiques2_1_3, td_statistiques2_1_4,
+    td_statistiques2_1_5
 ]).
 
-Sessions('TD Analyse numérique 1 Groupe 2', analyse_numerique_1, zakarova, td, GM3_2, [
-    td_ananum1_2_1, td_ananum1_2_2, td_ananum1_2_3, td_ananum1_2_4, td_ananum1_2_5
+Sessions('TD statistiques2 groupe2', statistiques2, godichon, td, GM4_2, [
+    td_statistiques2_2_1, td_statistiques2_2_2, td_statistiques2_2_3, td_statistiques2_2_4,
+    td_statistiques2_2_5
 ]).
 
-Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
-    ds_ananum1
+Sessions('DS statistiques2', statistiques2, godichon, ds, GM4, [
+    ds_statistiques2
+]).
+
+% JAVA %
+
+Sessions('CM java', java, vercouter , cm, GM4, [
+    cm_java_1, cm_java_2, cm_java_3, cm_java_4,
+    cm_java_5
+]).
+
+Sessions('TP java groupe1', java, vercouter, tp, GM4_1, [
+    tp_java_1_1, tp_java_1_2, tp_java_1_3, tp_java_1_4,
+    tp_java_1_5
+]).
+
+Sessions('TP java groupe2', java, vercouter, td, GM4_2, [
+    tp_java_2_1, tp_java_2_2, tp_java_2_3, tp_java_2_4,
+    tp_java_2_5
+]).
+
+Sessions('DS java', java, vercouter, ds, GM4, [
+    ds_java
+]).
+
+% ALGORITHME STRUCTURE DONNEES %
+
+Sessions('CM algo struc donne', algo_structure_donne, abdulrab , cm, GM4, [
+    cm_algo_structure_donne_1, cm_algo_structure_donne_2, cm_algo_structure_donne_3, cm_algo_structure_donne_4,
+    cm_algo_structure_donne_5
+]).
+
+Sessions('TD algo_structure_donne groupe1', algo_structure_donne, abdulrab, td, GM4_1, [
+    td_algo_structure_donne_1_1, td_algo_structure_donne_1_2, td_algo_structure_donne_1_3, td_algo_structure_donne_1_4,
+    td_algo_structure_donne_1_5
+]).
+
+Sessions('TD algo_structure_donne groupe2', algo_structure_donne, abdulrab, td, GM4_2, [
+    td_algo_structure_donne_2_1, td_algo_structure_donne_2_2, td_algo_structure_donne_2_3, td_algo_structure_donne_2_4,
+    td_algo_structure_donne_2_5
+]).
+
+Sessions('DS algo_structure_donne', algo_structure_donne, abdulrab, ds, GM4, [
+    ds_algo_structure_donne
 ]).
 
 
