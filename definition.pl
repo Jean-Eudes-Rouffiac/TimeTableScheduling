@@ -10,15 +10,17 @@
  * @arg Effectif    Nombre détudiants dans le groupe
  **/
 
-groupe(info,      62).
-groupe(id,        24).
-groupe(silr,      38).
-groupe(silr1,     18).
-groupe(silr2,     20).
-groupe(anglais_A, 12).
-groupe(anglais_B, 16).
-groupe(anglais_C, 18).
-groupe(anglais_D, 16).
+
+groupe(GM3, 65).
+groupe(GM3_1, 32).
+groupe(GM3_2, 33).
+groupe(GM4, 50).
+groupe(GM4_1, 25).
+groupe(GM4_2, 25).
+groupe(GM5, 30).
+groupe(GM5_1, 15).
+groupe(GM5_2, 15).
+
 
 /**
  * incomp(-G1, -G2)
@@ -26,16 +28,17 @@ groupe(anglais_D, 16).
  * @arg G1     Nom du groupe 1
  * @arg G2     Nom du groupe 2
  */
-incomp(id, info).
-incomp(silr, info).
-incomp(silr1, silr).
-incomp(silr1, info).
-incomp(silr2, silr).
-incomp(silr2, info).
-incomp(anglais_A, info).
-incomp(anglais_B, info).
-incomp(anglais_C, info).
-incomp(anglais_D, info).
+incomp(GM3, GM4).
+incomp(GM3, GM5).
+incomp(GM4, GM5).
+incomp(GM3_1, GM3).
+incomp(GM3_2, GM3_1).
+incomp(GM4_1, GM3).
+incomp(GM4_1, GM4_2).
+incomp(GM5_1, GM5_2).
+incomp(GM4_2, GM3).
+incomp(GM5_1, GM3).
+incomp(GM5_2, GM3).
 
 /**
  * incompatibles(-Groupe1, -Groupe2)
