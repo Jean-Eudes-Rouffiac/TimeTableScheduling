@@ -479,23 +479,12 @@ Sessions('DS markov', markov, fourati, ds, GM4, [
     ds_markov
 ]).
 
-<<<<<<< HEAD
+
 % STATISTIQUES 2 %
 
 Sessions('CM statistiques2', statistiques2, godichon , cm, GM4, [
     cm_statistiques2_1, cm_statistiques2_2, cm_statistiques2_3, cm_statistiques2_4,
     cm_statistiques2_5
-=======
-
-
-% GM3 %
-
-% Analyse numérique 1 %
-
-
-Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
-    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
->>>>>>> c36f7df89b9310b8d2be71c005d28afbf1374497
 ]).
 
 Sessions('TD statistiques2 groupe1', statistiques2, godichon, td, GM4_1, [
@@ -511,6 +500,7 @@ Sessions('TD statistiques2 groupe2', statistiques2, godichon, td, GM4_2, [
 Sessions('DS statistiques2', statistiques2, godichon, ds, GM4, [
     ds_statistiques2
 ]).
+
 
 % JAVA %
 
@@ -556,7 +546,14 @@ Sessions('DS algo_structure_donne', algo_structure_donne, abdulrab, ds, GM4, [
 
 
 
-% Mesure et distribution %
+% GM3 %
+
+% Analyse numérique 1 %
+
+
+Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
+    cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
+]).
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
@@ -575,7 +572,7 @@ Sessions('DS Analyse numérique 1', analyse_numerique_1, zakarova, ds, GM3, [
 ]).
 
 
-
+% Mesure et distribution %
 
 Sessions('CM Mesure et distribution', mesure_distribution, el_assoudi, cm, GM3, [
     cm_mesure_1, cm_mesure_2, cm_mesure_3, cm_mesure_4, cm_mesure_5
