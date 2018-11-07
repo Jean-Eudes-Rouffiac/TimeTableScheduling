@@ -367,21 +367,24 @@ accueille(S, T) :-
  * @arg Ids     Liste d'atomes servant d'ids pour ces séances
  */
 
- Sessions('CM mnedp1', mnedp1, , cm, GM4, [
+ Sessions('CM mnedp1', mnedp1, gout , cm, GM4, [
      cm_mnedp1_1_1, cm_mnedp1_1_2, cm_mnedp1_1_3, cm_mnedp1_1_4,
      cm_mnedp1_1_5
  ]).
 
- Sessions('TD mnedp1', mnedp1, , td, GM4_1, [
+ Sessions('TD mnedp1', mnedp1, gout, td, GM4_1, [
      td_mnedp1_1_1, td_mnedp1_1_2, td_mnedp1_1_3, td_mnedp1_1_4,
      td_mnedp1_1_5
  ]).
 
- Sessions('TD mnedp1', mnedp1, , td, GM4_2, [
+ Sessions('TD mnedp1', mnedp1, gout, td, GM4_2, [
      td_mnedp1_2_1, td_mnedp1_2_2, td_mnedp1_2_3, td_mnedp1_2_4,
      td_mnedp1_2_5
  ]).
 
+ Sessions('DS mnedp1', mnedp1, gout, ds, GM4, [
+     ds_mnedp1
+ ]).
 
 
 
