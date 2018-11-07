@@ -372,12 +372,12 @@ accueille(S, T) :-
      cm_mnedp1_1_5
  ]).
 
- Sessions('TD mnedp1', mnedp1, gout, td, GM4_1, [
+ Sessions('TD mnedp1_groupe1', mnedp1, gout, td, GM4_1, [
      td_mnedp1_1_1, td_mnedp1_1_2, td_mnedp1_1_3, td_mnedp1_1_4,
      td_mnedp1_1_5
  ]).
 
- Sessions('TD mnedp1', mnedp1, gout, td, GM4_2, [
+ Sessions('TD mnedp1_groupe2', mnedp1, gout, td, GM4_2, [
      td_mnedp1_2_1, td_mnedp1_2_2, td_mnedp1_2_3, td_mnedp1_2_4,
      td_mnedp1_2_5
  ]).
