@@ -367,9 +367,11 @@ accueille(S, T) :-
  * @arg Ids     Liste d'atomes servant d'ids pour ces séances
  */
 
+%% MNEDP1 %%
+
  Sessions('CM mnedp1', mnedp1, gout , cm, GM4, [
-     cm_mnedp1_1_1, cm_mnedp1_1_2, cm_mnedp1_1_3, cm_mnedp1_1_4,
-     cm_mnedp1_1_5
+     cm_mnedp1_1, cm_mnedp1_2, cm_mnedp1_3, cm_mnedp1_4,
+     cm_mnedp1_5
  ]).
 
  Sessions('TD mnedp1_groupe1', mnedp1, gout, td, GM4_1, [
@@ -386,7 +388,47 @@ accueille(S, T) :-
      ds_mnedp1
  ]).
 
+%% EDP %%
 
+ Sessions('CM edp', edp, le_guyader , cm, GM4, [
+     cm_edp_1, cm_edp_2, cm_edp_3, cm_edp_4,
+     cm_edp_5
+ ]).
+
+ Sessions('TD edp_groupe1', edp, le_guyader, td, GM4_1, [
+     td_edp_1_1, td_edp_1_2, td_edp_1_3, td_edp_1_4,
+     td_edp_1_5
+ ]).
+
+ Sessions('TD edp_groupe2', edp, le_guyader, td, GM4_2, [
+     td_edp_2_1, td_edp_2_2, td_edp_2_3, td_edp_2_4,
+     td_edp_2_5
+ ]).
+
+ Sessions('DS edp', edp, le_guyader, ds, GM4, [
+     ds_edp
+ ]).
+
+% OPTIMISATION_LINEAIRE %
+
+Sessions('CM opti_lineaire', opti_lineaire, forcadel , cm, GM4, [
+    cm_opti_lineaire_1, cm_opti_lineaire_2, cm_opti_lineaire_3, cm_opti_lineaire_4,
+    cm_opti_lineaire_5
+]).
+
+Sessions('TD opti_lineaire_groupe1', opti_lineaire, forcadel, td, GM4_1, [
+    td_opti_lineaire_1_1, td_opti_lineaire_1_2, td_opti_lineaire_1_3, td_opti_lineaire_1_4,
+    td_opti_lineaire_1_5
+]).
+
+Sessions('TD opti_lineaire_groupe2', opti_lineaire, forcadel, td, GM4_2, [
+    td_opti_lineaire_2_1, td_opti_lineaire_2_2, td_opti_lineaire_2_3, td_opti_lineaire_2_4,
+    td_opti_lineaire_2_5
+]).
+
+Sessions('DS opti_lineaire', opti_lineaire, forcadel, ds, GM4, [
+    ds_opti_lineaire
+]).
 
 Sessions('CM Analyse numérique 1', analyse_numerique_1, zakarova, cm, GM3, [
     cm_ananum1_1, cm_ananum1_2, cm_ananum1_3, cm_ananum1_4, cm_ananum1_5
