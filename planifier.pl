@@ -107,6 +107,7 @@ customSequenceValide(J1, M1, J2, M2, Jmin, Jmax) :-
  * @arg C   Un créneau [S, H, J, M, L]
  */
  % la séance n'est pas en lien avec le créneau transmis
+ 
 sequencementValideCreneau(S, _, _, _, [S2, _, _, _, _]):-
     \+ suitSeance(S, S2),
     \+ suitSeance(S, S2, _, _),
