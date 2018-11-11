@@ -226,6 +226,8 @@ plage(6, '17h30', '19h00').
 mois(1).
 mois(2).
 mois(3).
+mois(4).
+mois(5).
 
 
 
