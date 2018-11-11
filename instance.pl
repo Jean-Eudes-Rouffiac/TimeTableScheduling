@@ -81,7 +81,6 @@ matiere(analyse_fonctionnelle).
 matiere(algo_num_arith).
 
 matiere(statistiques1).
-matiere(analyse_donnees).
 matiere(equa_diff).
 
 matiere(langage_oriente_objet).
@@ -1016,10 +1015,20 @@ suitSeance(ds_algo, td_algo_2_5, 7, 14).
 suitSeance(ds_algo, td_algo_1_5, 7, 14).
 
 
+%suitSeance DS GM3 S6%
 
-
-
-
+suitSeance(ds_ananum2, td_ananum2_2_5, 7, 14).
+suitSeance(ds_ananum2, td_ananum2_1_5, 7, 14).
+suitSeance(ds_anafonc, td_anafonc_2_5, 7, 14).
+suitSeance(ds_anafonc, td_anafonc_1_5, 7, 14).
+suitSeance(ds_algo_num_arith, td_algo_num_arith_2_5, 7, 14).
+suitSeance(ds_algo_num_arith, td_algo_num_arith_1_5, 7, 14).
+suitSeance(ds_stat1, td_stat1_2_5, 7, 14).
+suitSeance(ds_stat1, td_stat1_1_5, 7, 14).
+suitSeance(ds_equadiff, td_equadiff_2_5, 7, 14).
+suitSeance(ds_equadiff, td_equadiff_1_5, 7, 14).
+suitSeance(ds_systexploit, tp_systexploit_2_5, 7, 14).
+suitSeance(ds_systexploit, tp_systexploit_1_5, 7, 14).
 
 
 
