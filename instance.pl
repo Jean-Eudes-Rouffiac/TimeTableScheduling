@@ -131,17 +131,10 @@ matiere(calcul_parallelle).
 matiere(programmation_logique_contrainte).
 
 %s11%
-matiere(meth_iterative).
 matiere(machine_learning).
 matiere(traitement_image).
 matiere(calcul_sto).
 matiere(realite_virtuelle).
-matiere(finance).
-matiere(ia).
-
-
-
-
 
 matiere(anglais).
 matiere(gsf).
@@ -1262,6 +1255,78 @@ suitSeance(td_programmation_logique_contrainte_2_3, cm_programmation_logique_con
 suitSeance(td_programmation_logique_contrainte_2_4, cm_programmation_logique_contrainte_4).
 suitSeance(td_programmation_logique_contrainte_2_5, cm_programmation_logique_contrainte_5).
 
+%machine_learning GM5 S10%
+suitSeance(cm_machine_learning_2, cm_machine_learning_1).
+suitSeance(cm_machine_learning_3, cm_machine_learning_2).
+suitSeance(cm_machine_learning_4, cm_machine_learning_3).
+suitSeance(cm_machine_learning_5, cm_machine_learning_4).
+
+suitSeance(td_machine_learning_1_1, cm_machine_learning_1).
+suitSeance(td_machine_learning_1_2, cm_machine_learning_2).
+suitSeance(td_machine_learning_1_3, cm_machine_learning_3).
+suitSeance(td_machine_learning_1_4, cm_machine_learning_4).
+suitSeance(td_machine_learning_1_5, cm_machine_learning_5).
+
+suitSeance(td_machine_learning_2_1, cm_machine_learning_1).
+suitSeance(td_machine_learning_2_2, cm_machine_learning_2).
+suitSeance(td_machine_learning_2_3, cm_machine_learning_3).
+suitSeance(td_machine_learning_2_4, cm_machine_learning_4).
+suitSeance(td_machine_learning_2_5, cm_machine_learning_5).
+
+%traitement_image GM5 S10%
+suitSeance(cm_traitement_image_2, cm_traitement_image_1).
+suitSeance(cm_traitement_image_3, cm_traitement_image_2).
+suitSeance(cm_traitement_image_4, cm_traitement_image_3).
+suitSeance(cm_traitement_image_5, cm_traitement_image_4).
+
+suitSeance(td_traitement_image_1_1, cm_traitement_image_1).
+suitSeance(td_traitement_image_1_2, cm_traitement_image_2).
+suitSeance(td_traitement_image_1_3, cm_traitement_image_3).
+suitSeance(td_traitement_image_1_4, cm_traitement_image_4).
+suitSeance(td_traitement_image_1_5, cm_traitement_image_5).
+
+suitSeance(td_traitement_image_2_1, cm_traitement_image_1).
+suitSeance(td_traitement_image_2_2, cm_traitement_image_2).
+suitSeance(td_traitement_image_2_3, cm_traitement_image_3).
+suitSeance(td_traitement_image_2_4, cm_traitement_image_4).
+suitSeance(td_traitement_image_2_5, cm_traitement_image_5).
+
+%calcul_sto GM5 S10%
+suitSeance(cm_calcul_sto_2, cm_calcul_sto_1).
+suitSeance(cm_calcul_sto_3, cm_calcul_sto_2).
+suitSeance(cm_calcul_sto_4, cm_calcul_sto_3).
+suitSeance(cm_calcul_sto_5, cm_calcul_sto_4).
+
+suitSeance(td_calcul_sto_1_1, cm_calcul_sto_1).
+suitSeance(td_calcul_sto_1_2, cm_calcul_sto_2).
+suitSeance(td_calcul_sto_1_3, cm_calcul_sto_3).
+suitSeance(td_calcul_sto_1_4, cm_calcul_sto_4).
+suitSeance(td_calcul_sto_1_5, cm_calcul_sto_5).
+
+suitSeance(td_calcul_sto_2_1, cm_calcul_sto_1).
+suitSeance(td_calcul_sto_2_2, cm_calcul_sto_2).
+suitSeance(td_calcul_sto_2_3, cm_calcul_sto_3).
+suitSeance(td_calcul_sto_2_4, cm_calcul_sto_4).
+suitSeance(td_calcul_sto_2_5, cm_calcul_sto_5).
+
+
+%realite_virtuelle GM5 S10%
+suitSeance(cm_realite_virtuelle_2, cm_realite_virtuelle_1).
+suitSeance(cm_realite_virtuelle_3, cm_realite_virtuelle_2).
+suitSeance(cm_realite_virtuelle_4, cm_realite_virtuelle_3).
+suitSeance(cm_realite_virtuelle_5, cm_realite_virtuelle_4).
+
+suitSeance(td_realite_virtuelle_1_1, cm_realite_virtuelle_1).
+suitSeance(td_realite_virtuelle_1_2, cm_realite_virtuelle_2).
+suitSeance(td_realite_virtuelle_1_3, cm_realite_virtuelle_3).
+suitSeance(td_realite_virtuelle_1_4, cm_realite_virtuelle_4).
+suitSeance(td_realite_virtuelle_1_5, cm_realite_virtuelle_5).
+
+suitSeance(td_realite_virtuelle_2_1, cm_realite_virtuelle_1).
+suitSeance(td_realite_virtuelle_2_2, cm_realite_virtuelle_2).
+suitSeance(td_realite_virtuelle_2_3, cm_realite_virtuelle_3).
+suitSeance(td_realite_virtuelle_2_4, cm_realite_virtuelle_4).
+suitSeance(td_realite_virtuelle_2_5, cm_realite_virtuelle_5).
 
 
 
