@@ -528,44 +528,6 @@ seances('DS Algo', algo, chaignaud, ds, gm3, [
 ]).
 
 
-% Anglais %
-
-seances('CM Anglais', anglais, milou, cm, gm3, [
-    cm_anglais1_1, cm_anglais1_2, cm_anglais1_3, cm_anglais1_4, cm_anglais1_5
-]).
-
-seances('TD Anglais Groupe 1', anglais, milou, td, gm3_1, [
-    td_anglais1_1_1, td_anglais1_1_2, td_anglais1_1_3, td_anglais1_1_4, td_anglais1_1_5
-]).
-
-seances('TD Anglais Groupe 2', anglais, milou, td, gm3_2, [
-    td_anglais1_2_1, td_anglais1_2_2, td_anglais1_2_3, td_anglais1_2_4, td_anglais1_2_5
-]).
-
-seances('DS Anglais', anglais, milou, ds, gm3, [
-    ds_anglais1
-]).
-
-% GSF %
-
-seances('TD GSF Groupe 1', gsf, borel, td, gm3_1, [
-    td_gsf1_1_1, td_gsf1_1_2, td_gsf1_1_3, td_gsf1_1_4, td_gsf1_1_5
-]).
-
-seances('TD GSF Groupe 2', gsf, borel, td, gm3_2, [
-    td_gsf1_2_1, td_gsf1_2_2, td_gsf1_2_3, td_gsf1_2_4, td_gsf1_2_5
-]).
-
-seances('DS GSF', gsf, borel, ds, gm3, [
-    ds_gsf1
-]).
-
-
-% Sport %
-
-seances('CM Sport', sport, dubois, cm, gm3, [
-    cm_sport1_1, cm_sport1_2, cm_sport1_3, cm_sport1_4, cm_sport1_5
-]).
 
 % S6 %
 
