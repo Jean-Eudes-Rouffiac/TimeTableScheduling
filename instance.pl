@@ -1031,6 +1031,13 @@ suitSeance(ds_algo_num_arith, td_algo_num_arith_1_5, 7, 14).
 suitSeance(ds_stat1, td_stat1_2_5, 7, 14).
 suitSeance(ds_stat1, td_stat1_1_5, 7, 14).
 
+%ds GM5%
+suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_2_5).
+suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_1_5).
+suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_1_5).
+suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_2_5).
+
+
 %ananum2 GM3 S6%
 suitSeance(cm_ananum2_2, cm_ananum2_1, 1, 10).
 suitSeance(cm_ananum2_3, cm_ananum2_2, 1, 10).
