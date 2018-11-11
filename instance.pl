@@ -940,6 +940,7 @@ seances('DS Système dexploitation objet', syst_exploitation, jaumat, ds, gm3, [
  */
 
 :- dynamic suitSeance/2.
+:- dynamic suitSeance/4.
 
 %
 %suitSeance GM3%
@@ -1030,12 +1031,6 @@ suitSeance(ds_algo_num_arith, td_algo_num_arith_2_5, 7, 14).
 suitSeance(ds_algo_num_arith, td_algo_num_arith_1_5, 7, 14).
 suitSeance(ds_stat1, td_stat1_2_5, 7, 14).
 suitSeance(ds_stat1, td_stat1_1_5, 7, 14).
-
-%ds GM5%
-suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_2_5).
-suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_1_5).
-suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_1_5).
-suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_2_5).
 
 
 %ananum2 GM3 S6%
@@ -1335,6 +1330,12 @@ suitSeance(td_realite_virtuelle_2_3, cm_realite_virtuelle_3).
 suitSeance(td_realite_virtuelle_2_4, cm_realite_virtuelle_4).
 suitSeance(td_realite_virtuelle_2_5, cm_realite_virtuelle_5).
 
+
+%ds GM5%
+suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_2_5).
+suitSeance(ds_programmation_logique_contrainte,td_programmation_logique_contrainte_1_5).
+suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_1_5).
+suitSeance(ds_auto_non_lineaire, td_auto_non_lineaire_2_5).
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
