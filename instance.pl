@@ -129,7 +129,6 @@ matiere(hamilton_jacobi).
 matiere(auto_non_lineaire).
 matiere(calcul_parallelle).
 matiere(programmation_logique_contrainte).
-matiere(opti_grande_dimension).
 
 %s11%
 matiere(meth_iterative).
@@ -949,7 +948,9 @@ seances('DS Système dexploitation objet', syst_exploitation, jaumat, ds, gm3, [
 
 :- dynamic suitSeance/2.
 
-
+%
+%suitSeance GM3%
+%
 suitSeance(cm_ananum2_1, cm_ananum1_5, 28, 35).
 suitSeance(cm_anafonc_1, cm_ananum1_5, 28, 35).
 suitSeance(cm_algo_num_arith_1, cm_ananum1_5, 28, 35).
@@ -1006,7 +1007,7 @@ suitSeance(cm_stat1_1, cm_algo_5, 28, 35).
 suitSeance(cm_equadiff_1, cm_algo_5, 28, 35).
 suitSeance(cm_systexploit_1, cm_algo_5, 28, 35).
 
-
+%DS GM3 suitSeance%
 suitSeance(ds_ananum1, td_ananum1_2_5, 7, 14).
 suitSeance(ds_ananum1, td_ananum1_1_5, 7, 14).
 suitSeance(ds_fortran, td_fortran_1_5, 7, 14).
@@ -1148,8 +1149,125 @@ suitSeance(tp_systexploit_2_3, cm_systexploit_3).
 suitSeance(tp_systexploit_2_4, cm_systexploit_4).
 suitSeance(tp_systexploit_2_5, cm_systexploit_5).
 
-% Écriture dynamique de la base de donnée -------------------------------------
 
+%
+%suitSeance GM5%
+%
+
+%regression_non_lineaire GM5 S9%
+suitSeance(cm_regression_non_lineaire_2, cm_regression_non_lineaire_1).
+suitSeance(cm_regression_non_lineaire_3, cm_regression_non_lineaire_2).
+suitSeance(cm_regression_non_lineaire_4, cm_regression_non_lineaire_3).
+suitSeance(cm_regression_non_lineaire_5, cm_regression_non_lineaire_4).
+
+suitSeance(tp_regression_non_lineaire_1_1, cm_regression_non_lineaire_1).
+suitSeance(tp_regression_non_lineaire_1_2, cm_regression_non_lineaire_2).
+suitSeance(tp_regression_non_lineaire_1_3, cm_regression_non_lineaire_3).
+suitSeance(tp_regression_non_lineaire_1_4, cm_regression_non_lineaire_4).
+suitSeance(tp_regression_non_lineaire_1_5, cm_regression_non_lineaire_5).
+
+suitSeance(tp_regression_non_lineaire_2_1, cm_regression_non_lineaire_1).
+suitSeance(tp_regression_non_lineaire_2_2, cm_regression_non_lineaire_2).
+suitSeance(tp_regression_non_lineaire_2_3, cm_regression_non_lineaire_3).
+suitSeance(tp_regression_non_lineaire_2_4, cm_regression_non_lineaire_4).
+suitSeance(tp_regression_non_lineaire_2_5, cm_regression_non_lineaire_5).
+
+%had GM5 S9%
+suitSeance(cm_had_2, cm_had_1).
+suitSeance(cm_had_3, cm_had_2).
+suitSeance(cm_had_4, cm_had_3).
+suitSeance(cm_had_5, cm_had_4).
+
+suitSeance(td_had_1_1, cm_had_1).
+suitSeance(td_had_1_2, cm_had_2).
+suitSeance(td_had_1_3, cm_had_3).
+suitSeance(td_had_1_4, cm_had_4).
+suitSeance(td_had_1_5, cm_had_5).
+
+suitSeance(td_had_2_1, cm_had_1).
+suitSeance(td_had_2_2, cm_had_2).
+suitSeance(td_had_2_3, cm_had_3).
+suitSeance(td_had_2_4, cm_had_4).
+suitSeance(td_had_2_5, cm_had_5).
+
+%hamilton_jacobi GM5 S9%
+suitSeance(cm_hamilton_jacobi_2, cm_hamilton_jacobi_1).
+suitSeance(cm_hamilton_jacobi_3, cm_hamilton_jacobi_2).
+suitSeance(cm_hamilton_jacobi_4, cm_hamilton_jacobi_3).
+suitSeance(cm_hamilton_jacobi_5, cm_hamilton_jacobi_4).
+
+suitSeance(td_hamilton_jacobi_1_1, cm_hamilton_jacobi_1).
+suitSeance(td_hamilton_jacobi_1_2, cm_hamilton_jacobi_2).
+suitSeance(td_hamilton_jacobi_1_3, cm_hamilton_jacobi_3).
+suitSeance(td_hamilton_jacobi_1_4, cm_hamilton_jacobi_4).
+suitSeance(td_hamilton_jacobi_1_5, cm_hamilton_jacobi_5).
+
+suitSeance(td_hamilton_jacobi_2_1, cm_hamilton_jacobi_1).
+suitSeance(td_hamilton_jacobi_2_2, cm_hamilton_jacobi_2).
+suitSeance(td_hamilton_jacobi_2_3, cm_hamilton_jacobi_3).
+suitSeance(td_hamilton_jacobi_2_4, cm_hamilton_jacobi_4).
+suitSeance(td_hamilton_jacobi_2_5, cm_hamilton_jacobi_5).
+
+%auto_non_lineaire GM5 S9%
+suitSeance(cm_auto_non_lineaire_2, cm_auto_non_lineaire_1).
+suitSeance(cm_auto_non_lineaire_3, cm_auto_non_lineaire_2).
+suitSeance(cm_auto_non_lineaire_4, cm_auto_non_lineaire_3).
+suitSeance(cm_auto_non_lineaire_5, cm_auto_non_lineaire_4).
+
+suitSeance(td_auto_non_lineaire_1_1, cm_auto_non_lineaire_1).
+suitSeance(td_auto_non_lineaire_1_2, cm_auto_non_lineaire_2).
+suitSeance(td_auto_non_lineaire_1_3, cm_auto_non_lineaire_3).
+suitSeance(td_auto_non_lineaire_1_4, cm_auto_non_lineaire_4).
+suitSeance(td_auto_non_lineaire_1_5, cm_auto_non_lineaire_5).
+
+suitSeance(td_auto_non_lineaire_2_1, cm_auto_non_lineaire_1).
+suitSeance(td_auto_non_lineaire_2_2, cm_auto_non_lineaire_2).
+suitSeance(td_auto_non_lineaire_2_3, cm_auto_non_lineaire_3).
+suitSeance(td_auto_non_lineaire_2_4, cm_auto_non_lineaire_4).
+suitSeance(td_auto_non_lineaire_2_5, cm_auto_non_lineaire_5).
+
+%calcul_parallelle GM5 S9%
+suitSeance(cm_calcul_parallelle_2, cm_calcul_parallelle_1).
+suitSeance(cm_calcul_parallelle_3, cm_calcul_parallelle_2).
+suitSeance(cm_calcul_parallelle_4, cm_calcul_parallelle_3).
+suitSeance(cm_calcul_parallelle_5, cm_calcul_parallelle_4).
+
+suitSeance(td_calcul_parallelle_1_1, cm_calcul_parallelle_1).
+suitSeance(td_calcul_parallelle_1_2, cm_calcul_parallelle_2).
+suitSeance(td_calcul_parallelle_1_3, cm_calcul_parallelle_3).
+suitSeance(td_calcul_parallelle_1_4, cm_calcul_parallelle_4).
+suitSeance(td_calcul_parallelle_1_5, cm_calcul_parallelle_5).
+
+suitSeance(td_calcul_parallelle_2_1, cm_calcul_parallelle_1).
+suitSeance(td_calcul_parallelle_2_2, cm_calcul_parallelle_2).
+suitSeance(td_calcul_parallelle_2_3, cm_calcul_parallelle_3).
+suitSeance(td_calcul_parallelle_2_4, cm_calcul_parallelle_4).
+suitSeance(td_calcul_parallelle_2_5, cm_calcul_parallelle_5).
+
+%programmation_logique_contrainte GM5 S9%
+suitSeance(cm_programmation_logique_contrainte_2, cm_programmation_logique_contrainte_1).
+suitSeance(cm_programmation_logique_contrainte_3, cm_programmation_logique_contrainte_2).
+suitSeance(cm_programmation_logique_contrainte_4, cm_programmation_logique_contrainte_3).
+suitSeance(cm_programmation_logique_contrainte_5, cm_programmation_logique_contrainte_4).
+
+suitSeance(td_programmation_logique_contrainte_1_1, cm_programmation_logique_contrainte_1).
+suitSeance(td_programmation_logique_contrainte_1_2, cm_programmation_logique_contrainte_2).
+suitSeance(td_programmation_logique_contrainte_1_3, cm_programmation_logique_contrainte_3).
+suitSeance(td_programmation_logique_contrainte_1_4, cm_programmation_logique_contrainte_4).
+suitSeance(td_programmation_logique_contrainte_1_5, cm_programmation_logique_contrainte_5).
+
+suitSeance(td_programmation_logique_contrainte_2_1, cm_programmation_logique_contrainte_1).
+suitSeance(td_programmation_logique_contrainte_2_2, cm_programmation_logique_contrainte_2).
+suitSeance(td_programmation_logique_contrainte_2_3, cm_programmation_logique_contrainte_3).
+suitSeance(td_programmation_logique_contrainte_2_4, cm_programmation_logique_contrainte_4).
+suitSeance(td_programmation_logique_contrainte_2_5, cm_programmation_logique_contrainte_5).
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Écriture dynamique de la base de donnée -------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 /**
  * computeProfSeance(+P, +Seance)
  *
