@@ -1024,23 +1024,20 @@ suitSeance(ds_C, tp_C_2_5, 7, 14).
 suitSeance(ds_algo, td_algo_2_5, 7, 14).
 suitSeance(ds_algo, td_algo_1_5, 7, 14).
 
-
-%suitSeance DS GM3 S6%
-
-suitSeance(ds_ananum2, td_ananum2_2_5, 7, 14).
-suitSeance(ds_ananum2, td_ananum2_1_5, 7, 14).
 suitSeance(ds_anafonc, td_anafonc_2_5, 7, 14).
 suitSeance(ds_anafonc, td_anafonc_1_5, 7, 14).
-suitSeance(ds_algo_num_arith, td_algo_num_arith_2_5, 7, 14).
-suitSeance(ds_algo_num_arith, td_algo_num_arith_1_5, 7, 14).
-suitSeance(ds_stat1, td_stat1_2_5, 7, 14).
-suitSeance(ds_stat1, td_stat1_1_5, 7, 14).
+suitSeance(ds_ananum2, td_ananum2_2_5, 7, 14).
+suitSeance(ds_ananum2, td_ananum2_1_5, 7, 14).
 suitSeance(ds_equadiff, td_equadiff_2_5, 7, 14).
 suitSeance(ds_equadiff, td_equadiff_1_5, 7, 14).
 suitSeance(ds_systexploit, tp_systexploit_2_5, 7, 14).
 suitSeance(ds_systexploit, tp_systexploit_1_5, 7, 14).
+suitSeance(ds_algo_num_arith, td_algo_num_arith_2_5, 7, 14).
+suitSeance(ds_algo_num_arith, td_algo_num_arith_1_5, 7, 14).
+suitSeance(ds_stat1, td_stat1_2_5, 7, 14).
+suitSeance(ds_stat1, td_stat1_1_5, 7, 14).
 
-%un CM par semaine GM3 S6%
+%ananum2 GM3 S6%
 suitSeance(cm_ananum2_2, cm_ananum2_1, 1, 10).
 suitSeance(cm_ananum2_3, cm_ananum2_2, 1, 10).
 suitSeance(cm_ananum2_4, cm_ananum2_3, 1, 10).
@@ -1058,6 +1055,98 @@ suitSeance(td_ananum2_2_3, cm_ananum2_3, 1, 10).
 suitSeance(td_ananum2_2_4, cm_ananum2_4, 1, 10).
 suitSeance(td_ananum2_2_5, cm_ananum2_5, 1, 10).
 
+%anafonc2 GM3 S6%
+suitSeance(cm_anafonc_2, cm_anafonc_1, 1, 10).
+suitSeance(cm_anafonc_3, cm_anafonc_2, 1, 10).
+suitSeance(cm_anafonc_4, cm_anafonc_3, 1, 10).
+suitSeance(cm_anafonc_5, cm_anafonc_4, 1, 10).
+
+suitSeance(td_anafonc_1_1, cm_anafonc_1, 1, 10).
+suitSeance(td_anafonc_1_2, cm_anafonc_2, 1, 10).
+suitSeance(td_anafonc_1_3, cm_anafonc_3, 1, 10).
+suitSeance(td_anafonc_1_4, cm_anafonc_4, 1, 10).
+suitSeance(td_anafonc_1_5, cm_anafonc_5, 1, 10).
+
+suitSeance(td_anafonc_2_1, cm_anafonc_1, 1, 10).
+suitSeance(td_anafonc_2_2, cm_anafonc_2, 1, 10).
+suitSeance(td_anafonc_2_3, cm_anafonc_3, 1, 10).
+suitSeance(td_anafonc_2_4, cm_anafonc_4, 1, 10).
+suitSeance(td_anafonc_2_5, cm_anafonc_5, 1, 10).
+
+%algo_num_arith GM3 S6%
+
+suitSeance(cm_algo_num_arith_2, cm_algo_num_arith_1).
+suitSeance(cm_algo_num_arith_3, cm_algo_num_arith_2).
+suitSeance(cm_algo_num_arith_4, cm_algo_num_arith_3).
+suitSeance(cm_algo_num_arith_5, cm_algo_num_arith_4).
+
+suitSeance(td_algo_num_arith_1_1, cm_algo_num_arith_1).
+suitSeance(td_algo_num_arith_1_2, cm_algo_num_arith_2).
+suitSeance(td_algo_num_arith_1_3, cm_algo_num_arith_3).
+suitSeance(td_algo_num_arith_1_4, cm_algo_num_arith_4).
+suitSeance(td_algo_num_arith_1_5, cm_algo_num_arith_5).
+
+suitSeance(td_algo_num_arith_2_1, cm_algo_num_arith_1).
+suitSeance(td_algo_num_arith_2_2, cm_algo_num_arith_2).
+suitSeance(td_algo_num_arith_2_3, cm_algo_num_arith_3).
+suitSeance(td_algo_num_arith_2_4, cm_algo_num_arith_4).
+suitSeance(td_algo_num_arith_2_5, cm_algo_num_arith_5).
+
+%statistiques1 GM3 S6%
+
+suitSeance(cm_stat1_2, cm_stat1_1).
+suitSeance(cm_stat1_3, cm_stat1_2).
+suitSeance(cm_stat1_4, cm_stat1_3).
+suitSeance(cm_stat1_5, cm_stat1_4).
+
+suitSeance(td_stat1_1_1, cm_stat1_1).
+suitSeance(td_stat1_1_2, cm_stat1_2).
+suitSeance(td_stat1_1_3, cm_stat1_3).
+suitSeance(td_stat1_1_4, cm_stat1_4).
+suitSeance(td_stat1_1_5, cm_stat1_5).
+
+suitSeance(td_stat1_2_1, cm_stat1_1).
+suitSeance(td_stat1_2_2, cm_stat1_2).
+suitSeance(td_stat1_2_3, cm_stat1_3).
+suitSeance(td_stat1_2_4, cm_stat1_4).
+suitSeance(td_stat1_2_5, cm_stat1_5).
+
+%equa_diff GM3 S6%
+
+suitSeance(cm_equadiff_2, cm_equadiff_1).
+suitSeance(cm_equadiff_3, cm_equadiff_2).
+suitSeance(cm_equadiff_4, cm_equadiff_3).
+suitSeance(cm_equadiff_5, cm_equadiff_4).
+
+suitSeance(td_equadiff_1_1, cm_equadiff_1).
+suitSeance(td_equadiff_1_2, cm_equadiff_2).
+suitSeance(td_equadiff_1_3, cm_equadiff_3).
+suitSeance(td_equadiff_1_4, cm_equadiff_4).
+suitSeance(td_equadiff_1_5, cm_equadiff_5).
+
+suitSeance(td_equadiff_2_1, cm_equadiff_1).
+suitSeance(td_equadiff_2_2, cm_equadiff_2).
+suitSeance(td_equadiff_2_3, cm_equadiff_3).
+suitSeance(td_equadiff_2_4, cm_equadiff_4).
+suitSeance(td_equadiff_2_5, cm_equadiff_5).
+
+%syst_exploitation GM3 S6%
+suitSeance(cm_systexploit_2, cm_systexploit_1).
+suitSeance(cm_systexploit_3, cm_systexploit_2).
+suitSeance(cm_systexploit_4, cm_systexploit_3).
+suitSeance(cm_systexploit_5, cm_systexploit_4).
+
+suitSeance(tp_systexploit_1_1, cm_systexploit_1).
+suitSeance(tp_systexploit_1_2, cm_systexploit_2).
+suitSeance(tp_systexploit_1_3, cm_systexploit_3).
+suitSeance(tp_systexploit_1_4, cm_systexploit_4).
+suitSeance(tp_systexploit_1_5, cm_systexploit_5).
+
+suitSeance(tp_systexploit_2_1, cm_systexploit_1).
+suitSeance(tp_systexploit_2_2, cm_systexploit_2).
+suitSeance(tp_systexploit_2_3, cm_systexploit_3).
+suitSeance(tp_systexploit_2_4, cm_systexploit_4).
+suitSeance(tp_systexploit_2_5, cm_systexploit_5).
 
 % Écriture dynamique de la base de donnée -------------------------------------
 
