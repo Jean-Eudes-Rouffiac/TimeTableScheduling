@@ -227,6 +227,11 @@ mois(2).
 mois(3).
 mois(4).
 mois(5).
+mois(6).
+mois(7).
+mois(8).
+mois(9).
+
 
 
 
@@ -291,6 +296,8 @@ typeCours(ds).
 
 salle(ma_h_r1_01, 60, [cm, ds]).
 salle(ma_h_r1_03, 60, [cm, ds]).
+salle(ma_h_r1_05, 60, [cm, ds]).
+salle(ma_h_r1_07, 60, [cm, ds]).
 salle(ma_b_rc_17, 50, [td, cm]).
 salle(ma_b_rc_01, 50, [td, cm]).
 salle(ma_g_rc_01-02-03, 150, [cm, ds]).
@@ -299,6 +306,9 @@ salle(ma_i_r1_03, 35, [td]).
 salle(ma_i_r1_08, 35, [td]).
 salle(ma_e_r1_06, 60, [td, cm]).
 salle(ma_e_r1_01, 60, [td, cm]).
+salle(ma_f_r1_06, 35, [td]).
+salle(ma_f_r1_03, 35, [td]).
+salle(ma_f_r1_08, 35, [td]).
 salle(ma_g_rC_05, 30, [td]).
 salle(ma_g_rC_07, 30, [td]).
 salle(ma_c_rC_01, 65, [cm, ds]).
@@ -1030,6 +1040,23 @@ suitSeance(ds_equadiff, td_equadiff_1_5, 7, 14).
 suitSeance(ds_systexploit, tp_systexploit_2_5, 7, 14).
 suitSeance(ds_systexploit, tp_systexploit_1_5, 7, 14).
 
+%un CM par semaine GM3 S6%
+suitSeance(cm_ananum2_2, cm_ananum2_1, 1, 10).
+suitSeance(cm_ananum2_3, cm_ananum2_2, 1, 10).
+suitSeance(cm_ananum2_4, cm_ananum2_3, 1, 10).
+suitSeance(cm_ananum2_5, cm_ananum2_4, 1, 10).
+
+suitSeance(td_ananum2_1_1, cm_ananum2_1, 1, 10).
+suitSeance(td_ananum2_1_2, cm_ananum2_2, 1, 10).
+suitSeance(td_ananum2_1_3, cm_ananum2_3, 1, 10).
+suitSeance(td_ananum2_1_4, cm_ananum2_4, 1, 10).
+suitSeance(td_ananum2_1_5, cm_ananum2_5, 1, 10).
+
+suitSeance(td_ananum2_2_1, cm_ananum2_1, 1, 10).
+suitSeance(td_ananum2_2_2, cm_ananum2_2, 1, 10).
+suitSeance(td_ananum2_2_3, cm_ananum2_3, 1, 10).
+suitSeance(td_ananum2_2_4, cm_ananum2_4, 1, 10).
+suitSeance(td_ananum2_2_5, cm_ananum2_5, 1, 10).
 
 
 % Écriture dynamique de la base de donnée -------------------------------------
